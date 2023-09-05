@@ -1,26 +1,19 @@
 # Testing Spring REST Mapping
 - Created Demo model
-  - Created String id;
-  - Created String name;
-  - Created String age;
-    - (It will be an integer in the future)
-  - Created String birthPlace;
-  - Created String birthDate;
-    - (It will be a date in the future)
-  - Created all getters and setters
-  - Created a constructor with all fields
+  - Removed String id;
+  - Changed String age; --> int age;
+  - Changed String birthDate; --> Date birthDate;
+  - Removed and changed all getters and setters
 - Created DemoController
   - Created a HashMap<String, Demo> to store the data
   - Filled the HashMap with some data
-  - Created default (/) endpoint
-    - (Returns "Hello World")
-  - Created people (/people) endpoint
-    - (Returns all the data from the HashMap as a HTML format)
-  - Created people/{id} endpoint
-    - (Returns the data from the HashMap with the given id as a HTML format)
-  - Created person (POST) (/person) endpoint
-    - (Adds a new person to the HashMap)
-- Created DemoService
+    - Modified the data to match the new model
+  - Modified (/people) endpoint to return the HashMap with key and value pairs
+  - Added @RequestBody to (/person) endpoint to receive a JSON object
+  - Created DeletedMapping for person (/person/{id})
+    - Added @PathVariable to receive the id from the URL
+    - If the id is found in the HashMap, the person is removed and a message is returned
+    - If the id is not found in the HashMap, a message is returned
 
 # To add new data to the HashMap use this code in browser console:
 ```js

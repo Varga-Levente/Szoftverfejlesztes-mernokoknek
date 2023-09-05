@@ -11,9 +11,9 @@ import java.util.*;
 public class DemoController {
 
     private Map<String, Demo> demoList = new HashMap<>(){{
-       put("0", new Demo("1", "John Doe", "25", "Budapest", "1995-01-01"));
-       put("1", new Demo("2", "Jane Doe", "23", "Debrecen", "1997-01-01"));
-       put("2", new Demo("3", "Jack Doe", "21", "Szeged", "1999-01-01"));
+       put("0", new Demo("John Doe", 25, "Budapest", new Date(1998, 01,01)));
+       put("1", new Demo("John Adams", 11, "Debrecen", new Date(1999, 06,02)));
+       put("2", new Demo("John Valaki", 38, "Szeged", new Date(2000, 12,11)));
     }};
 
     @GetMapping("/")
@@ -23,9 +23,11 @@ public class DemoController {
 
     @GetMapping("/people")
     public String getPeople(){
+        //Create an empty string and add every HashMap key-value pair to it
+        //[Key: Value]<br>
         String people = "";
-        for (Demo demo : demoList.values()) {
-            people += demo.toString();
+        for(Map.Entry<String, Demo> entry : demoList.entrySet()){
+            people += entry.getKey() + ": " + entry.getValue();
         }
         return people;
     }
@@ -43,6 +45,15 @@ public class DemoController {
     public String addPerson(@RequestBody Demo demo){
         demoList.put(UUID.randomUUID().toString(), demo);
         return demo.toString();
+    }
+
+    @DeleteMapping("/person/{id}")
+    public String deletePerson(@PathVariable String id){
+        if(!demoList.containsKey(id)){
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Person not found");
+        }
+        demoList.remove(id);
+        return "Person deleted";
     }
 
 }

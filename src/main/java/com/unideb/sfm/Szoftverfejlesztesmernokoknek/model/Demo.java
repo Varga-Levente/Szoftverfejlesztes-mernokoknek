@@ -5,12 +5,11 @@ import java.util.Date;
 public class Demo {
     String id;
     String name;
-    String age;
+    int age;
     String birthPlace;
-    String birthDate;
+    Date birthDate;
 
-    public Demo(String id, String name, String age, String birthPlace, String birthDate) {
-        this.id = id;
+    public Demo(String name, int age, String birthPlace, Date birthDate) {
         this.name = name;
         this.age = age;
         this.birthPlace = birthPlace;
@@ -20,20 +19,11 @@ public class Demo {
     @Override
     public String toString() {
         return "<b>{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
+                "name='" + name + '\'' +
                 ", age=" + age +
                 ", birthPlace='" + birthPlace + '\'' +
                 ", birthDate=" + birthDate +
                 "}</b><br>";
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
     }
 
     public String getName() {
@@ -44,11 +34,11 @@ public class Demo {
         this.name = name;
     }
 
-    public String getAge() {
+    public int getAge() {
         return age;
     }
 
-    public void setAge(String age) {
+    public void setAge(int age) {
         this.age = age;
     }
 
@@ -60,11 +50,11 @@ public class Demo {
         this.birthPlace = birthPlace;
     }
 
-    public String getBirthDate() {
+    public Date getBirthDate() {
         return birthDate;
     }
 
-    public void setBirthDate(String birthDate) {
+    public void setBirthDate(Date birthDate) {
         this.birthDate = birthDate;
     }
 }
