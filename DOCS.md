@@ -25,3 +25,12 @@
     .then(text => alert(text));
 })();
 ```
+
+# To delete data from the HashMap by id use this code in browser console:
+```js
+(async function deletePhoto(id) {
+          await fetch("http://localhost:8080/person/" + id, {
+                    method: "DELETE"
+          })
+})("ID_HERE");
+```
