@@ -1,6 +1,11 @@
-# Testing Spring REST Mapping
-- Created a static folder in resources called static and added testme.html
-  - This is a simple html page that will be used to test the REST API
+# Modifications
+- application.properties
+  - Added basic things for H2 database
+- H2 Database
+  - Created users table
+  - Added 3 random test users
+
+---
 
 # To add new data to the HashMap use this code in browser console:
 ```js

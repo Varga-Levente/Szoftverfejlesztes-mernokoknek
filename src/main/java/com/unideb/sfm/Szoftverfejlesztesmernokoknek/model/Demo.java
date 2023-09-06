@@ -3,7 +3,6 @@ package com.unideb.sfm.Szoftverfejlesztesmernokoknek.model;
 import java.util.Date;
 
 public class Demo {
-    String id;
     String name;
     int age;
     String birthPlace;
