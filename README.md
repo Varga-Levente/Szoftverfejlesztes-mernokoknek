@@ -5,8 +5,8 @@
 ## Authors
 
 - [@Varga-Levente](https://github.com/Varga-Levente)
-- [@Éles-Dani]()
-- [@Divinyi-Balázs]()
+- [@Éles-Dani](https://github.com/deles30)
+- [@Divinyi-Balázs](https://github.com/leuk0)
 - [@Nemes-Levente]()
 
 ## Compile
