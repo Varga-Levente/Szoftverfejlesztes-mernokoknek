@@ -1,19 +1,6 @@
 # Testing Spring REST Mapping
-- Created Demo model
-  - Removed String id;
-  - Changed String age; --> int age;
-  - Changed String birthDate; --> Date birthDate;
-  - Removed and changed all getters and setters
-- Created DemoController
-  - Created a HashMap<String, Demo> to store the data
-  - Filled the HashMap with some data
-    - Modified the data to match the new model
-  - Modified (/people) endpoint to return the HashMap with key and value pairs
-  - Added @RequestBody to (/person) endpoint to receive a JSON object
-  - Created DeletedMapping for person (/person/{id})
-    - Added @PathVariable to receive the id from the URL
-    - If the id is found in the HashMap, the person is removed and a message is returned
-    - If the id is not found in the HashMap, a message is returned
+- Created a static folder in resources called static and added testme.html
+  - This is a simple html page that will be used to test the REST API
 
 # To add new data to the HashMap use this code in browser console:
 ```js
