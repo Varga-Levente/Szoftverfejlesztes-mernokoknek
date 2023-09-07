@@ -56,4 +56,10 @@ public class DemoController {
         return "Person deleted";
     }
 
+    @GetMapping("/DB")
+    public String getDB(){
+        //Get data from H2 database
+        return "";
+    }
+
 }
