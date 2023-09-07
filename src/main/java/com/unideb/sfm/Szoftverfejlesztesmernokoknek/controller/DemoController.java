@@ -5,7 +5,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
+import java.sql.*;
 import java.util.*;
+import java.util.Date;
 
 @RestController
 public class DemoController {
@@ -57,9 +59,19 @@ public class DemoController {
     }
 
     @GetMapping("/DB")
-    public String getDB(){
-        //Get data from H2 database
-        return "";
+    public String getDB() throws SQLException {
+        //For testing only
+        String jbdcUrl = "jdbc:h2:file:./DB";
+        Connection conn = DriverManager.getConnection(jbdcUrl, "sa", "password");
+        String sql = "SELECT * FROM USERS";
+        Statement stmt = conn.createStatement();
+        ResultSet rs = stmt.executeQuery(sql);
+        String result = "";
+        // List all users [NAME, AGE, BIRTHPLACE, BIRTHDAY]
+        while(rs.next()){
+            result += rs.getString("NAME") + ", " + rs.getInt("AGE") + ", " + rs.getString("BIRTHPLACE") + ", " + rs.getDate("BIRTHDAY") + "<br>";
+        }
+        return result;
     }
 
 }

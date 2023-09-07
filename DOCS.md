@@ -1,9 +1,5 @@
 # Modifications
-- application.properties
-  - Added basic things for H2 database
-- H2 Database
-  - Created users table
-  - Added 3 random test users
+- Created /DB endpoint to display all users in the H2 database (FILE)
 
 ---
 
