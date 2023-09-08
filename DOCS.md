@@ -1,19 +1,6 @@
 # Modifications
-<<<<<<< HEAD
-- Created /DB endpoint to display all users in the H2 database (FILE)
-=======
-- **application.properties**
-  - Fixed basic things for H2 database
-  - Added DDL settings
-- **H2 Database**
-  - DB File is now in the project folder (DB)
-- **Code**
-    - Added a new entity (Movie)
-      - Now we can create tables for entities automatically (DDL)
-    - Added a new repository (MovieRepository)
-      - Now we can use CRUD operations for entities
-    - Added a new controller (MovieController)
-      - We can make any code with entities (CRUD operations)
+- Created a PostMapping to add a new movie to database
+
 ---
 # Project good to know things
 - The project is using H2 database
@@ -21,7 +8,6 @@
 - The project is using Spring Data JPA
 - The project is using Spring Web
 - The project is using REST API
->>>>>>> 699d3f8689b5a8cb1990324b6b111b2cfe334abb
 
 ---
 # Access to H2 Database

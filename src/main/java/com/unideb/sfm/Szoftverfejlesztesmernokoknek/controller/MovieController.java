@@ -3,6 +3,8 @@ package com.unideb.sfm.Szoftverfejlesztesmernokoknek.controller;
 import com.unideb.sfm.Szoftverfejlesztesmernokoknek.model.Movie;
 import com.unideb.sfm.Szoftverfejlesztesmernokoknek.repository.MovieRepository;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -20,6 +22,12 @@ public class MovieController {
     @RequestMapping(path = "api/v1/movies")
     public List<Movie> getMovies() {
         return movieRepository.findAll();
+    }
+
+    @PostMapping(path = "api/v1/movies")
+    public String addMovie(@RequestBody Movie movie) {
+        movieRepository.save(movie);
+        return movie.toString();
     }
 
 }
