@@ -1,5 +1,10 @@
 # Modifications
-- Created a PostMapping to add a new movie to database
+- Created default data in json format (resources/data.json)
+- Created a new endpoint to reset the database (pi/v1/movies/reset)
+  - It will delete all the data from the database
+  - It will load the default data from the json file
+  - It will reset the sequence of the id
+  - It will put the default data into the database
 
 ---
 # Project good to know things

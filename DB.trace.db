@@ -853,3 +853,6 @@ insert into MOCK_DATA (ID, RATING, TITLE, RELEASE_YEAR) values (100, 0.93, 'Euph
 2023-09-08 10:21:42 jdbc[13]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PROJECT_USERS" not found; SQL statement:
 SELECT * FROM PROJECT_USERS [42102-214]
+2023-09-08 21:20:47 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP [*]SEQUNECE MOVIE_SEQUENCE"; expected "TABLE, INDEX, USER, SEQUENCE, CONSTANT, TRIGGER, VIEW, ROLE, ALIAS, SCHEMA, ALL OBJECTS, DOMAIN, TYPE, DATATYPE, AGGREGATE, SYNONYM"; SQL statement:
+DROP SEQUNECE MOVIE_SEQUENCE [42001-214]
