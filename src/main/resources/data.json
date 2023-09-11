@@ -1,0 +1,502 @@
+[
+    {
+        "title": "Meg 2: The Trench",
+        "year": "2023",
+        "rating": 7
+    },
+    {
+        "title": "Barbie",
+        "year": "2023",
+        "rating": 7.4
+    },
+    {
+        "title": "Indiana Jones and the Dial of Destiny",
+        "year": "2023",
+        "rating": 6.7
+    },
+    {
+        "title": "Elemental",
+        "year": "2023",
+        "rating": 7.8
+    },
+    {
+        "title": "Sound of Freedom",
+        "year": "2023",
+        "rating": 8.1
+    },
+    {
+        "title": "Adipurush",
+        "year": "2023",
+        "rating": 4.7
+    },
+    {
+        "title": "The Last Voyage of the Demeter",
+        "year": "2023",
+        "rating": 7.3
+    },
+    {
+        "title": "The Nun II",
+        "year": "2023",
+        "rating": 7.1
+    },
+    {
+        "title": "Spider-Man: Across the Spider-Verse",
+        "year": "2023",
+        "rating": 8.4
+    },
+    {
+        "title": "Strays",
+        "year": "2023",
+        "rating": 6.9
+    },
+    {
+        "title": "Transformers: Rise of the Beasts",
+        "year": "2023",
+        "rating": 7.5
+    },
+    {
+        "title": "Heart of Stone",
+        "year": "2023",
+        "rating": 6.9
+    },
+    {
+        "title": "Fast X",
+        "year": "2023",
+        "rating": 7.3
+    },
+    {
+        "title": "The Flash",
+        "year": "2023",
+        "rating": 6.9
+    },
+    {
+        "title": "Teenage Mutant Ninja Turtles: Mutant Mayhem",
+        "year": "2023",
+        "rating": 7.2
+    },
+    {
+        "title": "The Little Mermaid",
+        "year": "2023",
+        "rating": 6.6
+    },
+    {
+        "title": "Jagun Jagun",
+        "year": "2023",
+        "rating": 6.6
+    },
+    {
+        "title": "No Hard Feelings",
+        "year": "2023",
+        "rating": 7.2
+    },
+    {
+        "title": "Sympathy for the Devil",
+        "year": "2023",
+        "rating": 6.3
+    },
+    {
+        "title": "H4Z4RD",
+        "year": "2022",
+        "rating": 6.2
+    },
+    {
+        "title": "Oppenheimer",
+        "year": "2023",
+        "rating": 8.3
+    },
+    {
+        "title": "John Wick: Chapter 4",
+        "year": "2023",
+        "rating": 7.8
+    },
+    {
+        "title": "The Super Mario Bros. Movie",
+        "year": "2023",
+        "rating": 7.8
+    },
+    {
+        "title": "Talk to Me",
+        "year": "2023",
+        "rating": 7.1
+    },
+    {
+        "title": "Guardians of the Galaxy Vol. 3",
+        "year": "2023",
+        "rating": 8
+    },
+    {
+        "title": "One Piece Film Red",
+        "year": "2022",
+        "rating": 7.4
+    },
+    {
+        "title": "The Boogeyman",
+        "year": "2023",
+        "rating": 6.7
+    },
+    {
+        "title": "The Equalizer 3",
+        "year": "2023",
+        "rating": 7
+    },
+    {
+        "title": "Insidious: The Red Door",
+        "year": "2023",
+        "rating": 6.9
+    },
+    {
+        "title": "The Nun",
+        "year": "2018",
+        "rating": 5.9
+    },
+    {
+        "title": "The Flood",
+        "year": "2023",
+        "rating": 6.8
+    },
+    {
+        "title": "Cobweb",
+        "year": "2023",
+        "rating": 6.7
+    },
+    {
+        "title": "My Fault",
+        "year": "2023",
+        "rating": 8.1
+    },
+    {
+        "title": "Soulcatcher",
+        "year": "2023",
+        "rating": 6.5
+    },
+    {
+        "title": "Resident Evil: Death Island",
+        "year": "2023",
+        "rating": 7.6
+    },
+    {
+        "title": "Babylon 5: The Road Home",
+        "year": "2023",
+        "rating": 6.8
+    },
+    {
+        "title": "Hidden Strike",
+        "year": "2023",
+        "rating": 7.1
+    },
+    {
+        "title": "Avatar: The Way of Water",
+        "year": "2022",
+        "rating": 7.7
+    },
+    {
+        "title": "Gran Turismo",
+        "year": "2023",
+        "rating": 7.5
+    },
+    {
+        "title": "Remember",
+        "year": "2022",
+        "rating": 7.4
+    },
+    {
+        "title": "Ruby Gillman, Teenage Kraken",
+        "year": "2023",
+        "rating": 7.5
+    },
+    {
+        "title": "Between Us",
+        "year": "2023",
+        "rating": 6.4
+    },
+    {
+        "title": "Mob Land",
+        "year": "2023",
+        "rating": 6.2
+    },
+    {
+        "title": "My House",
+        "year": "2023",
+        "rating": 5.6
+    },
+    {
+        "title": "Knights of the Zodiac",
+        "year": "2023",
+        "rating": 6.6
+    },
+    {
+        "title": "Warhorse One",
+        "year": "2023",
+        "rating": 7.3
+    },
+    {
+        "title": "Blue Beetle",
+        "year": "2023",
+        "rating": 6.9
+    },
+    {
+        "title": "The Monkey King",
+        "year": "2023",
+        "rating": 6.9
+    },
+    {
+        "title": "The Mistress",
+        "year": "2023",
+        "rating": 4.9
+    },
+    {
+        "title": "Dampyr",
+        "year": "2022",
+        "rating": 6.5
+    },
+    {
+        "title": "Miraculous: Ladybug & Cat Noir, The Movie",
+        "year": "2023",
+        "rating": 7.9
+    },
+    {
+        "title": "Kingdom 2: Far and Away",
+        "year": "2022",
+        "rating": 6.9
+    },
+    {
+        "title": "Mission: Impossible - Dead Reckoning Part One",
+        "year": "2023",
+        "rating": 7.7
+    },
+    {
+        "title": "Hypnotic",
+        "year": "2023",
+        "rating": 6.5
+    },
+    {
+        "title": "Puss in Boots: The Last Wish",
+        "year": "2022",
+        "rating": 8.3
+    },
+    {
+        "title": "Extraction 2",
+        "year": "2023",
+        "rating": 7.5
+    },
+    {
+        "title": "Mavka: The Forest Song",
+        "year": "2023",
+        "rating": 7.4
+    },
+    {
+        "title": "Killer Book Club",
+        "year": "2023",
+        "rating": 5.5
+    },
+    {
+        "title": "All Ladies Do It",
+        "year": "1992",
+        "rating": 4.7
+    },
+    {
+        "title": "Ghosted",
+        "year": "2023",
+        "rating": 7.1
+    },
+    {
+        "title": "Sasaki and Miyano: Graduation",
+        "year": "2023",
+        "rating": 7.9
+    },
+    {
+        "title": "Happy Ending",
+        "year": "2023",
+        "rating": 6.1
+    },
+    {
+        "title": "The Seven Deadly Sins: Grudge of Edinburgh Part 2",
+        "year": "2023",
+        "rating": 7.7
+    },
+    {
+        "title": "The Conjuring: The Devil Made Me Do It",
+        "year": "2021",
+        "rating": 7.5
+    },
+    {
+        "title": "The Haunting of the Tower of London",
+        "year": "2022",
+        "rating": 5.9
+    },
+    {
+        "title": "The Pope's Exorcist",
+        "year": "2023",
+        "rating": 7.2
+    },
+    {
+        "title": "Shin Kamen Rider",
+        "year": "2023",
+        "rating": 7.1
+    },
+    {
+        "title": "Alien Invasion",
+        "year": "2023",
+        "rating": 5.4
+    },
+    {
+        "title": "Zom 100: Bucket List of the Dead",
+        "year": "2023",
+        "rating": 6.7
+    },
+    {
+        "title": "The Equalizer",
+        "year": "2014",
+        "rating": 7.2
+    },
+    {
+        "title": "San Andreas",
+        "year": "2015",
+        "rating": 6.2
+    },
+    {
+        "title": "Justice League: Warworld",
+        "year": "2023",
+        "rating": 7.3
+    },
+    {
+        "title": "Guy Ritchie's The Covenant",
+        "year": "2023",
+        "rating": 7.8
+    },
+    {
+        "title": "Unwelcome",
+        "year": "2023",
+        "rating": 6
+    },
+    {
+        "title": "She Came from the Woods",
+        "year": "2023",
+        "rating": 6.6
+    },
+    {
+        "title": "Sisu",
+        "year": "2023",
+        "rating": 7.5
+    },
+    {
+        "title": "Kingdom 3: The Flame of Fate",
+        "year": "2023",
+        "rating": 7.6
+    },
+    {
+        "title": "The Dive",
+        "year": "2023",
+        "rating": 6.7
+    },
+    {
+        "title": "River Wild",
+        "year": "2023",
+        "rating": 6.6
+    },
+    {
+        "title": "The Golden Lotus",
+        "year": "1974",
+        "rating": 3.6
+    },
+    {
+        "title": "The Prince & Me 2: The Royal Wedding",
+        "year": "2006",
+        "rating": 5.7
+    },
+    {
+        "title": "Lamborghini: The Man Behind the Legend",
+        "year": "2022",
+        "rating": 6.1
+    },
+    {
+        "title": "The Strange Case of a Claustrophobic Ghost",
+        "year": "2023",
+        "rating": 7.9
+    },
+    {
+        "title": "Evil Dead Rise",
+        "year": "2023",
+        "rating": 7
+    },
+    {
+        "title": "Spider-Man: No Way Home",
+        "year": "2021",
+        "rating": 8
+    },
+    {
+        "title": "Scream VI",
+        "year": "2023",
+        "rating": 7.2
+    },
+    {
+        "title": "Ant-Man and the Wasp: Quantumania",
+        "year": "2023",
+        "rating": 6.4
+    },
+    {
+        "title": "You Are So Not Invited to My Bat Mitzvah",
+        "year": "2023",
+        "rating": 6.3
+    },
+    {
+        "title": "Trapped in the Cabin",
+        "year": "2023",
+        "rating": 6
+    },
+    {
+        "title": "The Great Seduction",
+        "year": "2023",
+        "rating": 6.8
+    },
+    {
+        "title": "Fear the Night",
+        "year": "2023",
+        "rating": 6.7
+    },
+    {
+        "title": "The Darkest Minds",
+        "year": "2018",
+        "rating": 7
+    },
+    {
+        "title": "Naked Poison",
+        "year": "2000",
+        "rating": 5.2
+    },
+    {
+        "title": "The Black Demon",
+        "year": "2023",
+        "rating": 6.3
+    },
+    {
+        "title": "Creed III",
+        "year": "2023",
+        "rating": 7.2
+    },
+    {
+        "title": "Top Gun: Maverick",
+        "year": "2022",
+        "rating": 8.3
+    },
+    {
+        "title": "A Day and a Half",
+        "year": "2023",
+        "rating": 6
+    },
+    {
+        "title": "Shazam! Fury of the Gods",
+        "year": "2023",
+        "rating": 6.7
+    },
+    {
+        "title": "Encanto",
+        "year": "2021",
+        "rating": 7.6
+    },
+    {
+        "title": "War of the Worlds: The Attack",
+        "year": "2023",
+        "rating": 5.3
+    }
+]

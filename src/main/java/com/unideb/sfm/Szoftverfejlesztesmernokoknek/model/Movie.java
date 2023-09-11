@@ -10,7 +10,8 @@ public class Movie {
     @Id
     @SequenceGenerator(
             name = "movie_sequence",
-            sequenceName = "movie_sequence"
+            sequenceName = "movie_sequence",
+            allocationSize = 1
     )
     @GeneratedValue(
             strategy = GenerationType.SEQUENCE,
@@ -30,6 +31,15 @@ public class Movie {
     }
 
     public Movie() {} // default empty constructor
+
+//Utils
+    public static String getTableName() {
+        return "project_movies";
+    }
+
+    public static String getSequenceName() {
+        return "movie_sequence";
+    }
 
 // Override toString, equals and hashCode
     @Override

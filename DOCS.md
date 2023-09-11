@@ -1,16 +1,11 @@
 # Modifications
-- **application.properties**
-  - Fixed basic things for H2 database
-  - Added DDL settings
-- **H2 Database**
-  - DB File is now in the project folder (DB)
-- **Code**
-    - Added a new entity (Movie)
-      - Now we can create tables for entities automatically (DDL)
-    - Added a new repository (MovieRepository)
-      - Now we can use CRUD operations for entities
-    - Added a new controller (MovieController)
-      - We can make any code with entities (CRUD operations)
+- Created default data in json format (resources/data.json)
+- Created a new endpoint to reset the database (pi/v1/movies/reset)
+  - It will delete all the data from the database
+  - It will load the default data from the json file
+  - It will reset the sequence of the id
+  - It will put the default data into the database
+
 ---
 # Project good to know things
 - The project is using H2 database
