@@ -97,4 +97,10 @@ public class MovieController {
         return states;
     }
 
+    @RequestMapping(path = "api/v1/movies/deleteAll")
+    public ResponseEntity<String> deleteAllMovies() {
+        movieRepository.deleteAll();
+        return new ResponseEntity<>("All movies deleted", HttpStatus.OK);
+    }
+
 }
