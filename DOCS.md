@@ -1,18 +1,27 @@
 # Modifications
-- Created default data in json format (resources/data.json)
-- Created a new endpoint to reset the database (pi/v1/movies/reset)
-  - It will delete all the data from the database
-  - It will load the default data from the json file
-  - It will reset the sequence of the id
-  - It will put the default data into the database
+- Created React App in the project folder (app)
+- Added bootstrap@5 react-cookie@4 react-router-dom@6 reactstrap@9 to the React App
+- Added proxy line to the package.json in the React App to connect to the Spring Boot app
+  - Example fetch request: `fetch('api/...')`
+- Modified the default App.js in the React App to display all movies from the database
 
 ---
-# Project good to know things
+# Java Spring good to know things
 - The project is using H2 database
   - Located in the project folder (DB)
 - The project is using Spring Data JPA
 - The project is using Spring Web
 - The project is using REST API
+
+---
+# React good to know things
+- The React App is located in the project folder (app)
+- The React App is using npm (Node Package Manager)
+- To start the React app
+  - Chnage directory to the app folder
+  - Run `npm start`
+  - It will start the React app on port 3000
+  - It will require to start the Spring Boot app on port 8080 before starting the React app
 
 ---
 # Access to H2 Database

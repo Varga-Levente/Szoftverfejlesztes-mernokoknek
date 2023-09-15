@@ -8,10 +8,7 @@ import jakarta.persistence.Query;
 import jakarta.transaction.Transactional;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -27,18 +24,60 @@ public class MovieController {
         this.movieRepository = movieRepository;
         this.entityManager = entityManager;
     }
-
-    @RequestMapping(path = "api/v1/movies")
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    @RequestMapping(path = "api/v1/movies/getAllMovie")
     public List<Movie> getMovies() {
         return movieRepository.findAll();
     }
-
-    @PostMapping(path = "api/v1/movies")
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    @PostMapping(path = "api/v1/movies/addMovie")
     public String addMovie(@RequestBody Movie movie) {
         movieRepository.save(movie);
         return movie.toString();
     }
-
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    @RequestMapping(path = "api/v1/movies/getMovieById/{id}")
+    public ResponseEntity<Movie> getMovieById(@PathVariable("id") Integer id) {
+        Movie movie = movieRepository.findById(id).orElse(null);
+        if (movie == null) {
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
+        return new ResponseEntity<>(movie, HttpStatus.OK);
+    }
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    @RequestMapping(path = "api/v1/movies/getPopularMovies")
+    public ResponseEntity<List<Movie>> getPopularMovies() {
+        //Get all movies
+        List<Movie> movies = movieRepository.findAll();
+        //Create a list for the popular movies and add them to the list
+        List<Movie> popularMovies = new ArrayList<>();
+        //Find the movies with rating higher than 8
+        for (Movie movie : movies) {
+            if (movie.getRating() > 7) {
+                popularMovies.add(movie);
+            }
+        }
+        //Return the list of popular movies
+        return new ResponseEntity<>(popularMovies, HttpStatus.OK);
+    }
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    @RequestMapping(path = "api/v1/movies/getMoviesByCategory/{category}")
+    public ResponseEntity<List<Movie>> getMovieByCategory(@PathVariable("category") String category) {
+        //Get all movies
+        List<Movie> movies = movieRepository.findAll();
+        //Create a list for the movies with the given category and add them to the list
+        List<Movie> moviesWithCategory = new ArrayList<>();
+        //Make the category lowercase and find the movies with the given category (Categories are separated by ;)
+        for (Movie movie : movies) {
+            String categories = movie.getCategories().toLowerCase();
+            if (categories.contains(category.toLowerCase())) {
+                moviesWithCategory.add(movie);
+            }
+        }
+        //Return the list of movies with the given category
+        return new ResponseEntity<>(moviesWithCategory, HttpStatus.OK);
+    }
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     @Transactional
     @RequestMapping(path = "api/v1/movies/reset")
     public List resetMovies() throws IOException {
@@ -68,7 +107,7 @@ public class MovieController {
             while (i < movies.size()) {
                 movieRepository.save(movies.get(i));
                 // Debugging purposes
-                //states.add("Movie added: "+movies.get(i).toString());
+                states.add("Movie added: "+movies.get(i).toString());
                 i++;
             }
             states.add("Movies saved to database");
@@ -96,11 +135,12 @@ public class MovieController {
 
         return states;
     }
-
-    @RequestMapping(path = "api/v1/movies/deleteAll")
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    @DeleteMapping(path = "api/v1/movies/deleteAll")
     public ResponseEntity<String> deleteAllMovies() {
         movieRepository.deleteAll();
         return new ResponseEntity<>("All movies deleted", HttpStatus.OK);
     }
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 }
