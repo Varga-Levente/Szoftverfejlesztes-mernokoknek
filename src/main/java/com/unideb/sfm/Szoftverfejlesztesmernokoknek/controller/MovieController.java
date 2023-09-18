@@ -89,12 +89,10 @@ public class MovieController {
             movieRepository.deleteAll();
             states.add("Movies deleted");
 
-            //Reset the id sequence
-            String seqname = Movie.getSequenceName();
-            String resetSql = "ALTER SEQUENCE "+seqname.toUpperCase()+" RESTART WITH 1";
-            entityManager.createNativeQuery(resetSql).executeUpdate();
-            //Add response to states
-            states.add("Id sequence reset to 1");
+            //Reset the auto increment id in mariadb
+            Query query = entityManager.createNativeQuery("ALTER TABLE project_movies AUTO_INCREMENT = 1");
+            query.executeUpdate();
+            states.add("Auto increment id reset");
 
             //Read default movies from json file and id each of them
             ReadJSON readJSON = new ReadJSON();
