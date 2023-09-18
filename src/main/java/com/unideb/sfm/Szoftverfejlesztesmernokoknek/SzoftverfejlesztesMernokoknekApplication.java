@@ -9,7 +9,6 @@ public class SzoftverfejlesztesMernokoknekApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SzoftverfejlesztesMernokoknekApplication.class, args);
 		//Open browser
-		//Teszt
 		try {
 			Runtime.getRuntime().exec("rundll32 url.dll,FileProtocolHandler " + "http://localhost:8080");
 		} catch (Exception e) {

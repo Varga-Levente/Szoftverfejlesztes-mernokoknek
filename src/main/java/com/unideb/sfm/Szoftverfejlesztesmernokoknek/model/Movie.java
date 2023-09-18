@@ -8,15 +8,7 @@ import java.util.Objects;
 @Table(name = "project_movies")
 public class Movie {
     @Id
-    @SequenceGenerator(
-            name = "movie_sequence",
-            sequenceName = "movie_sequence",
-            allocationSize = 1
-    )
-    @GeneratedValue(
-            strategy = GenerationType.SEQUENCE,
-            generator = "movie_sequence"
-    )
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     //@NotNull(message = "Title cannot be null")
