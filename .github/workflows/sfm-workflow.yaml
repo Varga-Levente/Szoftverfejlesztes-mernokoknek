@@ -74,6 +74,7 @@ jobs:
           context: .
           file: Dockerfile-app
           push: true
+          tags: vlevente2001/sfm:latest
   deploy:
     if: ${{ github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
