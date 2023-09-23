@@ -6,6 +6,7 @@ import org.springframework.test.context.TestPropertySource;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+//Using this annotation to use the application-test.properties file
 @SpringBootTest
 @TestPropertySource(locations = "classpath:application-test.properties")
 class ConnTestTest {
