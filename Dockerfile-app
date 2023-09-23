@@ -1,3 +1,6 @@
+# Build szakasz
+FROM maven:3.8.4-openjdk-17 AS build
+
 WORKDIR /project
 
 COPY pom.xml .
@@ -7,6 +10,7 @@ COPY src/ /project/src
 
 RUN mvn package
 
+# Második szakasz
 FROM openjdk:17-jdk-slim
 
 RUN mkdir /app
