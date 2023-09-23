@@ -1,5 +1,26 @@
+WORKDIR /project
+
+COPY pom.xml .
+RUN mvn dependency:go-offline
+
+COPY src/ /project/src
+
+RUN mvn package
+
 FROM openjdk:17-jdk-slim
-VOLUME /tmp
-EXPOSE 8080
-ADD target/Szoftverfejlesztes-mernokoknek-0.0.1-SNAPSHOT.jar app.jar
-ENTRYPOINT ["java","-jar","/app.jar","--server.port=8181"]
+
+RUN mkdir /app
+
+RUN addgroup -g 1001 -S sfmgroup
+
+RUN adduser -S sfm -u 1001
+
+COPY --from=build /project/target/Szoftverfejlesztes-mernokoknek-0.0.1-SNAPSHOT.jar /app/app.jar
+
+WORKDIR /app
+
+RUN chown -R sfm:sfmgroup /app
+
+EXPOSE 8000
+
+CMD java $JAVA_OPTS -jar app.jar
