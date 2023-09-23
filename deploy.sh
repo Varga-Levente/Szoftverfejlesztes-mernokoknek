@@ -3,7 +3,7 @@
 start=$(date +"%s")
 
 ssh -p ${SERVER_PORT} ${SERVER_USER}@${SERVER_HOST} -i key.txt -t -t -o StrictHostKeyChecking=no << 'ENDSSH'
-docker pull tericcabrel/bmi:latest
+docker pull vlevente2001/sfm:latest
 
 CONTAINER_NAME=bmiapp
 if [ "$(docker ps -qa -f name=$CONTAINER_NAME)" ]; then
@@ -13,7 +13,7 @@ if [ "$(docker ps -qa -f name=$CONTAINER_NAME)" ]; then
     fi
 fi
 
-docker run -d --rm -p 8000:8000 --name $CONTAINER_NAME tericcabrel/bmi:latest
+docker run -d --rm -p 8000:8000 --name $CONTAINER_NAME vlevente2001/sfm:latest
 
 exit
 ENDSSH
