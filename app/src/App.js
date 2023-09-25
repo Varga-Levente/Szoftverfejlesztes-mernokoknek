@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './App.css';
 
 class App extends Component {
     constructor() {
@@ -31,8 +32,9 @@ class App extends Component {
                             <p>Év: {movie.year}</p>
                             <p>Értékelés: {movie.rating}</p>
                             <p>Leírás: {movie.overview}</p>
-                            <img src={movie.poster_path} alt={movie.title} />
+                            <img className="poster" src={movie.poster_path} alt={movie.title} />
                             <p>Kategóriák: {movie.categories}</p>
+                            <hr /> {/* HR elem minden filmadat után */}
                         </li>
                     ))}
                 </ul>
