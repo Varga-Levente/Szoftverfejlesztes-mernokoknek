@@ -22,7 +22,7 @@ if [ "$(docker ps -qa -f name=$CONTAINER_NAME)" ]; then
 fi
 
 # Docker konténer indítása a megadott beállításokkal.
-docker run -d --rm -p 8080:8080 --name $CONTAINER_NAME vlevente2001/sfm-react:latest
+docker run -d --rm -p 80:80 --name $CONTAINER_NAME vlevente2001/sfm-react:latest
 
 # Kilépés a távoli szerverről.
 exit
