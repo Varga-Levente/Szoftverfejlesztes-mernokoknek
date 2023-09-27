@@ -4,12 +4,12 @@ on:
     branches: [ main ]
     paths:
       - 'src/**'
-      - '.github/workflows/app-workflow.yaml'
+      - '.github/workflows/sfm-workflow.yaml'
   push:
     branches: [ main ]
     paths:
       - 'src/**'
-      - '.github/workflows/app-workflow.yaml'
+      - '.github/workflows/sfm-workflow.yaml'
 jobs:
   project-build:
     runs-on: ubuntu-latest
