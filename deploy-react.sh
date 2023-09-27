@@ -1,78 +1,47 @@
-name: React App Workflow
+#!/bin/bash
 
-on:
-  pull_request:
-    branches: [main]
-    paths:
-      - 'app/**' # Az app mappát figyeli
-      - '.github/workflows/react-workflow.yaml'
-  push:
-    branches: [main]
-    paths:
-      - 'app/**' # Az app mappát figyeli
-      - '.github/workflows/react-workflow.yaml'
+# Mérjük az időt a script futásának kezdetén
+start=$(date +"%s")
 
-jobs:
-  react-app-build:
-    runs-on: ubuntu-latest
+# SSH kapcsolat létesítése a távoli szerverrel, majd a script futtatása a távoli gépen
+ssh -p ${SERVER_PORT} ${SERVER_USER}@${SERVER_HOST} -i key.txt -t -t -o StrictHostKeyChecking=no << 'ENDSSH'
 
-    steps:
-      - uses: actions/checkout@v2
+# Docker container letöltése
+docker pull vlevente2001/sfm:latest
 
-      - name: Set up Node.js 18.x
-        uses: actions/setup-node@v2
-        with:
-          node-version: 18.x
+# Docker konténer nevének beállítása.
+CONTAINER_NAME=sfmapp-react
 
-      - name: Install Node.js dependencies
-        working-directory: app
-        run: npm install
+# Ellenőrizzük, hogy van-e futó konténer ezen a néven.
+if [ "$(docker ps -qa -f name=$CONTAINER_NAME)" ]; then
+    # Ha van futó konténer, akkor leállítjuk.
+    if [ "$(docker ps -q -f name=$CONTAINER_NAME)" ]; then
+        echo "Container is running -> stopping it..."
+        docker stop $CONTAINER_NAME;
+    fi
+fi
 
-      - name: Build React App
-        working-directory: app
-        run: npm run build
+# Docker konténer indítása a megadott beállításokkal.
+docker run -d --rm -p 80:80 --name $CONTAINER_NAME vlevente2001/sfm-react:latest
 
-  docker-build:
-    if: ${{ github.ref == 'refs/heads/main' }}
-    runs-on: ubuntu-latest
-    needs:
-      - react-app-build
-    steps:
-      - uses: actions/checkout@v2
+# Kilépés a távoli szerverről.
+exit
+ENDSSH
 
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v2
+# Ellenőrizzük a távoli végrehajtás visszatérési értékét.
+if [ $? -eq 0 ]; then
+  # Sikeres végrehajtás esetén a script is sikeresen lefutott.
+  exit 0
+else
+  # Hiba esetén a script hibával tér vissza.
+  exit 1
+fi
 
-      - name: Dashboard to Docker Hub
-        uses: docker/login-action@v2
-        with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
+# Mérjük az időt a script futásának végén.
+end=$(date +"%s")
 
-      - name: Build and push
-        uses: docker/build-push-action@v4
-        with:
-          context: .
-          file: Dockerfile-app-react
-          push: true
-          tags: vlevente2001/sfm-react:latest
+# Számítsuk ki, mennyi időbe telt a script futása.
+diff=$(($end - $start))
 
-  deploy:
-    if: ${{ github.ref == 'refs/heads/main' }}
-    runs-on: ubuntu-latest
-    needs:
-      - docker-build
-    steps:
-      - uses: actions/checkout@v3
-      - name: Add Server key
-        run: |
-          touch key.txt && echo "${{ secrets.SERVER_KEY }}" > key.txt
-          chmod 600 key.txt
-      - name: Deploy the application
-        env:
-          SERVER_HOST: ${{ secrets.SERVER_HOST }}
-          SERVER_PORT: ${{ secrets.SERVER_PORT }}
-          SERVER_USER: ${{ secrets.SERVER_USER }}
-        run: |
-          set -e
-          ./deploy-react.sh
+# Kiírjuk a futási időt.
+echo "Deployed in : ${diff}s"
