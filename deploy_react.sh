@@ -7,10 +7,10 @@ start=$(date +"%s")
 ssh -p ${SERVER_PORT} ${SERVER_USER}@${SERVER_HOST} -i key.txt -t -t -o StrictHostKeyChecking=no << 'ENDSSH'
 
 # Docker container letöltése
-docker pull vlevente2001/sfm:latest
+docker pull vlevente2001/sfm-react:latest
 
 # Docker konténer nevének beállítása.
-CONTAINER_NAME=sfmapp
+CONTAINER_NAME=sfm-react-app
 
 # Ellenőrizzük, hogy van-e futó konténer ezen a néven.
 if [ "$(docker ps -qa -f name=$CONTAINER_NAME)" ]; then
@@ -22,7 +22,7 @@ if [ "$(docker ps -qa -f name=$CONTAINER_NAME)" ]; then
 fi
 
 # Docker konténer indítása a megadott beállításokkal.
-docker run -d --rm -p 8080:8080 --name $CONTAINER_NAME vlevente2001/sfm:latest
+docker run -d --rm -p 8080:8080 --name $CONTAINER_NAME vlevente2001/sfm-react:latest
 
 # Kilépés a távoli szerverről.
 exit

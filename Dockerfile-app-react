@@ -1,0 +1,32 @@
+# Első szakasz: Build szakasz
+FROM node:14 AS build
+
+# Munkakönyvtár beállítása
+WORKDIR /app
+
+# Másold be a package.json és package-lock.json fájlokat
+COPY /app/package*.json ./
+
+# Node.js függőségek telepítése
+RUN npm install
+
+# Projekt fájlok másolása
+COPY /app .
+
+# React alkalmazás build-elése
+RUN npm run build
+
+# Második szakasz: Production szakasz
+FROM nginx:alpine
+
+# Nginx konfiguráció másolása
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+# Build szakaszból származó build fájlok másolása
+COPY --from=build /app/build /usr/share/nginx/html
+
+# Port beállítása, amelyen a konténer fut majd
+EXPOSE 80
+
+# Nginx indítása
+CMD ["nginx", "-g", "daemon off;"]
