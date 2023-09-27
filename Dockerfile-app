@@ -17,6 +17,8 @@ RUN mkdir /app
 
 COPY --from=build /project/target/Szoftverfejlesztes-mernokoknek-0.0.1-SNAPSHOT.jar /app/app.jar
 
+COPY src/main/resources/data.json resources/data.json
+
 WORKDIR /app
 
 EXPOSE 8000

@@ -1,0 +1,67 @@
+@import '~material-icons/iconfont/material-icons.css';
+
+ul {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-70%);
+    /*margin-left: -85px;*/
+    background-color: #2b2b38;
+    padding-left: 18px !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 16px;
+    border: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 30px;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .active {
+    color: #F74346 !important;
+  }
+  
+  li {
+    text-align: center;
+    line-height: 0px;
+    color: #c0c0c0;
+    padding-bottom: 30px;
+  }
+  
+  .navigationlink {
+    color: #c0c0c0;
+    font-family: 'Roboto';
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .listitem {
+    text-align: center;
+    line-height: 0px;
+    color: #c0c0c0;
+    padding-bottom: 30px;
+  }
+  
+  .faicon {
+    font-size: 32px;
+    padding-bottom: 10px;
+  }
+  
+  .mui {
+    font-size: 39px;
+    padding-bottom: 10px;
+  }
+
+  .fas {
+    padding-bottom: 12px;
+  }
+
+  .listitem:hover {
+    color: #F74346!important; /* Azonnali színváltozás a hover hatás elindulásakor */
+    transition: color 0.2s ease; /* Áttűnési effekt: 0.2 másodperc időtartam, könnyű gyorsaság */
+  }
+
+  .listitem:active, .listitem:focus, .listitem:visited, .listitem:link {
+    color: #F74346!important; /* Azonnali színváltozás a hover hatás elindulásakor */
+  }

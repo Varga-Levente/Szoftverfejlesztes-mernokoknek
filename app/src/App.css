@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-color: #161621;
+  overflow-X: hidden;
 }
 
 .App-logo {
@@ -35,4 +37,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.poster{
+  max-height: 400px;
 }
