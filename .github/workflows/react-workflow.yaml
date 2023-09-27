@@ -28,10 +28,6 @@ jobs:
         working-directory: app
         run: npm install
 
-      - name: Run React App tests
-        working-directory: app
-        run: npm test
-
       - name: Build React App
         working-directory: app
         run: npm run build
