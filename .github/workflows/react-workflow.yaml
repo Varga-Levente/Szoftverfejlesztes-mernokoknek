@@ -75,5 +75,5 @@ jobs:
           SERVER_USER: ${{ secrets.SERVER_USER }}
         run: |
           set -e
-          ./deploy_react.sh
+          ./deploy-react.sh
 
