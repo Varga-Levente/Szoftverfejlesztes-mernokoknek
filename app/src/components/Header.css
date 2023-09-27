@@ -51,32 +51,6 @@
     border-bottom-left-radius: 10px;
   }
   
-  .custom-select {
-    cursor: pointer;
-    /*padding-bottom: 54px;*/
-    margin-left: 25px;
-    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);
-  }
-  
-  .select-text {
-    color: #F74346;
-    font-size: 12px;
-  }
-  
-  select {
-    color: white;
-    font-size: 18px;
-    height: 20px;
-  }
-  
-  .select-arrow {
-    margin-left: 10px;
-  }
-  
-  .fasangledown {
-    color: #F74346;
-  }
-  
   .basketicon {
     font-size: 30px;
     color: #FFFFFF;
@@ -101,49 +75,6 @@
     font-family: 'Roboto';
     font-weight: 500;
     color: #c0c0c0 !important;
-  }
-  
-  .custom-select {
-    position: relative;
-    display: inline-block;
-    font-family: 'Roboto';
-    font-weight: 500;
-    overflow: hidden;
-    background-color: #2B2B38;
-    height: 55px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: 10px;
-    padding-top: 2px;
-  }
-  
-  .select-arrow {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 40px;
-    background-color: #2B2B38;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    pointer-events: none;
-  }
-  
-  select {
-    width: 100%;
-    border: none;
-    background-color: #2B2B38;
-    appearance: none;
-    padding: 0;
-    margin-top: -10px;
-  }
-  
-  select:focus {
-    outline: none;
   }
   
   .active {
