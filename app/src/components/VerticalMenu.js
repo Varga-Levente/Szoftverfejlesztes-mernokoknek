@@ -32,7 +32,7 @@ const VerticalMenu = () => {
         >
             <a className="nav-link active navigationlink" href="/#">
                 <i className="material-icons mui">movie</i><br />
-                Billboard
+                <span className="menuname">Billboard</span>
             </a>
         </li>
         <li className="nav-item listitem"
@@ -41,7 +41,7 @@ const VerticalMenu = () => {
         >
             <a className="nav-link navigationlink" href="/#">
                 <i className="material-icons mui">movie_filter</i><br />
-                Coming soon
+                <span className="menuname">Coming soon</span>
             </a>
         </li>
         <li className="nav-item listitem"
@@ -50,7 +50,7 @@ const VerticalMenu = () => {
         >
             <a className="nav-link navigationlink" href="/#">
                 <FontAwesomeIcon icon={faHamburger} className="fas faicon" /><br />
-                Food
+                <span className="menuname">Food</span>
             </a>
         </li>
         <li className="nav-item listitem" style={{ paddingBottom: 15 }}
@@ -59,7 +59,7 @@ const VerticalMenu = () => {
         >
             <a className="nav-link navigationlink" href="/#">
                 <FontAwesomeIcon icon={faUser} className="fas faicon" /><br />
-                Profile
+                <span className="menuname">Profile</span>
             </a>
         </li>
     </ul>

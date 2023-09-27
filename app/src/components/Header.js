@@ -1,21 +1,15 @@
 import React from 'react';
 import './Header.css';
+import './CinemaSelector';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDown, faSearch, faShoppingBasket } from '@fortawesome/free-solid-svg-icons'; // Hozzáadva a faCaretDown import
+import { faSearch, faShoppingBasket } from '@fortawesome/free-solid-svg-icons';
+import CinemaSelector from "./CinemaSelector"; // Hozzáadva a faCaretDown import
 
 const Header = () => {
   return (
     <div className="row justify-content-center align-items-center" style={{ height: 75 }}>
         <div className="col text-start col-2" style={{ height: 50 }}>
-            <div className="custom-select">
-            <span className="select-text">Choose cinema</span>
-            <select>
-                <option value="">Debrecen</option>
-            </select>
-            <div className="select-arrow">
-                <FontAwesomeIcon icon={faAngleDown} className="fasangledown" style={{color: "#F74346"}}/>
-            </div>
-            </div>
+            <CinemaSelector />
         </div>
         <div className="col text-center">
             <div className="input-group">

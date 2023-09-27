@@ -65,3 +65,12 @@ ul {
   .listitem:active, .listitem:focus, .listitem:visited, .listitem:link {
     color: #F74346!important; /* Azonnali színváltozás a hover hatás elindulásakor */
   }
+
+  a:visited {
+    color: #c0c0c0;
+  }
+
+  .menuname {
+      /*Warp text to 2 lines*/
+      white-space: nowrap;
+  }
