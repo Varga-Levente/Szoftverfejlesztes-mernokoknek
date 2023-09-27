@@ -1,5 +1,5 @@
 # Első szakasz: Build szakasz
-FROM node:14 AS build
+FROM node:18 AS build
 
 # Munkakönyvtár beállítása
 WORKDIR /app
