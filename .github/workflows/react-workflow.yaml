@@ -6,11 +6,15 @@ on:
     paths:
       - 'app/**' # Az app mappát figyeli
       - '.github/workflows/react-workflow.yaml'
+      - 'deploy-react.sh'
+      - 'Dockerfile-app-react'
   push:
     branches: [main]
     paths:
       - 'app/**' # Az app mappát figyeli
       - '.github/workflows/react-workflow.yaml'
+      - 'deploy-react.sh'
+      - 'Dockerfile-app-react'
 
 jobs:
   react-app-build:

@@ -5,11 +5,17 @@ on:
     paths:
       - 'src/**'
       - '.github/workflows/sfm-workflow.yaml'
+      - 'deploy.sh'
+      - 'Dockerfile-app'
+      - 'pom.xml'
   push:
     branches: [ main ]
     paths:
       - 'src/**'
       - '.github/workflows/sfm-workflow.yaml'
+      - 'deploy.sh'
+      - 'Dockerfile-app'
+      - 'pom.xml'
 jobs:
   project-build:
     runs-on: ubuntu-latest
