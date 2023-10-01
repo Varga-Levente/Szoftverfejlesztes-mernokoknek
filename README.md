@@ -8,7 +8,7 @@
 - [@Éles-Dani](https://github.com/deles30)
 - [@Divinyi-Balázs](https://github.com/leuk0)
 - [@Nemes-Levente](https://github.com/NemesLevente18)
-- [@Kalmár-János]([https://github.com/NemesLevente18](https://github.com/kalmaryjanos))
+- [@Kalmár-János](https://github.com/kalmaryjanos)
 
 ## Roadmap
 
