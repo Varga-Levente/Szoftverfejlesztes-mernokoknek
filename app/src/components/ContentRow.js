@@ -1,6 +1,7 @@
 import React from 'react';
 import './ContentRow.css';
 import VerticalMenu from './VerticalMenu';
+import Poster from './Poster';
 
 const ContentRow = () => {
   return (
@@ -9,6 +10,7 @@ const ContentRow = () => {
             <VerticalMenu />
         </div>
         <div className="col" />
+            <Poster />
         </div>
   );
 }
