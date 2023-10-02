@@ -8,10 +8,10 @@ import CinemaSelector from "./CinemaSelector"; // Hozzáadva a faCaretDown impor
 const Header = () => {
   return (
     <div className="row justify-content-center align-items-center" style={{ height: 75 }}>
-        <div className="col text-start col-2" style={{ height: 50 }}>
+        <div className="col text-start col-3" style={{ height: 50 }}>
             <CinemaSelector />
         </div>
-        <div className="col text-center">
+        <div className="col col-15 text-center">
             <div className="input-group">
             <span className="input-group-text searchinputpre">
                 <FontAwesomeIcon icon={faSearch} style={{ color: "white" }} />
@@ -26,7 +26,7 @@ const Header = () => {
             </button>
             </div>
         </div>
-        <div className="col col-2">
+        <div className="col col-3">
             <div className="text-end align-middle right">
                 <FontAwesomeIcon icon={faShoppingBasket} className="basketicon"/>
                 <img className="avatar" alt='avatar' src="avatar.jpg" />

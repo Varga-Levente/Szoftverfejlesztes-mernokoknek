@@ -17,7 +17,8 @@
 }
 
 .costomselect {
-    max-width: 175px;
+    /*max-width: 175px;*/
+    
     background-color: #2B2B38;
     color: white;
     border-radius: 10px;
