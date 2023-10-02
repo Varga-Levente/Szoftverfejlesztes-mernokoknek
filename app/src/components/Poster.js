@@ -3,7 +3,7 @@ import './Poster.css';
 
 const Poster = () => {
     return (
-        <>
+        <h1 className="poster">Poster</h1>
     );
 }
 
