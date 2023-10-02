@@ -32,7 +32,7 @@ public class ReservationController {
     }
 
     //TODO: This should be a POST request in the future
-    //Create a new reservation with get parameters
+    //Create a new reservation with get parameters The movie already has CinemaRoom only need to specify the row and seat
     //http://localhost:8080/api/v1/reservation/create?userId=1&movieId=1&cinemaRoomId=1&row=1&seat=1
     @RequestMapping("/create")
     public ResponseEntity<String> createReservation(
@@ -55,14 +55,46 @@ public class ReservationController {
         Reservation reservation = new Reservation();
         reservation.setUser(user);
         reservation.setMovie(movie);
-        reservation.setCinemaRoom(cinemaRoom);
         reservation.setRow(row);
+        reservation.setCinemaRoom(cinemaRoom);
         reservation.setSeat(seat);
 
         // Mentsd el a foglalást az adatbázisban
         reservationRepository.save(reservation);
 
         return ResponseEntity.ok("Foglalás sikeresen létrehozva.");
+    }
+
+    //Get all reservations
+    //http://localhost:8080/api/v1/reservation/getAll
+    @RequestMapping("/getAll")
+    public ResponseEntity<Iterable<Reservation>> getAllReservations() {
+        return ResponseEntity.ok(reservationRepository.findAll());
+    }
+
+    //Check if a seat is reserved by movieId (Get data from Reservation repository)
+    //http://localhost:8080/api/v1/reservation/isReserved?movieId=1&row=1&seat=1
+    @RequestMapping("/isReserved")
+    public ResponseEntity<Boolean> isReserved(
+            @RequestParam int movieId,
+            @RequestParam int row,
+            @RequestParam int seat
+    ) {
+        // Ellenőrizd, hogy a film létezik-e az adatbázisban
+        Movie movie = movieRepository.findById(movieId).orElse(null);
+
+        if (movie == null) {
+            return ResponseEntity.badRequest().body(false);
+        }
+
+        // Ellenőrizd, hogy a megadott hely már foglalt-e
+        for (Reservation reservation : reservationRepository.findAll()) {
+            if (reservation.getMovie().getId() == movieId && reservation.getRow() == row && reservation.getSeat() == seat) {
+                return ResponseEntity.ok(true);
+            }
+        }
+
+        return ResponseEntity.ok(false);
     }
 
     //TODO: Create delete reservation endpoint (DELETE request)
