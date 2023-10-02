@@ -2,6 +2,8 @@ package com.unideb.sfm.Szoftverfejlesztesmernokoknek.model;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
 @Table(name = "project_users")
 public class User {
@@ -10,4 +12,12 @@ public class User {
     private Integer id;
 
     private String username;
+
+    private String password;
+
+    private String email;
+
+    private String role;
+
+    private String name;
 }

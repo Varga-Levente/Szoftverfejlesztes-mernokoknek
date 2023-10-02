@@ -28,7 +28,7 @@ public class Movie {
 
     private String categories;
 
-//Constructors
+    //Constructors
     public Movie(Integer id, String title, Integer year, double rating, String overview, String poster_path, String categories) {
         setId(id);
         setTitle(title);
@@ -41,7 +41,7 @@ public class Movie {
 
     public Movie() {} // default empty constructor
 
-//Utils
+    //Utils
     public static String getTableName() {
         return "project_movies";
     }
@@ -50,7 +50,7 @@ public class Movie {
         return "movie_sequence";
     }
 
-// Override toString, equals and hashCode
+    // Override toString, equals and hashCode
     @Override
     public String toString() {
         return "Movie{" +
@@ -77,7 +77,7 @@ public class Movie {
         return Objects.hash(id, title, year, rating, overview, poster_path, categories);
     }
 
-// getters and setters and other add and remove methods
+    // getters and setters and other add and remove methods
     public Integer getId() {
         return id;
     }
