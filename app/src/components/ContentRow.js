@@ -6,12 +6,15 @@ import Poster from './Poster';
 const ContentRow = () => {
   return (
     <div className="row" style={{ height: "100vh" }}>
+
         <div className="col col-1" style={{ position: "relative" }}>
             <VerticalMenu />
         </div>
-        <div className="col" />
+
+        <div className="col content-col">
             <Poster />
         </div>
+    </div>
   );
 }
 
