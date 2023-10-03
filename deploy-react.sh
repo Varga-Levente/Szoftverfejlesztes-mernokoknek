@@ -7,7 +7,7 @@ start=$(date +"%s")
 ssh -p ${SERVER_PORT} ${SERVER_USER}@${SERVER_HOST} -i key.txt -t -t -o StrictHostKeyChecking=no << 'ENDSSH'
 
 # Docker container letöltése
-docker pull vlevente2001/sfm:latest
+docker pull vlevente2001/sfm-react:latest
 
 # Docker konténer nevének beállítása.
 CONTAINER_NAME=sfmapp-react
