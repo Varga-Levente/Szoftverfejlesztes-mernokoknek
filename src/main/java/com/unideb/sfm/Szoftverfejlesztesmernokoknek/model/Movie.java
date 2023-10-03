@@ -28,7 +28,10 @@ public class Movie {
 
     private String categories;
 
-//Constructors
+    @ManyToOne
+    private CinemaRoom cinemaRoom;
+
+    //Constructors
     public Movie(Integer id, String title, Integer year, double rating, String overview, String poster_path, String categories) {
         setId(id);
         setTitle(title);
@@ -41,7 +44,7 @@ public class Movie {
 
     public Movie() {} // default empty constructor
 
-//Utils
+    //Utils
     public static String getTableName() {
         return "project_movies";
     }
@@ -50,17 +53,18 @@ public class Movie {
         return "movie_sequence";
     }
 
-// Override toString, equals and hashCode
+    // Override toString, equals and hashCode
     @Override
     public String toString() {
         return "Movie{" +
                 "id=" + id +
-                ", title='" + title + "'" +
+                ", title='" + title + '\'' +
                 ", year=" + year +
                 ", rating=" + rating +
-                ", overview=" + overview +
-                ", poster_path=" + poster_path +
-                ", category=" + categories +
+                ", overview='" + overview + '\'' +
+                ", poster_path='" + poster_path + '\'' +
+                ", categories='" + categories + '\'' +
+                ", cinemaRoom=" + cinemaRoom +
                 '}';
     }
 
@@ -69,15 +73,15 @@ public class Movie {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Movie movie = (Movie) o;
-        return Double.compare(movie.rating, rating) == 0 && Objects.equals(id, movie.id) && Objects.equals(title, movie.title) && Objects.equals(year, movie.year) && Objects.equals(overview, movie.overview) && Objects.equals(poster_path, movie.poster_path) && Objects.equals(categories, movie.categories);
+        return Double.compare(movie.rating, rating) == 0 && Objects.equals(id, movie.id) && Objects.equals(title, movie.title) && Objects.equals(year, movie.year) && Objects.equals(overview, movie.overview) && Objects.equals(poster_path, movie.poster_path) && Objects.equals(categories, movie.categories) && Objects.equals(cinemaRoom, movie.cinemaRoom);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, title, year, rating, overview, poster_path, categories);
+        return Objects.hash(id, title, year, rating, overview, poster_path, categories, cinemaRoom);
     }
 
-// getters and setters and other add and remove methods
+    // getters and setters and other add and remove methods
     public Integer getId() {
         return id;
     }
@@ -140,5 +144,13 @@ public class Movie {
 
     public void setCategories(String categories) {
         this.categories = categories;
+    }
+
+    public CinemaRoom getCinemaRoom() {
+        return cinemaRoom;
+    }
+
+    public void setCinemaRoom(CinemaRoom cinemaRoom) {
+        this.cinemaRoom = cinemaRoom;
     }
 }
