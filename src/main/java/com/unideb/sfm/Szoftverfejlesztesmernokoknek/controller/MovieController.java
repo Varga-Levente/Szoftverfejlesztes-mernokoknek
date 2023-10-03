@@ -1,6 +1,8 @@
 package com.unideb.sfm.Szoftverfejlesztesmernokoknek.controller;
 
+import com.unideb.sfm.Szoftverfejlesztesmernokoknek.model.CinemaRoom;
 import com.unideb.sfm.Szoftverfejlesztesmernokoknek.model.Movie;
+import com.unideb.sfm.Szoftverfejlesztesmernokoknek.repository.CinemaRoomRepository;
 import com.unideb.sfm.Szoftverfejlesztesmernokoknek.repository.MovieRepository;
 import com.unideb.sfm.Szoftverfejlesztesmernokoknek.utils.ReadJSON;
 import jakarta.persistence.EntityManager;
@@ -15,28 +17,31 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
+@RequestMapping("/api/v1/movies")
 public class MovieController {
 
     private final MovieRepository movieRepository;
+    private final CinemaRoomRepository cinemaRoomRepository;
     private EntityManager entityManager;
 
-    public MovieController(MovieRepository movieRepository, EntityManager entityManager) {
+    public MovieController(MovieRepository movieRepository, EntityManager entityManager, CinemaRoomRepository cinemaRoomRepository) {
         this.movieRepository = movieRepository;
+        this.cinemaRoomRepository = cinemaRoomRepository;
         this.entityManager = entityManager;
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    @RequestMapping(path = "api/v1/movies/getAllMovie")
+    @GetMapping(path = "/getAllMovie")
     public List<Movie> getMovies() {
         return movieRepository.findAll();
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    @PostMapping(path = "api/v1/movies/addMovie")
+    @PostMapping(path = "/addMovie")
     public String addMovie(@RequestBody Movie movie) {
         movieRepository.save(movie);
         return movie.toString();
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    @RequestMapping(path = "api/v1/movies/getMovieById/{id}")
+    @GetMapping(path = "/getMovieById/{id}")
     public ResponseEntity<Movie> getMovieById(@PathVariable("id") Integer id) {
         Movie movie = movieRepository.findById(id).orElse(null);
         if (movie == null) {
@@ -45,7 +50,7 @@ public class MovieController {
         return new ResponseEntity<>(movie, HttpStatus.OK);
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    @RequestMapping(path = "api/v1/movies/getPopularMovies")
+    @GetMapping(path = "/getPopularMovies")
     public ResponseEntity<List<Movie>> getPopularMovies() {
         //Get all movies
         List<Movie> movies = movieRepository.findAll();
@@ -61,7 +66,7 @@ public class MovieController {
         return new ResponseEntity<>(popularMovies, HttpStatus.OK);
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    @RequestMapping(path = "api/v1/movies/getMoviesByCategory/{category}")
+    @GetMapping(path = "/getMoviesByCategory/{category}")
     public ResponseEntity<List<Movie>> getMovieByCategory(@PathVariable("category") String category) {
         //Get all movies
         List<Movie> movies = movieRepository.findAll();
@@ -78,8 +83,9 @@ public class MovieController {
         return new ResponseEntity<>(moviesWithCategory, HttpStatus.OK);
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //http://localhost:8080/api/v1/movies/reset
     @Transactional
-    @RequestMapping(path = "api/v1/movies/reset")
+    @GetMapping(path = "/reset")
     public List resetMovies() throws IOException {
         List<String> states = new ArrayList<>();
 
@@ -134,11 +140,27 @@ public class MovieController {
         return states;
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    @DeleteMapping(path = "api/v1/movies/deleteAll")
+    @DeleteMapping(path = "/deleteAll")
     public ResponseEntity<String> deleteAllMovies() {
         movieRepository.deleteAll();
         return new ResponseEntity<>("All movies deleted", HttpStatus.OK);
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //http://localhost:8080/api/v1/movies/setCinemaRoom/1
+    @GetMapping(path = "/setCinemaRoom/{id}")
+    public ResponseEntity<String> setCinemaRoom(@PathVariable("id") Integer id) {
+        Movie movie = movieRepository.findById(id).orElse(null);
+        if (movie == null) {
+            return new ResponseEntity<>("Movie not found", HttpStatus.BAD_REQUEST);
+        }
+        CinemaRoom cinemaRoom = cinemaRoomRepository.findById(id).orElse(null);
+        if (cinemaRoom == null) {
+            return new ResponseEntity<>("Cinema room not found", HttpStatus.BAD_REQUEST);
+        }
+        movie.setCinemaRoom(cinemaRoom);
+        movieRepository.save(movie);
+        return new ResponseEntity<>("Cinema room set", HttpStatus.OK);
+    }
 
 }
