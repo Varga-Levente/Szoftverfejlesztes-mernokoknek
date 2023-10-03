@@ -1,6 +1,8 @@
 package com.unideb.sfm.Szoftverfejlesztesmernokoknek.controller;
 
+import com.unideb.sfm.Szoftverfejlesztesmernokoknek.model.CinemaRoom;
 import com.unideb.sfm.Szoftverfejlesztesmernokoknek.model.Movie;
+import com.unideb.sfm.Szoftverfejlesztesmernokoknek.repository.CinemaRoomRepository;
 import com.unideb.sfm.Szoftverfejlesztesmernokoknek.repository.MovieRepository;
 import com.unideb.sfm.Szoftverfejlesztesmernokoknek.utils.ReadJSON;
 import jakarta.persistence.EntityManager;
@@ -19,10 +21,12 @@ import java.util.List;
 public class MovieController {
 
     private final MovieRepository movieRepository;
+    private final CinemaRoomRepository cinemaRoomRepository;
     private EntityManager entityManager;
 
-    public MovieController(MovieRepository movieRepository, EntityManager entityManager) {
+    public MovieController(MovieRepository movieRepository, EntityManager entityManager, CinemaRoomRepository cinemaRoomRepository) {
         this.movieRepository = movieRepository;
+        this.cinemaRoomRepository = cinemaRoomRepository;
         this.entityManager = entityManager;
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -79,6 +83,7 @@ public class MovieController {
         return new ResponseEntity<>(moviesWithCategory, HttpStatus.OK);
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //http://localhost:8080/api/v1/movies/reset
     @Transactional
     @GetMapping(path = "/reset")
     public List resetMovies() throws IOException {
@@ -141,5 +146,21 @@ public class MovieController {
         return new ResponseEntity<>("All movies deleted", HttpStatus.OK);
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //http://localhost:8080/api/v1/movies/setCinemaRoom/1
+    @GetMapping(path = "/setCinemaRoom/{id}")
+    public ResponseEntity<String> setCinemaRoom(@PathVariable("id") Integer id) {
+        Movie movie = movieRepository.findById(id).orElse(null);
+        if (movie == null) {
+            return new ResponseEntity<>("Movie not found", HttpStatus.BAD_REQUEST);
+        }
+        CinemaRoom cinemaRoom = cinemaRoomRepository.findById(id).orElse(null);
+        if (cinemaRoom == null) {
+            return new ResponseEntity<>("Cinema room not found", HttpStatus.BAD_REQUEST);
+        }
+        movie.setCinemaRoom(cinemaRoom);
+        movieRepository.save(movie);
+        return new ResponseEntity<>("Cinema room set", HttpStatus.OK);
+    }
 
 }
