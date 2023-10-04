@@ -10,7 +10,7 @@ const ContentRow = () => {
     //Get categories from API /movies/getAllCategories
     const [categories, setCategories] = React.useState([]);
     React.useEffect(() => {
-        fetch('/movies/getAllCategories')
+        fetch('movies/getAllCategories')
             .then((response) => response.json())
             .then((data) => {
                 setCategories(data);
@@ -32,9 +32,9 @@ const ContentRow = () => {
                             exact
                             render={(props) => (
                                 <div>
-                                    <Scroller {...props} endpoint="/movies/getPopularMovies" category="Popular (7+ Rating)" extraclass="popular-category"/>
+                                    <Scroller {...props} endpoint="movies/getPopularMovies" category="Popular (7+ Rating)" extraclass="popular-category"/>
                                     {categories.map((category) => (
-                                        <Scroller {...props} endpoint={`/movies/getMoviesByCategory/${category}`} category={category} />
+                                        <Scroller {...props} endpoint={`movies/getMoviesByCategory/${category}`} category={category} />
                                     ))}
                                 </div>
                             )}
