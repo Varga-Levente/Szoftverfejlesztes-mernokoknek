@@ -1,11 +1,11 @@
 @import '~material-icons/iconfont/material-icons.css';
 
 ul {
+    margin-top: 50vh; /* Középen vertikálisan igazítás a képernyő magasságának feléig */
+    transform: translateY(-50%); /* Középre igazítás az elmozdítás révén */
     position: fixed;
     left: 0;
     top: 0;
-    margin-top: 30%;
-    transform: translateY(-70%);
     /*margin-left: -85px;*/
     background-color: #2b2b38;
     padding-left: 18px !important;

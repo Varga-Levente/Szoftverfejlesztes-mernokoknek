@@ -11,14 +11,23 @@
     font-size: 1.5vw;
     white-space: normal;
     z-index: 150;
+    padding-left: 0.5%;
+}
+
+.popular-category {
+    color: #f74346;
+}
+
+.popular-category:before {
+    content: "🔥";
 }
 
 .scroller-container {
-    margin-top: 2%;
+    margin-top: 1%;
 }
 
 .scroller-container:not(:first-child) {
-    margin-top: 14%;
+    margin-top: 8%;
     padding-top: 10%;
 }
 

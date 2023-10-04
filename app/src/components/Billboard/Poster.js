@@ -1,7 +1,7 @@
 import React from 'react';
 import './Poster.css';
 
-const Poster = ({ title, posterPath, key }) => {
+const Poster = ({ title, posterPath }) => {
     //Check if the title has : in it and split it and store it in title1 and title2 (Add : in the end of title1)
     let title1 = title;
     let title2 = "";
@@ -11,7 +11,7 @@ const Poster = ({ title, posterPath, key }) => {
     }
 
     return (
-        <div key={key} className="poster p-2">
+        <div className="poster p-2">
             <img className="movie-poster" src={posterPath} alt={title}/>
             <div className="poster-title-container">
                 <p className="movie-title">
