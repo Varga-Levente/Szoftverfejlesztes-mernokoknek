@@ -1,0 +1,1 @@
+export const API_URL = "http://vps-df7347a7.vps.ovh.net:8080/api/v1";
