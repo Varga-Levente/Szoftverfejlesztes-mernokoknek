@@ -1,9 +1,10 @@
 @import '~material-icons/iconfont/material-icons.css';
 
 ul {
-    margin: 0;
-    position: absolute;
-    top: 50%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin-top: 30%;
     transform: translateY(-70%);
     /*margin-left: -85px;*/
     background-color: #2b2b38;

@@ -4,13 +4,13 @@
 }
 
 .scroller-category {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     color: #c0c0c0;
     text-align: left;
     font-size: 1.5vw;
     white-space: normal;
-
+    z-index: 150;
 }
 
 .scroller-container {
@@ -18,8 +18,8 @@
 }
 
 .scroller-container:not(:first-child) {
-    margin-top: 16%;
-    padding-top: 15px;
+    margin-top: 14%;
+    padding-top: 10%;
 }
 
 .category-sup {

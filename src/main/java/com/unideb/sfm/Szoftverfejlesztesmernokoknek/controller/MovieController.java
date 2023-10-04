@@ -164,5 +164,26 @@ public class MovieController {
         //Return ok
         return new ResponseEntity<>("Cinema room set for movie", HttpStatus.OK);
     }
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //http://localhost:8080/api/v1/movies/getAllCategories
+    @GetMapping(path = "/getAllCategories")
+    public ResponseEntity<List<String>> getAllCategories() {
+        //Get all movies
+        List<Movie> movies = movieRepository.findAll();
+        //Create a list for the categories
+        List<String> categories = new ArrayList<>();
+        //Add the categories to the list
+        for (Movie movie : movies) {
+            String[] category = movie.getCategories().split(";");
+            for (String s : category) {
+                if (!categories.contains(s)) {
+                    categories.add(s);
+                }
+            }
+        }
+        //Return the list of categories
+        return new ResponseEntity<>(categories, HttpStatus.OK);
+    }
 
 }

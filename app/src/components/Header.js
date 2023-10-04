@@ -7,7 +7,7 @@ import CinemaSelector from "./CinemaSelector"; // Hozzáadva a faCaretDown impor
 
 const Header = () => {
   return (
-    <div className="row justify-content-center align-items-center" style={{ height: 75 }}>
+    <div className="row fixed-top justify-content-center top-nav align-items-center" style={{ height: 75 }}>
         <div className="col text-start col-3" style={{ height: 50 }}>
             <CinemaSelector />
         </div>
