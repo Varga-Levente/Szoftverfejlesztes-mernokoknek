@@ -1,10 +1,11 @@
 @import '~material-icons/iconfont/material-icons.css';
 
 ul {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-70%);
+    margin-top: 50vh; /* Középen vertikálisan igazítás a képernyő magasságának feléig */
+    transform: translateY(-50%); /* Középre igazítás az elmozdítás révén */
+    position: fixed;
+    left: 0;
+    top: 0;
     /*margin-left: -85px;*/
     background-color: #2b2b38;
     padding-left: 18px !important;
@@ -15,6 +16,7 @@ ul {
     border-bottom-right-radius: 20px;
     border-top-right-radius: 30px;
     box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);
+    z-index: 100;
   }
   
   .active {

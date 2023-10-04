@@ -29,8 +29,8 @@
   .searchbtn {
     margin-left: 8px;
     border-radius: 10px;
-    height: 55px;
-    width: 55px;
+    height: 65px;
+    width: 65px;
     background: #F74346;
     border-color: #F74346;
   }
@@ -59,7 +59,7 @@
   }  
   
   .avatar {
-    width: 55px;
+    width: 65px;
     border-radius: 12.9px;
     margin: 10px;
     box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);
@@ -85,7 +85,7 @@
     width: 80%;
     margin: 0 auto;
     border-radius: 10px;
-    height: 55px;
+    height: 65px;
     box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);
   }
 
@@ -96,4 +96,9 @@
   .align-middle {
     vertical-align: middle!important;
     padding-right: 25px;
+  }
+
+  .top-nav {
+    background-image: linear-gradient(to bottom, #161621, #161621, #161621, rgba(22, 22, 33, 1), rgba(22, 22, 33, 0.9), rgba(22, 22, 33, 0.9), rgba(22, 22, 33, 0.0));
+    padding-bottom: 6%;
   }

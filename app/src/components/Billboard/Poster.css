@@ -10,15 +10,21 @@
     display: block;
     margin: auto;
     border-radius: 20px;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);
 }
 
 .movie-title {
     font-family: 'Roboto';
     font-weight: 700;
     color: #f74346;
-    text-align: center;
+    text-align: left;
     font-size: 0.6vw;
     white-space: normal;
+}
+.poster-title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .testimonial-group > .row {
@@ -48,9 +54,4 @@
 
 .content-col {
     width: 100%;
-}
-
-.scroll-div {
-    position: absolute;
-    width: 90%;
 }
