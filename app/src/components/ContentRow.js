@@ -11,7 +11,7 @@ const ContentRow = () => {
     //Get categories from API /movies/getAllCategories
     const [categories, setCategories] = React.useState([]);
     React.useEffect(() => {
-        fetch(`${API_URL}/api/movies/getAllCategories`)
+        fetch(`${API_URL}/movies/getAllCategories`)
             .then((response) => response.json())
             .then((data) => {
                 setCategories(data);
@@ -35,7 +35,7 @@ const ContentRow = () => {
                                 <div>
                                     {/*Popular Scroller*/}
                                     <Scroller {...props}
-                                              endpoint={`${API_URL}/api/movies/getPopularMovies`}
+                                              endpoint={`${API_URL}/movies/getPopularMovies`}
                                               category="Popular (7+ Rating)"
                                               extraclass="popular-category"
                                     />
@@ -43,7 +43,7 @@ const ContentRow = () => {
                                     {/*Scrollers by Categories*/}
                                     {categories.map((category) => (
                                         <Scroller {...props}
-                                                  endpoint={`/api/movies/getMoviesByCategory/${category}`}
+                                                  endpoint={`${API_URL}/movies/getMoviesByCategory/${category}`}
                                                   category={category}
                                         />
                                     ))}
