@@ -23,7 +23,7 @@ const ContentRow = () => {
             }, (error) => {
                 console.error('API hívás sikertelen:', error);
             });
-    }, [API_URL]);
+    }, []);
 
     return (
         <div className="row" style={{ height: '100%' }}>
