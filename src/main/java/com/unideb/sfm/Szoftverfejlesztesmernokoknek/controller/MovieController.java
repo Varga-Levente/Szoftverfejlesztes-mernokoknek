@@ -148,19 +148,21 @@ public class MovieController {
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     //http://localhost:8080/api/v1/movies/setCinemaRoom/1
-    @GetMapping(path = "/setCinemaRoom/{id}")
-    public ResponseEntity<String> setCinemaRoom(@PathVariable("id") Integer id) {
-        Movie movie = movieRepository.findById(id).orElse(null);
-        if (movie == null) {
-            return new ResponseEntity<>("Movie not found", HttpStatus.BAD_REQUEST);
+    @GetMapping(path = "/setCinemaRoom/{movieid}/{roomid}")
+    public ResponseEntity<String> setCinemaRoom(@PathVariable("movieid") Integer movieid, @PathVariable("roomid") Integer roomid) {
+        //Get the movie and the cinema room
+        Movie movie = movieRepository.findById(movieid).orElse(null);
+        CinemaRoom cinemaRoom = cinemaRoomRepository.findById(roomid).orElse(null);
+        //If the movie or the cinema room is null, return bad request
+        if (movie == null || cinemaRoom == null) {
+            return new ResponseEntity<>("Movie or cinema room not found", HttpStatus.BAD_REQUEST);
         }
-        CinemaRoom cinemaRoom = cinemaRoomRepository.findById(id).orElse(null);
-        if (cinemaRoom == null) {
-            return new ResponseEntity<>("Cinema room not found", HttpStatus.BAD_REQUEST);
-        }
+        //Set the cinema room for the movie
         movie.setCinemaRoom(cinemaRoom);
+        //Save the movie
         movieRepository.save(movie);
-        return new ResponseEntity<>("Cinema room set", HttpStatus.OK);
+        //Return ok
+        return new ResponseEntity<>("Cinema room set for movie", HttpStatus.OK);
     }
 
 }

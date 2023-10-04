@@ -49,6 +49,7 @@ public class CinemaRoomController {
         return cinemaRoomRepository.findAll();
     }
 
+    //TODO: This will be deleted in production
     //Clear all rooms
     //http://localhost:8080/api/v1/room/clearAll
     @Transactional

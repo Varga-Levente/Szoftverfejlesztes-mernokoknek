@@ -1,0 +1,27 @@
+.scroll-div {
+    position: absolute;
+    width: 90%;
+}
+
+.scroller-category {
+    font-family: 'Roboto';
+    font-weight: 700;
+    color: #c0c0c0;
+    text-align: left;
+    font-size: 1.5vw;
+    white-space: normal;
+
+}
+
+.scroller-container {
+    margin-top: 2%;
+}
+
+.scroller-container:not(:first-child) {
+    margin-top: 16%;
+    padding-top: 15px;
+}
+
+.category-sup {
+    font-size: 50%;
+}
