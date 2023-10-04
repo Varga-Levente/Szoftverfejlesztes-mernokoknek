@@ -8,6 +8,7 @@ on:
       - '.github/workflows/react-workflow.yaml'
       - 'deploy-react.sh'
       - 'Dockerfile-app-react'
+      - 'nginx.conf'
   push:
     branches: [main]
     paths:
@@ -15,6 +16,7 @@ on:
       - '.github/workflows/react-workflow.yaml'
       - 'deploy-react.sh'
       - 'Dockerfile-app-react'
+      - 'nginx.conf'
 
 jobs:
   react-app-build:
