@@ -2,6 +2,7 @@
 
 body {
   background-color: #161621;
+  scroll-behavior: smooth;
 }
 
 .App {
