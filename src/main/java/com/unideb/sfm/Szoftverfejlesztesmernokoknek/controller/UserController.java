@@ -5,6 +5,7 @@ import com.unideb.sfm.Szoftverfejlesztesmernokoknek.repository.UserRepository;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@CrossOrigin
 @RequestMapping("/api/v1/user")
 public class UserController {
     private final UserRepository userRepository;
