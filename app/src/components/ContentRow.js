@@ -16,7 +16,7 @@ const ContentRow = () => {
             .then((data) => {
                 setCategories(data);
             });
-    }, []);
+    }, [API_URL]);
 
     return (
         <div className="row" style={{ height: '100%' }}>
