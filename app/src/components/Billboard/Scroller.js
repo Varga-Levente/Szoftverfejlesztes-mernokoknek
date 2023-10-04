@@ -19,6 +19,33 @@ const Scroller = ({ endpoint, category, extraclass }) => {
             });
     }, [endpoint]);
 
+    useEffect(() => {
+        const scrollDivs = document.querySelectorAll(".scroll-div");
+
+        const handleScroll = (event) => {
+            event.preventDefault();
+
+            if (event.deltaY < 0) {
+                event.currentTarget.scrollLeft -= 160;
+            } else if (event.deltaY > 0) {
+                event.currentTarget.scrollLeft += 160;
+            }
+        };
+
+        scrollDivs.forEach((scrollDiv) => {
+            // Ezen sorokkal kikapcsoljuk az alapértelmezett görgetést
+            scrollDiv.addEventListener("wheel", handleScroll, { passive: false });
+            scrollDiv.addEventListener("mousewheel", handleScroll, { passive: false });
+        });
+
+        return () => {
+            scrollDivs.forEach((scrollDiv) => {
+                scrollDiv.removeEventListener("wheel", handleScroll);
+                scrollDiv.removeEventListener("mousewheel", handleScroll);
+            });
+        };
+    }, []);
+
     //Split category into two parts on space if it starts with "Popular"
     let category1 = category;
     let category2 = "";
@@ -33,12 +60,11 @@ const Scroller = ({ endpoint, category, extraclass }) => {
             <h2 className={`scroller-category ${extraclass}`}>{category1}<sup className="category-sup"> {category2}</sup></h2>
             <div className="d-flex flex-nowrap overflow-x-auto scroll-div">
                 {movies.map((movie) => (
-                    <Poster title={movie.title} posterPath={movie.poster_path} />
+                    <Poster key={movie.id} title={movie.title} posterPath={movie.poster_path} className="scroll-item" />
                 ))}
             </div>
         </div>
     );
-
 }
 
 export default Scroller;

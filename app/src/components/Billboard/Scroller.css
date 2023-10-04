@@ -1,6 +1,11 @@
 .scroll-div {
     position: absolute;
     width: 90%;
+    scroll-behavior: smooth;
+}
+
+.scroll-item {
+    transition: transform 1s ease-in-out;
 }
 
 .scroller-category {
@@ -27,8 +32,7 @@
 }
 
 .scroller-container:not(:first-child) {
-    margin-top: 8%;
-    padding-top: 10%;
+    margin-top: 20vw;
 }
 
 .category-sup {
