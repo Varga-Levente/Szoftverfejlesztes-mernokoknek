@@ -3,7 +3,7 @@ package com.unideb.sfm.Szoftverfejlesztesmernokoknek.model;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 
-import java.util.Objects;
+import java.util.*;
 
 @Entity
 @Table(name = "project_users")
@@ -22,6 +22,9 @@ public class User {
 
     @Column(nullable = false, length = 256)
     private String password;
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    private List<Cart> cartItems = new ArrayList<>();
 
     //TODO: Add role
     //TODO: Add profile picture url
@@ -79,5 +82,13 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public List<Cart> getCartItems() {
+        return cartItems;
+    }
+
+    public void setCartItems(List<Cart> cartItems) {
+        this.cartItems = cartItems;
     }
 }

@@ -1,17 +1,40 @@
 package com.unideb.sfm.Szoftverfejlesztesmernokoknek.controller;
 
+import com.unideb.sfm.Szoftverfejlesztesmernokoknek.DTO.CartDTO;
+import com.unideb.sfm.Szoftverfejlesztesmernokoknek.DTO.UserDTO;
+import com.unideb.sfm.Szoftverfejlesztesmernokoknek.model.Cart;
+import com.unideb.sfm.Szoftverfejlesztesmernokoknek.model.Food;
 import com.unideb.sfm.Szoftverfejlesztesmernokoknek.model.User;
+import com.unideb.sfm.Szoftverfejlesztesmernokoknek.repository.CartRepository;
+import com.unideb.sfm.Szoftverfejlesztesmernokoknek.repository.FoodRepository;
+import com.unideb.sfm.Szoftverfejlesztesmernokoknek.repository.ReservationRepository;
 import com.unideb.sfm.Szoftverfejlesztesmernokoknek.repository.UserRepository;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @CrossOrigin
 @RequestMapping("/api/v1/user")
 public class UserController {
+    @Autowired
     private final UserRepository userRepository;
+    @Autowired
+    private final FoodRepository foodRepository;
+    @Autowired
+    private final ReservationRepository reservationRepository;
+    @Autowired
+    private final CartRepository cartRepository;
 
-    public UserController(UserRepository userRepository) {
+    public UserController(UserRepository userRepository, FoodRepository foodRepository, ReservationRepository reservationRepository, CartRepository cartRepository) {
         this.userRepository = userRepository;
+        this.foodRepository = foodRepository;
+        this.reservationRepository = reservationRepository;
+        this.cartRepository = cartRepository;
     }
 
     //TODO: Make this work with POST
@@ -69,24 +92,50 @@ public class UserController {
         return users;
     }
 
-    //Get user by id and
+    //Get user by id
     //http://localhost:8080/api/v1/user/getById?id=1
     @RequestMapping("/getById")
-    public User getUserById(@RequestParam int id) {
+    public UserDTO getUserById(@RequestParam int id) {
         User user = userRepository.findById(id).orElse(null);
+
+        if (user == null) {
+            // Kezeljük az esetet, ha a felhasználót nem találjuk meg
+            return null;
+        }
+
         String email = user.getEmail();
         String[] emailParts = email.split("@");
         String emailName = emailParts[0];
         String emailDomain = emailParts[1];
         String emailTLD = emailDomain.split("\\.")[1];
         String emailProvider = emailDomain.split("\\.")[0];
+
         //Make emailName unreadable with * chars between 1 and last char and make emailProvider unreadable with * chars between 1 and last char
         String emailHidden = emailName.charAt(0) + "*".repeat(emailName.length() - 2) + emailName.charAt(emailName.length() - 1) + "@" + emailProvider.charAt(0) + "*".repeat(emailProvider.length() - 2) + emailProvider.charAt(emailProvider.length() - 1) + "." + emailTLD;
-        user.setEmail(emailHidden);
-        user.setPassword("***PROTECTED***");
 
-        return user;
+        //Get user cart items with CartDTO
+        List<Cart> cartItems = cartRepository.findAllByUserId(id);
+
+        // Cart objektumokból CartDTO objektumokat készítünk
+        List<CartDTO> cartDTOs = new ArrayList<>();
+        for (Cart cart : cartItems) {
+            CartDTO cartDTO = new CartDTO(cart.getId(), cart.getUser().getId(), cart.getFood().getId(), cart.getQuantity());
+            cartDTOs.add(cartDTO);
+        }
+
+        // A UserDTO-ba helyezzük át az adatokat
+        UserDTO userDTO = new UserDTO();
+        userDTO.setId(user.getId());
+        userDTO.setName(user.getName());
+        userDTO.setEmail(emailHidden);
+        userDTO.setCartItems(cartDTOs);
+        userDTO.setPassword("***PROTECTED***");
+
+        return userDTO;
     }
+
+
+
 
     //Get user by email
     //http://localhost:8080/api/v1/user/getByEmail?email=john.doe%40sfm.com
@@ -134,4 +183,12 @@ public class UserController {
         userRepository.delete(user);
         return "User deleted";
     }
+
+    //==================================================================================================================
+    //Carts
+
+
+
+
+
 }

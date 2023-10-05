@@ -9,59 +9,44 @@ import java.util.Objects;
 public class Food {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private int id;
     private String name;
+    @Column(length = 1500)
+    private String description;
     private int price;
     private String img_url;
 
-    public Food(Integer id, String name, int price, String img_url) {
-        setId(id);
+    @ManyToOne // Egy User-hez tartozik
+    @JoinColumn(name = "user_id") // Az "user_id" oszlop azonosítja a kapcsolatot
+    private User user; // Ez az attribútum mutat az User entitásra
+
+    public Food(String name, String description, int price, String img_url) {
         setName(name);
+        setDescription(description);
         setPrice(price);
         setImg_url(img_url);
     }
 
     public Food() {} // default empty constructor
 
-//Utils
-    public static String getTableName() {
-        return "project_food";
-    }
-
-    public static String getSequenceName() {
-        return "food_sequence";
-    }
-
-// Override toString, equals and hashCode
-    @Override
-    public String toString() {
-        return "Food{" +
-                "id=" + id +
-                ", name='" + name + "'" +
-                ", price=" + price +
-                ", img_url=" + img_url +
-                '}';
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Food food)) return false;
-        return Objects.equals(getId(), food.getId()) && Objects.equals(getName(), food.getName()) && Objects.equals(getPrice(), food.getPrice()) && Objects.equals(getImg_url(), food.getImg_url());
+        if (o == null || getClass() != o.getClass()) return false;
+        Food food = (Food) o;
+        return price == food.price && Objects.equals(id, food.id) && Objects.equals(name, food.name) && Objects.equals(description, food.description) && Objects.equals(img_url, food.img_url);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId(), getName(), getPrice(), getImg_url());
+        return Objects.hash(id, name, description, price, img_url);
     }
 
-// getters and setters
-
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -71,6 +56,14 @@ public class Food {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public int getPrice() {
