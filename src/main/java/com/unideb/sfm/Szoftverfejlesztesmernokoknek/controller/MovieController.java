@@ -1,8 +1,6 @@
 package com.unideb.sfm.Szoftverfejlesztesmernokoknek.controller;
 
-import com.unideb.sfm.Szoftverfejlesztesmernokoknek.model.CinemaRoom;
 import com.unideb.sfm.Szoftverfejlesztesmernokoknek.model.Movie;
-import com.unideb.sfm.Szoftverfejlesztesmernokoknek.repository.CinemaRoomRepository;
 import com.unideb.sfm.Szoftverfejlesztesmernokoknek.repository.MovieRepository;
 import com.unideb.sfm.Szoftverfejlesztesmernokoknek.utils.ReadJSON;
 import jakarta.persistence.EntityManager;
@@ -22,12 +20,10 @@ import java.util.List;
 public class MovieController {
 
     private final MovieRepository movieRepository;
-    private final CinemaRoomRepository cinemaRoomRepository;
     private EntityManager entityManager;
 
-    public MovieController(MovieRepository movieRepository, EntityManager entityManager, CinemaRoomRepository cinemaRoomRepository) {
+    public MovieController(MovieRepository movieRepository, EntityManager entityManager) {
         this.movieRepository = movieRepository;
-        this.cinemaRoomRepository = cinemaRoomRepository;
         this.entityManager = entityManager;
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -145,25 +141,6 @@ public class MovieController {
     public ResponseEntity<String> deleteAllMovies() {
         movieRepository.deleteAll();
         return new ResponseEntity<>("All movies deleted", HttpStatus.OK);
-    }
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-    //http://localhost:8080/api/v1/movies/setCinemaRoom/1
-    @GetMapping(path = "/setCinemaRoom/{movieid}/{roomid}")
-    public ResponseEntity<String> setCinemaRoom(@PathVariable("movieid") Integer movieid, @PathVariable("roomid") Integer roomid) {
-        //Get the movie and the cinema room
-        Movie movie = movieRepository.findById(movieid).orElse(null);
-        CinemaRoom cinemaRoom = cinemaRoomRepository.findById(roomid).orElse(null);
-        //If the movie or the cinema room is null, return bad request
-        if (movie == null || cinemaRoom == null) {
-            return new ResponseEntity<>("Movie or cinema room not found", HttpStatus.BAD_REQUEST);
-        }
-        //Set the cinema room for the movie
-        movie.setCinemaRoom(cinemaRoom);
-        //Save the movie
-        movieRepository.save(movie);
-        //Return ok
-        return new ResponseEntity<>("Cinema room set for movie", HttpStatus.OK);
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

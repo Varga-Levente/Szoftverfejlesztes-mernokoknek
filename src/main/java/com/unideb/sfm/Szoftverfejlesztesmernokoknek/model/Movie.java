@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 import java.util.Objects;
 
 @Entity
-@Table(name = "project_movies")
+@Table(name = "sfm_project_movies")
 public class Movie {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,9 +28,6 @@ public class Movie {
 
     private String categories;
 
-    @ManyToOne
-    private CinemaRoom cinemaRoom;
-
     //Constructors
     public Movie(Integer id, String title, Integer year, double rating, String overview, String poster_path, String categories) {
         setId(id);
@@ -44,15 +41,6 @@ public class Movie {
 
     public Movie() {} // default empty constructor
 
-    //Utils
-    public static String getTableName() {
-        return "project_movies";
-    }
-
-    public static String getSequenceName() {
-        return "movie_sequence";
-    }
-
     // Override toString, equals and hashCode
     @Override
     public String toString() {
@@ -63,22 +51,20 @@ public class Movie {
                 ", rating=" + rating +
                 ", overview='" + overview + '\'' +
                 ", poster_path='" + poster_path + '\'' +
-                ", categories='" + categories + '\'' +
-                ", cinemaRoom=" + cinemaRoom +
+                ", categories='" + categories +
                 '}';
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Movie movie = (Movie) o;
-        return Double.compare(movie.rating, rating) == 0 && Objects.equals(id, movie.id) && Objects.equals(title, movie.title) && Objects.equals(year, movie.year) && Objects.equals(overview, movie.overview) && Objects.equals(poster_path, movie.poster_path) && Objects.equals(categories, movie.categories) && Objects.equals(cinemaRoom, movie.cinemaRoom);
+        if (!(o instanceof Movie movie)) return false;
+        return id.equals(movie.id) && title.equals(movie.title) && year.equals(movie.year) && rating == movie.rating && overview.equals(movie.overview) && poster_path.equals(movie.poster_path) && categories.equals(movie.categories);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, title, year, rating, overview, poster_path, categories, cinemaRoom);
+        return Objects.hash(id, title, year, rating, overview, poster_path, categories);
     }
 
     // getters and setters and other add and remove methods
@@ -144,13 +130,5 @@ public class Movie {
 
     public void setCategories(String categories) {
         this.categories = categories;
-    }
-
-    public CinemaRoom getCinemaRoom() {
-        return cinemaRoom;
-    }
-
-    public void setCinemaRoom(CinemaRoom cinemaRoom) {
-        this.cinemaRoom = cinemaRoom;
     }
 }
