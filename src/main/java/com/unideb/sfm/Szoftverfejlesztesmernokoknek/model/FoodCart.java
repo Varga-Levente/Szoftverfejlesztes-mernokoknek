@@ -15,11 +15,15 @@ public class FoodCart {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
-    @OneToOne
+    @ManyToOne
+    @JoinColumn(name = "food_id")
     private Food food;
 
-    @OneToOne
+    @ManyToOne
+    @JoinColumn(name = "user_id")
     private User user;
+
+    private Integer quantity;
 
     public FoodCart(Food food, User user) {
         setFood(food);
