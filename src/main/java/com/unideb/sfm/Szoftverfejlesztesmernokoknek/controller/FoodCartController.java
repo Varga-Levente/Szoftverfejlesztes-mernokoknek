@@ -14,7 +14,7 @@ public class FoodCartController {
     private FoodCartService foodCartService;
 
     @GetMapping("/addToCart/{userId}/{foodId}")
-    public FoodCart addToCart(@PathVariable("foodId") Integer foodId, @PathVariable("userId") Integer userId) {
+    public String addToCart(@PathVariable("foodId") Integer foodId, @PathVariable("userId") Integer userId) {
         return foodCartService.addToCart(foodId, userId);
     }
 

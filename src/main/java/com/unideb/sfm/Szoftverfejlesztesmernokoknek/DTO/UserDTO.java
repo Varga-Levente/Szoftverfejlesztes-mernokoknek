@@ -1,8 +1,9 @@
 package com.unideb.sfm.Szoftverfejlesztesmernokoknek.DTO;
 
-import com.unideb.sfm.Szoftverfejlesztesmernokoknek.model.FoodCart;
 import lombok.Getter;
 import lombok.Setter;
+
+import java.util.List;
 
 @Getter
 @Setter
@@ -13,6 +14,6 @@ public class UserDTO {
     private String email;
     private String password;
 
-    private FoodCart foodCart;
+    private List<FoodCartDTO> foodCarts;
 
 }
