@@ -26,9 +26,9 @@ const Scroller = ({ endpoint, category, extraclass }) => {
             event.preventDefault();
 
             if (event.deltaY < 0) {
-                event.currentTarget.scrollLeft -= 160;
+                event.currentTarget.scrollLeft -= (160)*2;
             } else if (event.deltaY > 0) {
-                event.currentTarget.scrollLeft += 160;
+                event.currentTarget.scrollLeft += (160)*2;
             }
         };
 
