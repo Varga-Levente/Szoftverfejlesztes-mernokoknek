@@ -5,21 +5,33 @@ import com.unideb.sfm.Szoftverfejlesztesmernokoknek.repository.FoodRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+import java.util.SplittableRandom;
+
 @Service
 public class FoodService {
-
     @Autowired
     private FoodRepository foodRepository;
 
+    public Iterable<Food> getAll() {
+        return foodRepository.findAll();
+    }
+
     public Food addFood(Food food) {
-        // Itt lehetőség van validálni az adatokat és további üzleti logikát végrehajtani
         return foodRepository.save(food);
     }
 
-    public void removeFoodById(Long foodId) {
+    public String removeFoodById(Integer foodId) {
         foodRepository.deleteById(foodId);
+        return "Food deleted";
     }
 
-    // További szolgáltatás metódusok, például getFoodById, updateFood stb.
-}
+    public String removeAll() {
+        foodRepository.deleteAll();
+        return "All food deleted";
+    }
 
+    public Food getFoodById(Integer foodId) {
+        return foodRepository.findById(foodId).orElse(null);
+    }
+}
