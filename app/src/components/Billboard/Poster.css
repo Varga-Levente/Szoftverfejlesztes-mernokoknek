@@ -5,6 +5,10 @@
     display: inline-block;
 }
 
+.poster:nth-child(even) .movie-title {
+    color: #fff;
+}
+
 .movie-poster {
     width: 140px;
     display: block;
@@ -18,7 +22,7 @@
     font-weight: 700;
     color: #f74346;
     text-align: left;
-    font-size: 0.8vw;
+    font-size: 0.7vw;
     white-space: normal;
 }
 .poster-title-container {
