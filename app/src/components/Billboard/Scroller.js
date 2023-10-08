@@ -60,7 +60,7 @@ const Scroller = ({ endpoint, category, extraclass }) => {
             <h2 className={`scroller-category ${extraclass}`}>{category1}<sup className="category-sup"> {category2}</sup></h2>
             <div className="d-flex flex-nowrap overflow-x-auto scroll-div">
                 {movies.map((movie) => (
-                    <Poster key={movie.id} title={movie.title} posterPath={movie.poster_path} className="scroll-item" />
+                    <Poster key={movie.id} movieid={movie.id} title={movie.title} posterPath={movie.poster_path} className="scroll-item" />
                 ))}
             </div>
         </div>
