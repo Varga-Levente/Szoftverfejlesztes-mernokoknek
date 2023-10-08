@@ -2,6 +2,8 @@
     position: absolute;
     width: 90%;
     scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
 }
 
 .scroll-item {
@@ -29,6 +31,8 @@
 
 .scroller-container {
     margin-top: 1%;
+    margin:0;
+    padding:0;
 }
 
 .scroller-container:not(:first-child) {

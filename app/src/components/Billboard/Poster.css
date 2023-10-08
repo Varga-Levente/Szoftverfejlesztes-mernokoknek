@@ -25,6 +25,7 @@
     font-size: 0.7vw;
     white-space: normal;
 }
+
 .poster-title-container {
     display: flex;
     flex-direction: column;
@@ -58,4 +59,8 @@
 
 .content-col {
     width: 100%;
+}
+
+.poster-link {
+    text-decoration: none;
 }
