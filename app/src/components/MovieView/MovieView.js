@@ -35,7 +35,7 @@ const MovieView = ({ match }) => {
                 console.error('Hiba történt az API-hívás során:', error);
                 window.location.href = '/';
             });
-    }, []);
+    }, [id]);
 
     return (
         <div className="container viewer">
