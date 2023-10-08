@@ -57,7 +57,7 @@ const MovieView = ({ match }) => {
                                 <p className="movieView-categories">{movieData.categories}</p>
                             </div>
                             <div className="centerflex">
-                                <a className="btn btn-danger btn-lg buy-ticket-btn" role="button">
+                                <a className="btn btn-danger btn-lg buy-ticket-btn" href="#" role="button">
                                     <FontAwesomeIcon icon={faTicket} className="ticket-icon"/>
                                     Buy a Ticket
                                 </a>
