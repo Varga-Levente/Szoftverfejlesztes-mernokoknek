@@ -70,7 +70,7 @@ const MovieView = ({ match }) => {
                         <p className="movieView-overiew">Overview</p>
                         <p className="movieView-overviewtext">{movieData.overview}</p>
                         <p className="movieView-trailer">Trailer</p>
-                        <iframe className="bg-dark bg-opacity-50 d-flex align-items-center align-self-center trailer-video"
+                        <iframe title={movieData.yt_trailer_id} className="bg-dark bg-opacity-50 d-flex align-items-center align-self-center trailer-video"
                                 allowFullScreen frameBorder="0" src={`https://www.youtube-nocookie.com/embed/${movieData.yt_trailer_id}`}
                                 width="800vh" height="450vw"></iframe>
                     </div>
