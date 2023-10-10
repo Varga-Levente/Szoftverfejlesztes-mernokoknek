@@ -1,0 +1,42 @@
+.scroll-div {
+    position: absolute;
+    width: 90%;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+}
+
+.scroll-item {
+    transition: transform 1s ease-in-out;
+}
+
+.scroller-category {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #c0c0c0;
+    text-align: left;
+    font-size: 1.5vw;
+    white-space: normal;
+    z-index: 150;
+    padding-left: 0.5%;
+}
+
+.popular-category {
+    color: #f74346;
+}
+
+.popular-category:before {
+    content: "🔥";
+}
+
+.scroller-container {
+    margin-top: 1%;
+}
+
+.scroller-container:not(:first-child) {
+    margin-top: 20vw;
+}
+
+.category-sup {
+    font-size: 50%;
+}

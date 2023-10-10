@@ -1,0 +1,126 @@
+.centerflex {
+    display: flex;
+    justify-content: center;
+}
+
+.movieView-title {
+    color: #f74346;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 1vw;
+    text-align: center;
+}
+
+.movieView-poster {
+    border-radius: 15px;
+    filter: drop-shadow(0px 0px 20px #2b2b38);
+    width: 34vh;
+    position: relative;
+}
+
+.movieView-categories {
+    color: white;
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 0.6vw;
+}
+
+.movieView-releaseyear {
+    color: white;
+}
+
+.centerflex.columnflex {
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.movieView-overiew {
+    color: #f74346;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 3vh;
+    text-align: left;
+}
+
+.movieView-overviewtext {
+    color: white;
+    text-align: justify;
+    font-family: 'Roboto';
+}
+
+.movieView-trailer {
+    color: #f74346;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 3vh;
+    text-align: left;
+}
+
+.trailer-video {
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.left-col {
+    align-self: center;
+}
+
+.posterdiv {
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+
+.rating-bar {
+    position: absolute;
+    width: 34vh;
+    text-align: center;
+    background-color: #2b2b38;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #c0c0c0;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 2vh;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.buy-ticket-btn {
+    width: 100%;
+    max-width: 14vw;
+    margin-top: 15px;
+    filter: drop-shadow(0px 0px 20px #2b2b38);
+}
+
+.ticket-icon {
+    padding-right: 5px;
+}
+
+.movieView-title {
+    padding: 0;
+    margin: 0;
+}
+
+.movieView-categories {
+    padding: 0;
+    margin: 0;
+}
+
+.viewer {
+    display: flex;
+    align-items: stretch;
+    margin-top: 3%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}

@@ -1,35 +1,93 @@
 [
     {
-        "title": "Meg 2: The Trench",
-        "year": "2023",
-        "rating": 7,
-        "overview": "An exploratory dive into the deepest depths of the ocean of a daring research team spirals into chaos when a malevolent mining operation threatens their mission and forces them into a high-stakes battle for survival.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//4m1Au3YkjqsxF8iwQy0fPYSxE0h.jpg",
-        "categories": "Action;Science Fiction;Horror"
-    },
-    {
-        "title": "Barbie",
-        "year": "2023",
-        "rating": 7.3,
-        "overview": "Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land. However, when they get a chance to go to the real world, they soon discover the joys and perils of living among humans.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//iuFNMS8U5cb6xfzi51Dbkovj7vM.jpg",
-        "categories": "Comedy;Adventure;Fantasy"
-    },
-    {
         "title": "The Nun II",
         "year": "2023",
-        "rating": 6.8,
+        "rating": 7,
         "overview": "In 1956 France, a priest is violently murdered, and Sister Irene begins to investigate. She once again comes face-to-face with a powerful evil.",
         "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//5gzzkR7y3hnY8AD1wXjCnVlHba5.jpg",
+        "yt_trailer_id": "OIC5q-fhuUM",
         "categories": "Horror;Mystery;Thriller"
     },
     {
-        "title": "Indiana Jones and the Dial of Destiny",
+        "title": "Sound of Freedom",
         "year": "2023",
-        "rating": 6.7,
-        "overview": "Finding himself in a new era, and approaching retirement, Indy wrestles with fitting into a world that seems to have outgrown him. But as the tentacles of an all-too-familiar evil return in the form of an old rival, Indy must don his hat and pick up his whip once more to make sure an ancient and powerful artifact doesn't fall into the wrong hands.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//Af4bXE63pVsb2FtbW8uYIyPBadD.jpg",
-        "categories": "Adventure;Action;Fantasy"
+        "rating": 8.1,
+        "overview": "The story of Tim Ballard, a former US government agent, who quits his job in order to devote his life to rescuing children from global sex traffickers.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//qA5kPYZA7FkVvqcEfJRoOy4kpHg.jpg",
+        "yt_trailer_id": "hyyyKcfJRGQ",
+        "categories": "Action;Drama"
+    },
+    {
+        "title": "Gran Turismo",
+        "year": "2023",
+        "rating": 8,
+        "overview": "The ultimate wish-fulfillment tale of a teenage Gran Turismo player whose gaming skills won him a series of Nissan competitions to become an actual professional racecar driver.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//51tqzRtKMMZEYUpSYkrUE7v9ehm.jpg",
+        "yt_trailer_id": "W1qDPFTD3QQ",
+        "categories": "Adventure;Action;Drama"
+    },
+    {
+        "title": "The Equalizer 3",
+        "year": "2023",
+        "rating": 7.2,
+        "overview": "Robert McCall finds himself at home in Southern Italy but he discovers his friends are under the control of local crime bosses. As events turn deadly, McCall knows what he has to do: become his friends' protector by taking on the mafia.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//b0Ej6fnXAP8fK75hlyi2jKqdhHz.jpg",
+        "yt_trailer_id": "WwAUIwb04c4",
+        "categories": "Action;Thriller;Crime"
+    },
+    {
+        "title": "Blue Beetle",
+        "year": "2023",
+        "rating": 7.1,
+        "overview": "Recent college grad Jaime Reyes returns home full of aspirations for his future, only to find that home is not quite as he left it. As he searches to find his purpose in the world, fate intervenes when Jaime unexpectedly finds himself in possession of an ancient relic of alien biotechnology: the Scarab.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//mXLOHHc1Zeuwsl4xYKjKh2280oL.jpg",
+        "yt_trailer_id": "bw8SDCfr3_Y",
+        "categories": "Action;Science Fiction;Adventure"
+    },
+    {
+        "title": "After Everything",
+        "year": "2023",
+        "rating": 6.8,
+        "overview": "Besieged by writer\u2019s block and the crushing breakup with Tessa, Hardin travels to Portugal in search of a woman he wronged in the past \u2013 and to find himself. Hoping to win back Tessa, he realizes he needs to change his ways before he can make the ultimate commitment.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//uQxjZGU6rxSPSMeAJPJQlmfV3ys.jpg",
+        "yt_trailer_id": "NsmopvKNSE4",
+        "categories": "Romance;Drama"
+    },
+    {
+        "title": "Talk to Me",
+        "year": "2023",
+        "rating": 7.2,
+        "overview": "When a group of friends discover how to conjure spirits using an embalmed hand, they become hooked on the new thrill, until one of them goes too far and unleashes terrifying supernatural forces.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//kdPMUMJzyYAc4roD52qavX0nLIC.jpg",
+        "yt_trailer_id": "C9n1qWHxg8Q",
+        "categories": "Horror;Thriller"
+    },
+    {
+        "title": "Meg 2: The Trench",
+        "year": "2023",
+        "rating": 6.9,
+        "overview": "An exploratory dive into the deepest depths of the ocean of a daring research team spirals into chaos when a malevolent mining operation threatens their mission and forces them into a high-stakes battle for survival.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//4m1Au3YkjqsxF8iwQy0fPYSxE0h.jpg",
+        "yt_trailer_id": "UhS-GJRPhw8",
+        "categories": "Action;Science Fiction;Horror"
+    },
+    {
+        "title": "Nowhere",
+        "year": "2023",
+        "rating": 7.8,
+        "overview": "A young pregnant woman named Mia escapes from a country at war by hiding in a maritime container aboard a cargo ship. After a violent storm, Mia gives birth to the child while lost at sea, where she must fight to survive.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//rpzFxv78UvYG5yQba2soO5mMl4T.jpg",
+        "yt_trailer_id": "KDUtdcU10YA",
+        "categories": "Thriller;Drama"
+    },
+    {
+        "title": "Sniper: G.R.I.T. - Global Response & Intelligence Team",
+        "year": "2023",
+        "rating": 7.5,
+        "overview": "When an international terrorist cult threatens global political stability and kidnaps a fellow agent, Ace Sniper Brandon Beckett and the newly-formed Global Response & Intelligence Team \u2013 or G.R.I.T. \u2013 led by Colonel Stone must travel across the world to Malta, infiltrate the cult, and take out its leader to free Lady Death and stop the global threat.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//gcd5TJwXLWeQ2Dn0aRxI8OJIIxK.jpg",
+        "yt_trailer_id": "3UgNRGsQeuc",
+        "categories": "Action;Thriller"
     },
     {
         "title": "Fast X",
@@ -37,39 +95,71 @@
         "rating": 7.3,
         "overview": "Over many missions and against impossible odds, Dom Toretto and his family have outsmarted, out-nerved and outdriven every foe in their path. Now, they confront the most lethal opponent they've ever faced: A terrifying threat emerging from the shadows of the past who's fueled by blood revenge, and who is determined to shatter this family and destroy everything\u2014and everyone\u2014that Dom loves, forever.",
         "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//fiVW06jE7z9YnO4trhaMEdclSiC.jpg",
+        "yt_trailer_id": "cg5z7wgOUig",
         "categories": "Action;Crime;Thriller"
     },
     {
-        "title": "Strays",
+        "title": "Retribution",
         "year": "2023",
-        "rating": 7.4,
-        "overview": "When Reggie is abandoned on the mean city streets by his lowlife owner, Doug, Reggie is certain that his beloved owner would never leave him on purpose. But once Reggie falls in with Bug, a fast-talking, foul-mouthed stray who loves his freedom and believes that owners are for suckers, Reggie finally realizes he was in a toxic relationship and begins to see Doug for the heartless sleazeball that he is.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//n1hqbSCtyBAxaXEl1Dj3ipXJAJG.jpg",
-        "categories": "Comedy;Adventure"
+        "rating": 6.8,
+        "overview": "When a mysterious caller puts a bomb under his car seat, Matt Turner begins a high-speed chase across the city to complete a specific series of tasks. With his kids trapped in the back seat and a bomb that will explode if they get out of the car, a normal commute becomes a twisted game of life or death as Matt follows the stranger's increasingly dangerous instructions in a race against time to save his family.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//oUmmY7QWWn7OhKlcPOnirHJpP1F.jpg",
+        "yt_trailer_id": "qhrVC8BUSLI",
+        "categories": "Action;Mystery;Thriller;Crime"
+    },
+    {
+        "title": "Barbie",
+        "year": "2023",
+        "rating": 7.3,
+        "overview": "Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land. However, when they get a chance to go to the real world, they soon discover the joys and perils of living among humans.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//iuFNMS8U5cb6xfzi51Dbkovj7vM.jpg",
+        "yt_trailer_id": "h_y8-295IB8",
+        "categories": "Comedy;Adventure;Fantasy"
+    },
+    {
+        "title": "Saw X",
+        "year": "2023",
+        "rating": 7.2,
+        "overview": "Between the events of 'Saw' and 'Saw II', a sick and desperate John Kramer travels to Mexico for a risky and experimental medical procedure in hopes of a miracle cure for his cancer, only to discover the entire operation is a scam to defraud the most vulnerable. Armed with a newfound purpose, the infamous serial killer returns to his work, turning the tables on the con artists in his signature visceral way through devious, deranged, and ingenious traps.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//aQPeznSu7XDTrrdCtT5eLiu52Yu.jpg",
+        "yt_trailer_id": "UqcGdmJJVTY",
+        "categories": "Crime;Horror;Thriller"
+    },
+    {
+        "title": "The Exorcist: Believer",
+        "year": "2023",
+        "rating": 5.2,
+        "overview": "When his daughter, Angela, and her friend Katherine, show signs of demonic possession, it unleashes a chain of events that forces single father Victor Fielding to confront the nadir of evil. Terrified and desperate, he seeks out Chris MacNeil, the only person alive who's witnessed anything like it before.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//lxRLC3WOFM2INoyEa3bFGIUApvn.jpg",
+        "yt_trailer_id": "i5p_xNm0wCM",
+        "categories": "Horror"
+    },
+    {
+        "title": "No One Will Save You",
+        "year": "2023",
+        "rating": 6.9,
+        "overview": "An exiled anxiety-ridden homebody must battle an alien who's found its way into her home.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//ehGIDAMaYy6Eg0o8ga0oqflDjqW.jpg",
+        "yt_trailer_id": "LXZpm6t491k",
+        "categories": "Horror;Science Fiction;Thriller"
+    },
+    {
+        "title": "Muzzle",
+        "year": "2023",
+        "rating": 6.3,
+        "overview": "LAPD K-9 officer Jake Rosser has just witnessed the shocking murder of his dedicated partner by a mysterious assailant. As he investigates the shooter\u2019s identity, he uncovers a vast conspiracy that has a chokehold on the city in this thrilling journey through the tangled streets of Los Angeles and the corrupt bureaucracy of the LAPD.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//9GiUF4AsXrWRGEZMjaiaGTlqx3R.jpg",
+        "yt_trailer_id": "rYY5QdEGEZw",
+        "categories": "Action;Crime;Drama;Thriller"
     },
     {
         "title": "Elemental",
         "year": "2023",
         "rating": 7.8,
         "overview": "In a city where fire, water, land and air residents live together, a fiery young woman and a go-with-the-flow guy will discover something elemental: how much they have in common.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//6oH378KUfCEitzJkm07r97L0RsZ.jpg",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//4Y1WNkd88JXmGfhtWR7dmDAo1T2.jpg",
+        "yt_trailer_id": "_JUxMulBL38",
         "categories": "Animation;Comedy;Family;Fantasy;Romance"
-    },
-    {
-        "title": "Sound of Freedom",
-        "year": "2023",
-        "rating": 8,
-        "overview": "The story of Tim Ballard, a former US government agent, who quits his job in order to devote his life to rescuing children from global sex traffickers.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//kSf9svfL2WrKeuK8W08xeR5lTn8.jpg",
-        "categories": "Action;Drama"
-    },
-    {
-        "title": "Teenage Mutant Ninja Turtles: Mutant Mayhem",
-        "year": "2023",
-        "rating": 7.2,
-        "overview": "After years of being sheltered from the human world, the Turtle brothers set out to win the hearts of New Yorkers and be accepted as normal teenagers through heroic acts. Their new friend April O'Neil helps them take on a mysterious crime syndicate, but they soon get in over their heads when an army of mutants is unleashed upon them.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//ueO9MYIOHO7M1PiMUeX74uf8fB9.jpg",
-        "categories": "Animation;Comedy;Action"
     },
     {
         "title": "Transformers: Rise of the Beasts",
@@ -77,375 +167,107 @@
         "rating": 7.5,
         "overview": "When a new threat capable of destroying the entire planet emerges, Optimus Prime and the Autobots must team up with a powerful faction known as the Maximals. With the fate of humanity hanging in the balance, humans Noah and Elena will do whatever it takes to help the Transformers as they engage in the ultimate battle to save Earth.",
         "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//gPbM0MK8CP8A174rmUwGsADNYKD.jpg",
+        "yt_trailer_id": "2-u1H4DEoNI",
         "categories": "Action;Adventure;Science Fiction"
     },
     {
-        "title": "The Nun",
-        "year": "2018",
-        "rating": 5.9,
-        "overview": "A priest with a haunted past and a novice on the threshold of her final vows are sent by the Vatican to investigate the death of a young nun in Romania and confront a malevolent force in the form of a demonic nun.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//sFC1ElvoKGdHJIWRpNB3xWJ9lJA.jpg",
-        "categories": "Horror;Mystery;Thriller"
+        "title": "The Black Book",
+        "year": "2023",
+        "rating": 7.4,
+        "overview": "After his son is wrongly accused of kidnapping, a deacon who has just lost his wife takes matters into his own hands and fights a crooked police gang to clear him.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//kn28W24slBLyGr8ZIZnxNE5YZrY.jpg",
+        "yt_trailer_id": "E_f5GAMFfTM",
+        "categories": "Mystery;Thriller;Action"
     },
     {
-        "title": "Mob Land",
+        "title": "Haunted Mansion",
+        "year": "2023",
+        "rating": 6.8,
+        "overview": "A woman and her son enlist a motley crew of so-called spiritual experts to help rid their home of supernatural squatters.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//8Im6DknDVxRiGXc5t8rVOJyzuNx.jpg",
+        "yt_trailer_id": "IOIKb3Qx93A",
+        "categories": "Fantasy;Comedy"
+    },
+    {
+        "title": "Carl's Date",
+        "year": "2023",
+        "rating": 7.8,
+        "overview": "Carl Fredricksen reluctantly agrees to go on a date with a lady friend\u2014but admittedly has no idea how dating works these days. Ever the helpful friend, Dug steps in to calm Carl's pre-date jitters and offer some tried-and-true tips for making friends\u2014if you're a dog.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//y8NtM6q3PzntqyNRNw6wgicwRYl.jpg",
+        "yt_trailer_id": "5emJgNiFbAA",
+        "categories": "Animation;Adventure;Family"
+    },
+    {
+        "title": "57 Seconds",
         "year": "2023",
         "rating": 6,
-        "overview": "A sheriff tries to keep the peace when a desperate family man violently robs a pill mill with his brother-in-law, alerting an enforcer for the New Orleans mafia.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//yMu1g7A26N6wRFNwSwC7FOcfmCR.jpg",
-        "categories": "Action;Crime;Thriller"
+        "overview": "When a tech blogger lands an interview with a tech guru and stops an attack on him, he finds a mysterious ring that takes him back 57 seconds into the past.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//dfS5qHWFuXyZQnwYREwb7N4qU5p.jpg",
+        "yt_trailer_id": "REnkCxHO8h8",
+        "categories": "Thriller;Science Fiction"
     },
     {
-        "title": "The Flash",
+        "title": "Indiana Jones and the Dial of Destiny",
         "year": "2023",
-        "rating": 6.9,
-        "overview": "When his attempt to save his family inadvertently alters the future, Barry Allen becomes trapped in a reality in which General Zod has returned and there are no Super Heroes to turn to. In order to save the world that he is in and return to the future that he knows, Barry's only hope is to race for his life. But will making the ultimate sacrifice be enough to reset the universe?",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//rktDFPbfHfUbArZ6OOOKsXcv0Bm.jpg",
-        "categories": "Action;Adventure;Science Fiction"
+        "rating": 6.7,
+        "overview": "Finding himself in a new era, and approaching retirement, Indy wrestles with fitting into a world that seems to have outgrown him. But as the tentacles of an all-too-familiar evil return in the form of an old rival, Indy must don his hat and pick up his whip once more to make sure an ancient and powerful artifact doesn't fall into the wrong hands.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//Af4bXE63pVsb2FtbW8uYIyPBadD.jpg",
+        "yt_trailer_id": "WBoDtHx1jAA",
+        "categories": "Adventure;Action"
     },
     {
-        "title": "Heart of Stone",
+        "title": "Teenage Mutant Ninja Turtles: Mutant Mayhem",
         "year": "2023",
-        "rating": 6.9,
-        "overview": "An intelligence operative for a shadowy global peacekeeping agency races to stop a hacker from stealing its most valuable \u2014 and dangerous \u2014 weapon.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//vB8o2p4ETnrfiWEgVxHmHWP9yRl.jpg",
-        "categories": "Thriller;Action"
+        "rating": 7.3,
+        "overview": "After years of being sheltered from the human world, the Turtle brothers set out to win the hearts of New Yorkers and be accepted as normal teenagers through heroic acts. Their new friend April O'Neil helps them take on a mysterious crime syndicate, but they soon get in over their heads when an army of mutants is unleashed upon them.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//ueO9MYIOHO7M1PiMUeX74uf8fB9.jpg",
+        "yt_trailer_id": "7HldRxOEokw",
+        "categories": "Animation;Comedy;Action"
     },
     {
-        "title": "The Little Mermaid",
+        "title": "Let Her Kill You",
         "year": "2023",
-        "rating": 6.6,
-        "overview": "The youngest of King Triton\u2019s daughters, and the most defiant, Ariel longs to find out more about the world beyond the sea, and while visiting the surface, falls for the dashing Prince Eric. With mermaids forbidden to interact with humans, Ariel makes a deal with the evil sea witch, Ursula, which gives her a chance to experience life on land, but ultimately places her life \u2013 and her father\u2019s crown \u2013 in jeopardy.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//ym1dxyOk4jFcSl4Q2zmRrA5BEEN.jpg",
-        "categories": "Adventure;Family;Fantasy;Romance"
+        "rating": 6.8,
+        "overview": "Alone in the mountains of Switzerland, Anne discovers that her isolated chalet is on surveillance and has been bugged. Caught up by her former life as an intelligence secret agent and an affair with her handler, Anne can only count on herself to get out alive.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//lNqSlpZAti3qdcxnquek7cNd3uF.jpg",
+        "yt_trailer_id": "MYgYbIgqB44",
+        "categories": "Thriller;Mystery"
     },
     {
-        "title": "Adipurush",
+        "title": "Amigos",
         "year": "2023",
-        "rating": 5,
-        "overview": "7000 years ago, Ayodhya's Prince Raghava and Prince Sesh along with the Mighty Vanar Warriors travels to the island of Lanka with an aim to rescue Raghava's wife Janaki, who has been abducted by Lankesh, the king of Lanka.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//1H2xEZOixs0z0JKwyjANZiKNNVJ.jpg",
-        "categories": "Action;Adventure;Drama;Fantasy;History"
+        "rating": 4.4,
+        "overview": "Siddharth, a youngman who runs a family business is astonished to find his doppelg\u00e4ngers Manjunath and Michael on getdopple.com. After meeting up in Goa, they come down to Hyderabad to help Siddarth win over Ishika, a girl looking for superman to be her husband. But things take a drastic turn when NIA swings into action to nab Michael, aka Bipin Roy.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//mhPhEvh2ffBdbgiSIjrlkqAGwNH.jpg",
+        "yt_trailer_id": null,
+        "categories": "Action;Thriller"
     },
     {
         "title": "Spider-Man: Across the Spider-Verse",
         "year": "2023",
-        "rating": 8.5,
+        "rating": 8.4,
         "overview": "After reuniting with Gwen Stacy, Brooklyn\u2019s full-time, friendly neighborhood Spider-Man is catapulted across the Multiverse, where he encounters the Spider Society, a team of Spider-People charged with protecting the Multiverse\u2019s very existence. But when the heroes clash on how to handle a new threat, Miles finds himself pitted against the other Spiders and must set out on his own to save those he loves most.",
         "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//8Vt6mWEReuy4Of61Lnj5Xj704m8.jpg",
+        "yt_trailer_id": "ijvjAzPPafA",
         "categories": "Animation;Action;Adventure"
     },
     {
-        "title": "Talk to Me",
-        "year": "2023",
-        "rating": 7.1,
-        "overview": "When a group of friends discover how to conjure spirits using an embalmed hand, they become hooked on the new thrill, until one of them goes too far and unleashes terrifying supernatural forces.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//kdPMUMJzyYAc4roD52qavX0nLIC.jpg",
-        "categories": "Horror;Thriller"
-    },
-    {
-        "title": "The Last Voyage of the Demeter",
-        "year": "2023",
-        "rating": 7.4,
-        "overview": "The crew of the merchant ship Demeter attempts to survive the ocean voyage from Carpathia to London as they are stalked each night by a merciless presence onboard the ship.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//nrtbv6Cew7qC7k9GsYSf5uSmuKh.jpg",
-        "categories": "Horror;Fantasy"
-    },
-    {
-        "title": "John Wick: Chapter 4",
-        "year": "2023",
-        "rating": 7.8,
-        "overview": "With the price on his head ever increasing, John Wick uncovers a path to defeating The High Table. But before he can earn his freedom, Wick must face off against a new enemy with powerful alliances across the globe and forces that turn old friends into foes.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//vZloFAK7NmvMGKE7VkF5UHaz0I.jpg",
-        "categories": "Action;Thriller;Crime"
-    },
-    {
-        "title": "No Hard Feelings",
-        "year": "2023",
-        "rating": 7.2,
-        "overview": "On the brink of losing her childhood home, Maddie discovers an intriguing job listing: wealthy helicopter parents looking for someone to \u201cdate\u201d their introverted 19-year-old son, Percy, before he leaves for college. To her surprise, Maddie soon discovers the awkward Percy is no sure thing.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//gD72DhJ7NbfxvtxGiAzLaa0xaoj.jpg",
-        "categories": "Comedy;Romance"
-    },
-    {
-        "title": "Insidious: The Red Door",
+        "title": "Overhaul",
         "year": "2023",
         "rating": 6.9,
-        "overview": "To put their demons to rest once and for all, Josh Lambert and a college-aged Dalton Lambert must go deeper into The Further than ever before, facing their family's dark past and a host of new and more horrifying terrors that lurk behind the red door.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//d07phJqCx6z5wILDYqkyraorDPi.jpg",
-        "categories": "Horror;Mystery;Thriller"
+        "overview": "When truck racer Roger loses everything, he receives a tempting but dangerous offer: to work as the getaway driver for a gang of thieves.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//6yx14lSACNJ2zRoYyXqecf3QNgr.jpg",
+        "yt_trailer_id": "6vgLc_Goo4g",
+        "categories": "Action;Thriller;Drama"
     },
     {
-        "title": "Oppenheimer",
+        "title": "Operation Napoleon",
         "year": "2023",
-        "rating": 8.3,
-        "overview": "The story of J. Robert Oppenheimer\u2019s role in the development of the atomic bomb during World War II.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
-        "categories": "Drama;History"
-    },
-    {
-        "title": "I Am Rage",
-        "year": "2023",
-        "rating": 10,
-        "overview": "An ancient cult embroiled in a sinister blood trade makes the deadly mistake of abducting a young woman with a violent, shocking past.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//iclmQs4O5dy7EAkbykI1qkowfK2.jpg",
-        "categories": "Action;Thriller;Horror"
-    },
-    {
-        "title": "The Super Mario Bros. Movie",
-        "year": "2023",
-        "rating": 7.8,
-        "overview": "While working underground to fix a water main, Brooklyn plumbers\u2014and brothers\u2014Mario and Luigi are transported down a mysterious pipe and wander into a magical new world. But when the brothers are separated, Mario embarks on an epic quest to find Luigi.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg",
-        "categories": "Animation;Family;Adventure;Fantasy;Comedy"
-    },
-    {
-        "title": "Guardians of the Galaxy Vol. 3",
-        "year": "2023",
-        "rating": 8,
-        "overview": "Peter Quill, still reeling from the loss of Gamora, must rally his team around him to defend the universe along with protecting one of their own. A mission that, if not completed successfully, could quite possibly lead to the end of the Guardians as we know them.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//r2J02Z2OpNTctfOSN1Ydgii51I3.jpg",
-        "categories": "Science Fiction;Adventure;Action"
-    },
-    {
-        "title": "H4Z4RD",
-        "year": "2022",
-        "rating": 6.4,
-        "overview": "Noah loves his girlfriend Lea and their daughter Zita dearly, just about as much as his extremely pimped car with vanity plate \u201cH4Z4RD\u201d. When his cousin offers him a seemingly simple job as a driver, it soon turns into an unlikely and nerve-racking race through Antwerp, which can only result in the end of Noah, his family or the car\u2026",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//1dviyIqBrbnigrbodIvfMQj8mJ0.jpg",
-        "categories": "Action;Comedy"
-    },
-    {
-        "title": "One Piece Film Red",
-        "year": "2022",
-        "rating": 7.4,
-        "overview": "Uta \u2014 the most beloved singer in the world. Her voice, which she sings with while concealing her true identity, has been described as \u201cotherworldly.\u201d She will appear in public for the first time at a live concert. As the venue fills with all kinds of Uta fans \u2014 excited pirates, the Navy watching closely, and the Straw Hats led by Luffy who simply came to enjoy her sonorous performance \u2014 the voice that the whole world has been waiting for is about to resound.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//ogDXuVkO92GcETZfSofXXemw7gb.jpg",
-        "categories": "Animation;Adventure;Action;Fantasy"
-    },
-    {
-        "title": "The Flood",
-        "year": "2023",
-        "rating": 6.9,
-        "overview": "A horde of giant hungry alligators is unleashed on a group of in-transit prisoners and their guards after a massive hurricane floods Louisiana.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//mvjqqklMpHwOxc40rn7dMhGT0Fc.jpg",
-        "categories": "Action;Mystery;Thriller;Horror"
-    },
-    {
-        "title": "Spirit of Fear",
-        "year": "2023",
-        "rating": 4.9,
-        "overview": "Trying to regain his memory, a man must evade a demonic presence while following the clues left for him to discover his past.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//v7htXVrfq9CXhlRXIVofuLUkc7M.jpg",
-        "categories": "Horror"
-    },
-    {
-        "title": "Jagun Jagun",
-        "year": "2023",
-        "rating": 6.5,
-        "overview": "A young man determined to become a powerful warrior joins an elite army, encountering the wrath of a maniacal warlord and the love of a fierce woman.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//n0GXumEMtwgYj2M3YW4Iu0veYJg.jpg",
-        "categories": "Action;Drama"
-    },
-    {
-        "title": "Kandahar",
-        "year": "2023",
-        "rating": 6.7,
-        "overview": "After his mission is exposed, an undercover CIA operative stuck deep in hostile territory in Afghanistan must fight his way out, alongside his Afghan translator, to an extraction point in Kandahar, all whilst avoiding elite enemy forces and foreign spies tasked with hunting them down.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//lCanGgsqF4xD2WA5NF8PWeT3IXd.jpg",
-        "categories": "Action;Thriller"
-    },
-    {
-        "title": "Sympathy for the Devil",
-        "year": "2023",
-        "rating": 6.3,
-        "overview": "After being forced to drive a mysterious passenger at gunpoint, a man finds himself in a high-stakes game of cat and mouse where it becomes clear that not everything is as it seems.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//afGdVMa80LMs6ibLP22CwM5uI4e.jpg",
+        "rating": 7,
+        "overview": "A modern-day lawyer is sucked into an international conspiracy after being accused of a murder she didn't commit. Her only chance of freedom lies in uncovering the secret of an old German WWII aeroplane, long buried deep beneath the ice, before the CIA.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//j2Or0w69bpPXrmkE0hpTzw6hzsr.jpg",
+        "yt_trailer_id": "DvLfCSFtcBo",
         "categories": "Thriller"
-    },
-    {
-        "title": "The Equalizer 3",
-        "year": "2023",
-        "rating": 6.8,
-        "overview": "Robert McCall finds himself at home in Southern Italy but he discovers his friends are under the control of local crime bosses. As events turn deadly, McCall knows what he has to do: become his friends' protector by taking on the mafia.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//p0WBnzgyqxMxbF4UGiqTwBLnwht.jpg",
-        "categories": "Action;Thriller;Crime"
-    },
-    {
-        "title": "The Boogeyman",
-        "year": "2023",
-        "rating": 6.8,
-        "overview": "Still reeling from the tragic death of their mother, a teenage girl and her younger sister find themselves plagued by a sadistic presence in their house and struggle to get their grieving father to pay attention before it\u2019s too late.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//pYwZdnXVnVxAr7dx4MEK7tTK9gI.jpg",
-        "categories": "Horror;Mystery"
-    },
-    {
-        "title": "Gran Turismo",
-        "year": "2023",
-        "rating": 7.5,
-        "overview": "The ultimate wish-fulfillment tale of a teenage Gran Turismo player whose gaming skills won him a series of Nissan competitions to become an actual professional racecar driver.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//51tqzRtKMMZEYUpSYkrUE7v9ehm.jpg",
-        "categories": "Action;Drama;Adventure"
-    },
-    {
-        "title": "The Mistress",
-        "year": "2023",
-        "rating": 4.8,
-        "overview": "Newlyweds Parker and Madeline move into their dream home. As they settle in, they discover a box of old love letters written to the original owner. And as the couple digs into the increasingly obsessive correspondence, a mysterious woman arrives with a horrifying secret that threatens their lives.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//1kdmre0wlUAUk9BvySv4Xoveieg.jpg",
-        "categories": "Horror;Thriller"
-    },
-    {
-        "title": "Hidden Strike",
-        "year": "2023",
-        "rating": 7.1,
-        "overview": "Two elite soldiers must escort civilians through a gauntlet of gunfire and explosions.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//zsbolOkw8RhTU4DKOrpf4M7KCmi.jpg",
-        "categories": "Action;Adventure;Thriller;Comedy"
-    },
-    {
-        "title": "97 Minutes",
-        "year": "2023",
-        "rating": 4.5,
-        "overview": "A hijacked 767 will crash in just 97 minutes when its fuel runs out. Against the strong will of NSA Deputy Toyin, NSA Director Hawkins prepares to have the plane shot down before it does any catastrophic damage on the ground, leaving the fate of the innocent passengers in the hands of Tyler, one of the alleged hijackers on board who is an undercover Interpol agent - or is he?",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//eYGyR8xF8emNs9AJAJSyLXu56kR.jpg",
-        "categories": "Thriller;Action"
-    },
-    {
-        "title": "Avatar: The Way of Water",
-        "year": "2022",
-        "rating": 7.7,
-        "overview": "Set more than a decade after the events of the first film, learn the story of the Sully family (Jake, Neytiri, and their kids), the trouble that follows them, the lengths they go to keep each other safe, the battles they fight to stay alive, and the tragedies they endure.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//t6HIqrRAclMCA60NsSmeqe9RmNV.jpg",
-        "categories": "Science Fiction;Adventure;Action"
-    },
-    {
-        "title": "Resident Evil: Death Island",
-        "year": "2023",
-        "rating": 7.6,
-        "overview": "In San Francisco, Jill Valentine is dealing with a zombie outbreak and a new T-Virus, Leon Kennedy is on the trail of a kidnapped DARPA scientist, and Claire Redfield is investigating a monstrous fish that is killing whales in the bay. Joined by Chris Redfield and Rebecca Chambers, they discover the trail of clues from their separate cases all converge on the same location, Alcatraz Island, where a new evil has taken residence and awaits their arrival.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//qayga07ICNDswm0cMJ8P3VwklFZ.jpg",
-        "categories": "Animation;Action;Horror"
-    },
-    {
-        "title": "Ruby Gillman, Teenage Kraken",
-        "year": "2023",
-        "rating": 7.5,
-        "overview": "Ruby Gillman, a sweet and awkward high school student, discovers she's a direct descendant of the warrior kraken queens. The kraken are sworn to protect the oceans of the world against the vain, power-hungry mermaids. Destined to inherit the throne from her commanding grandmother, Ruby must use her newfound powers to protect those she loves most.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//kgrLpJcLBbyhWIkK7fx1fM4iSvf.jpg",
-        "categories": "Animation;Family;Fantasy;Comedy"
-    },
-    {
-        "title": "My Fault",
-        "year": "2023",
-        "rating": 8.1,
-        "overview": "Noah must leave her city, boyfriend, and friends to move into William Leister's mansion, the flashy and wealthy husband of her mother Rafaela. As a proud and independent 17 year old, Noah resists living in a mansion surrounded by luxury. However, it is there where she meets Nick, her new stepbrother, and the clash of their strong personalities becomes evident from the very beginning.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//w46Vw536HwNnEzOa7J24YH9DPRS.jpg",
-        "categories": "Romance;Drama"
-    },
-    {
-        "title": "Blue Beetle",
-        "year": "2023",
-        "rating": 6.9,
-        "overview": "Recent college grad Jaime Reyes returns home full of aspirations for his future, only to find that home is not quite as he left it. As he searches to find his purpose in the world, fate intervenes when Jaime unexpectedly finds himself in possession of an ancient relic of alien biotechnology: the Scarab.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//vNfL4DYnonltukBrrgMmw94zMYL.jpg",
-        "categories": "Action;Science Fiction;Adventure"
-    },
-    {
-        "title": "Soulcatcher",
-        "year": "2023",
-        "rating": 6.5,
-        "overview": "A military contractor hired to seize a weapon that turns people into savage killers seeks revenge when his brother falls victim to the device.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//l1f9JSPjCfNftigEii1SDK1g2b3.jpg",
-        "categories": "Action;Adventure;Thriller"
-    },
-    {
-        "title": "Knights of the Zodiac",
-        "year": "2023",
-        "rating": 6.7,
-        "overview": "When a headstrong street orphan, Seiya, in search of his abducted sister unwittingly taps into hidden powers, he discovers he might be the only person alive who can protect a reincarnated goddess, sent to watch over humanity. Can he let his past go and embrace his destiny to become a Knight of the Zodiac?",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//qW4crfED8mpNDadSmMdi7ZDzhXF.jpg",
-        "categories": "Fantasy;Action;Adventure"
-    },
-    {
-        "title": "Sakra",
-        "year": "2023",
-        "rating": 6.4,
-        "overview": "Qiao Feng is the respected leader of a roving band of martial artists. After he is wrongfully accused of murder and subsequently exiled, Qiao Feng goes on the run in search of answers about his own mysterious origin story\u2014and the unknown enemies working to destroy him from the shadows.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//vvWyOCmBAND2p9UwaXZdALIDd2W.jpg",
-        "categories": "Action;Drama"
-    },
-    {
-        "title": "The Squad: Home Run",
-        "year": "2023",
-        "rating": 5.7,
-        "overview": "Former Antigang legend Niels Cartier, known for his muscular and unconventional methods, left the force following an intervention that went wrong and led to the death of his wife. When the gang of bank robbers responsible for her death reappears eight years later, Niels won't let anyone stand in his way to seek revenge. Even if it means forming an explosive duo with his temperamental 14-year-old daughter.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//kGclAzPJobEy7qg7LNuFI9grNoh.jpg",
-        "categories": "Action;Drama"
-    },
-    {
-        "title": "The Haunting of the Tower of London",
-        "year": "2022",
-        "rating": 5.9,
-        "overview": "The Two Princes, imprisoned and allegedly murdered in the Bloody Tower within the Tower Of London by Richard III. The story tells how they allegedly came back to haunt the Tower and with guards and inmates starting to die in horrible circumstances, it becomes clear the Two Princes are out for revenge. A chilling ghost story based on the famous mystery.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//3syWckCgiAcsJUjDoC4Skj3Qg2F.jpg",
-        "categories": "Horror;History"
-    },
-    {
-        "title": "Miraculous: Ladybug & Cat Noir, The Movie",
-        "year": "2023",
-        "rating": 7.9,
-        "overview": "A life of an ordinary Parisian teenager Marinette goes superhuman when she becomes Ladybug. Bestowed with magical powers of creation, Ladybug must unite with her opposite, Cat Noir, to save Paris as a new villain unleashes chaos unto the city.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//bBON9XO9Ek0DjRwMBnJNCwC96Cd.jpg",
-        "categories": "Animation;Family;Action;Fantasy;Romance"
-    },
-    {
-        "title": "Cobweb",
-        "year": "2023",
-        "rating": 6.8,
-        "overview": "Eight year old Peter is plagued by a mysterious, constant tapping from inside his bedroom wall\u2014one that his parents insist is all in his imagination. As Peter's fear intensifies, he believes that his parents could be hiding a terrible, dangerous secret and questions their trustworthiness.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//cGXFosYUHYjjdKrOmA0bbjvzhKz.jpg",
-        "categories": "Horror"
-    },
-    {
-        "title": "Mavka: The Forest Song",
-        "year": "2023",
-        "rating": 7.4,
-        "overview": "Mavka \u2014 a Soul of the Forest and its Warden \u2014 faces an impossible choice between love and her duty as guardian to the Heart of the Forest, when she falls in love with a human \u2014 the talented young musician Lukas.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//eeJjd9JU2Mdj9d7nWRFLWlrcExi.jpg",
-        "categories": "Animation;Adventure;Family;Fantasy"
-    },
-    {
-        "title": "Warhorse One",
-        "year": "2023",
-        "rating": 7.2,
-        "overview": "A gunned down Navy SEAL Master Chief must guide a child to safety through a gauntlet of hostile Taliban insurgents and survive the brutal Afghanistan wilderness.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//jP2ik17jvKiV5sGEknMFbZv7WAe.jpg",
-        "categories": "Action;Drama;War"
-    },
-    {
-        "title": "Puss in Boots: The Last Wish",
-        "year": "2022",
-        "rating": 8.3,
-        "overview": "Puss in Boots discovers that his passion for adventure has taken its toll: He has burned through eight of his nine lives, leaving him with only one life left. Puss sets out on an epic journey to find the mythical Last Wish and restore his nine lives.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//kuf6dutpsT0vSVehic3EZIqkOBt.jpg",
-        "categories": "Animation;Family;Fantasy;Adventure;Comedy;Action"
-    },
-    {
-        "title": "Pillow Party Massacre",
-        "year": "2023",
-        "rating": 4.9,
-        "overview": "After a bullying incident leads to tragedy, four former High school friends reconnect at a vacation home where a maniacal killer stalks the night.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//i0IGE0CCfHxsbCNJEPkYgLKdaSA.jpg",
-        "categories": "Horror;Thriller"
-    },
-    {
-        "title": "Extraction 2",
-        "year": "2023",
-        "rating": 7.5,
-        "overview": "Tasked with extracting a family who is at the mercy of a Georgian gangster, Tyler Rake infiltrates one of the world's deadliest prisons in order to save them. But when the extraction gets hot, and the gangster dies in the heat of battle, his equally ruthless brother tracks down Rake and his team to Vienna, in order to get revenge.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//7gKI9hpEMcZUQpNgKrkDzJpbnNS.jpg",
-        "categories": "Action;Thriller"
     },
     {
         "title": "Mission: Impossible - Dead Reckoning Part One",
@@ -453,199 +275,134 @@
         "rating": 7.7,
         "overview": "Ethan Hunt and his IMF team embark on their most dangerous mission yet: To track down a terrifying new weapon that threatens all of humanity before it falls into the wrong hands. With control of the future and the world's fate at stake and dark forces from Ethan's past closing in, a deadly race around the globe begins. Confronted by a mysterious, all-powerful enemy, Ethan must consider that nothing can matter more than his mission\u2014not even the lives of those he cares about most.",
         "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//NNxYkU70HPurnNCSiCjYAmacwm.jpg",
-        "categories": "Action;Adventure;Thriller"
+        "yt_trailer_id": "HF8BcUBUBb4",
+        "categories": "Action;Thriller"
     },
     {
-        "title": "The Pope's Exorcist",
-        "year": "2023",
-        "rating": 7.2,
-        "overview": "Father Gabriele Amorth, Chief Exorcist of the Vatican, investigates a young boy's terrifying possession and ends up uncovering a centuries-old conspiracy the Vatican has desperately tried to keep hidden.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//jFC4LS5qTAT3PinzdEzINfu1CV9.jpg",
-        "categories": "Horror;Thriller"
-    },
-    {
-        "title": "The Goldsmith",
-        "year": "2022",
-        "rating": 5,
-        "overview": "Determined to rob a goldsmith, three young robbers break into his country house. The man and his wife turn out to be less defenseless than they seem.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//3rzz3HryMj8yf6vBNLKnlCCJBPL.jpg",
-        "categories": "Horror;Thriller"
-    },
-    {
-        "title": "Casi muerta",
-        "year": "2023",
-        "rating": 7.5,
-        "overview": "Mar\u00eda and Javi are two lifelong friends. Even though they have drifted apart over the course of the last year, when Mar\u00eda suffers an accident that leaves her at the verge of dying, they reunite and discover that they have always been in love. Now Javi has to decide whether he continues with his new life with an Uruguayan girlfriend, or give a chance to a childhood love that could die out any second.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//gSezYOBs7H3RG8rDcjsK3MqluxN.jpg",
-        "categories": "Comedy;Romance"
-    },
-    {
-        "title": "Guy Ritchie's The Covenant",
-        "year": "2023",
-        "rating": 7.8,
-        "overview": "During the war in Afghanistan, a local interpreter risks his own life to carry an injured sergeant across miles of grueling terrain.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//kVG8zFFYrpyYLoHChuEeOGAd6Ru.jpg",
-        "categories": "War;Action;Thriller"
-    },
-    {
-        "title": "Remember",
-        "year": "2022",
-        "rating": 7.4,
-        "overview": "Pil-ju, an Alzheimer's patient in his 80s, who lost all his family during the Japanese colonial era, and devotes his lifelong revenge before his memories disappear, and a young man in his 20s who helps him.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//8y9mhh3PqGPXbZVhX7Mc25OJpHP.jpg",
-        "categories": "Thriller;Action;Drama"
-    },
-    {
-        "title": "The Seven Deadly Sins: Grudge of Edinburgh Part 2",
-        "year": "2023",
-        "rating": 7.6,
-        "overview": "Reunited with Lancelot for the first time since their tragic accident, Tristan must learn to conquer his inner demons in order to save his mother's life.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//516MFML05KWiPfiQNAsVCGMySc7.jpg",
-        "categories": "Action;Adventure;Fantasy;Animation"
-    },
-    {
-        "title": "Scream VI",
-        "year": "2023",
-        "rating": 7.2,
-        "overview": "Following the latest Ghostface killings, the four survivors leave Woodsboro behind and start a fresh chapter.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//wDWwtvkRRlgTiUr6TyLSMX8FCuZ.jpg",
-        "categories": "Horror;Thriller;Mystery"
-    },
-    {
-        "title": "Kokoro to Karada",
-        "year": "2004",
-        "rating": 0,
-        "overview": "A few years ago,  when Tomomi (Hiroko Akune) was on the way home from school, she saw her friend Keiko (Misaki Mori) about to be raped by a man. Tomomi hit the man in the head with a stone and saved Keiko.  In the present, Keiko, has buried her past, sells her body in Tokyo. One day, Keiko is contacted by Tomomi. They haven't spoken since their high school graduation. They meet and Keiko lets Tomomi stay at her apartment. Soon, the bizarre lives of the two women begins, with Tomomi also selling her body.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//tJSNalCgcqfI8mbI5xFveJGTQDv.jpg",
-        "categories": "Drama"
-    },
-    {
-        "title": "All Ladies Do It",
-        "year": "1992",
-        "rating": 4.7,
-        "overview": "After five years of marriage, Diana discovers the joys of adultery, claiming that she can save her failing relationship through betrayal.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//sVOdtRA4bwZmrVE3qzdJH73jOhL.jpg",
-        "categories": "Comedy;Drama"
-    },
-    {
-        "title": "The Monkey King",
+        "title": "The Flash",
         "year": "2023",
         "rating": 6.9,
-        "overview": "A stick-wielding monkey teams with a young girl on an epic quest for immortality, battling demons, dragons, gods \u2014 and his own ego \u2014 along the way.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//i6ye8ueFhVE5pXatgyRrZ83LBD8.jpg",
-        "categories": "Animation;Fantasy;Adventure;Family;Comedy"
+        "overview": "When his attempt to save his family inadvertently alters the future, Barry Allen becomes trapped in a reality in which General Zod has returned and there are no Super Heroes to turn to. In order to save the world that he is in and return to the future that he knows, Barry's only hope is to race for his life. But will making the ultimate sacrifice be enough to reset the universe?",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//rktDFPbfHfUbArZ6OOOKsXcv0Bm.jpg",
+        "yt_trailer_id": "8YV2hzjGjJw",
+        "categories": "Action;Adventure;Science Fiction"
     },
     {
-        "title": "Viking: Bloodlust",
+        "title": "The Super Mario Bros. Movie",
         "year": "2023",
-        "rating": 7.2,
-        "overview": "A band of vikings are on the run from a blood thirsty group of Berserkers who want to fight to the death.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//xveBJmViwHdgjH3UQQmImkHOW7B.jpg",
-        "categories": "Action;History"
+        "rating": 7.8,
+        "overview": "While working underground to fix a water main, Brooklyn plumbers\u2014and brothers\u2014Mario and Luigi are transported down a mysterious pipe and wander into a magical new world. But when the brothers are separated, Mario embarks on an epic quest to find Luigi.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg",
+        "yt_trailer_id": "6t6xKg7jX0w",
+        "categories": "Animation;Family;Adventure;Fantasy;Comedy"
     },
     {
-        "title": "A Haunting in Venice",
+        "title": "John Wick: Chapter 4",
         "year": "2023",
-        "rating": 8.5,
-        "overview": "Celebrated sleuth Hercule Poirot, now retired and living in self-imposed exile in Venice, reluctantly attends a Halloween s\u00e9ance at a decaying, haunted palazzo. When one of the guests is murdered, the detective is thrust into a sinister world of shadows and secrets.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//1Xgjl22MkAZQUavvOeBqRehrvqO.jpg",
-        "categories": "Drama;Mystery;Crime"
+        "rating": 7.8,
+        "overview": "With the price on his head ever increasing, John Wick uncovers a path to defeating The High Table. But before he can earn his freedom, Wick must face off against a new enemy with powerful alliances across the globe and forces that turn old friends into foes.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//vZloFAK7NmvMGKE7VkF5UHaz0I.jpg",
+        "yt_trailer_id": "eKl7NyhV6VA",
+        "categories": "Action;Thriller;Crime"
     },
     {
-        "title": "The Magic Flute",
-        "year": "2022",
-        "rating": 6,
-        "overview": "A seventeen year old travels from London to the Austrian Alps to attend the legendary Mozart boarding school. There, he discovers a centuries-old forgotten passageway into the fantastic world of Mozart's \"The Magic Flute\".",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//A0rKADffll1kdXQYTXNUeZCFvfo.jpg",
-        "categories": "Adventure;Fantasy;Music;Drama"
-    },
-    {
-        "title": "Justice League: Warworld",
-        "year": "2023",
-        "rating": 7.3,
-        "overview": "Until now, the Justice League has been a loose association of superpowered individuals. But when they are swept away to Warworld, a place of unending brutal gladiatorial combat, Batman, Superman, Wonder Woman and the others must somehow unite to form an unbeatable resistance able to lead an entire planet to freedom.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//qmevjlNDaWoEughGlXFWHbQ4TaR.jpg",
-        "categories": "Animation;Action;Science Fiction;Adventure"
-    },
-    {
-        "title": "Kingdom 2: Far and Away",
-        "year": "2022",
-        "rating": 7.1,
-        "overview": "It follows a young man who dreams of becoming a general and Ying Zheng, whose goal is unification.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//wE4NqJosSPjiyqStBEv67mQbR1b.jpg",
-        "categories": "Action;Adventure;War"
-    },
-    {
-        "title": "The Conjuring: The Devil Made Me Do It",
-        "year": "2021",
-        "rating": 7.5,
-        "overview": "Paranormal investigators Ed and Lorraine Warren encounter what would become one of the most sensational cases from their files. The fight for the soul of a young boy takes them beyond anything they'd ever seen before, to mark the first time in U.S. history that a murder suspect would claim demonic possession as a defense.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//xbSuFiJbbBWCkyCCKIMfuDCA4yV.jpg",
-        "categories": "Horror;Mystery;Thriller"
-    },
-    {
-        "title": "Hypnotic",
-        "year": "2023",
-        "rating": 6.5,
-        "overview": "A detective becomes entangled in a mystery involving his missing daughter and a secret government program while investigating a string of reality-bending crimes.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//mv362kHXz4Yr33wtQhqfcJWFM8G.jpg",
-        "categories": "Mystery;Thriller;Science Fiction"
-    },
-    {
-        "title": "My House",
-        "year": "2023",
-        "rating": 5.5,
-        "overview": "Carla lives life locked inside her house with her kind but tyrannical father. When their isolation is interrupted by a mysterious stranger, Carla questions the reasons for her family's withdrawal from the outside world and discovers dark secrets that redefine their existence.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//dKP2cphhHAsw0ftInIbipWfgB1l.jpg",
-        "categories": "Horror;Mystery;Thriller"
-    },
-    {
-        "title": "Sasaki and Miyano: Graduation",
-        "year": "2023",
-        "rating": 6.7,
-        "overview": "Miyano\u2019s world of Boys\u2019 Love manga turns to reality when chance leads him to Sasaki. Now, Sasaki wants to spend every opportunity with him.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//xjZjNaUVF9mX7ekOL3lvBUi72eQ.jpg",
-        "categories": "Animation;Romance"
-    },
-    {
-        "title": "Between Us",
-        "year": "2023",
-        "rating": 6.2,
-        "overview": "Elodie and Laetitia live in close love and dream of having a child. As Elodie discovers that she cannot get pregnant because of a health problem and encounters financial troubles, they decide to take a roommate.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//agdVHkEJlJ8C7OlyCOpNLTjnNaX.jpg",
-        "categories": "Drama"
-    },
-    {
-        "title": "San Andreas",
-        "year": "2015",
-        "rating": 6.2,
-        "overview": "In the aftermath of a massive earthquake in California, a rescue-chopper pilot makes a dangerous journey across the state in order to rescue his estranged daughter.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//2Gfjn962aaFSD6eST6QU3oLDZTo.jpg",
-        "categories": "Action;Drama;Thriller"
-    },
-    {
-        "title": "Shin Kamen Rider",
+        "title": "Poison",
         "year": "2023",
         "rating": 7,
-        "overview": "A man forced to bear power and stripped of humanity. A woman skeptical of happiness. Takeshi Hongo, an Augmentation made by SHOCKER, and Ruriko Midorikawa, a rebel of the organization, escape while fighting off assassins. What\u2019s justice? What\u2019s evil? Will this violence end? Despite his power, Hongo tries to remain human. Along with freedom, Ruriko has regained a heart. What paths will they choose?",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//9dTO2RygcDT0cQkawABw4QkDegN.jpg",
-        "categories": "Action;Drama;Science Fiction"
+        "overview": "When a poisonous snake slithers onto an Englishman's stomach in India, his associate and a doctor race to save him.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//evgEvYCUGidCyUCxA77EUJiWpVQ.jpg",
+        "yt_trailer_id": "FZVWaqKt81g",
+        "categories": "Comedy"
     },
     {
-        "title": "Killer Book Club",
+        "title": "Kandahar",
         "year": "2023",
-        "rating": 5.7,
-        "overview": "Eight horror-loving friends fight for their lives when a killer clown who seems to know the grim secret they share begins to pick them off, one by one.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//zZH0sAUV0nfEEDBUdWBMLjs2XnN.jpg",
-        "categories": "Horror;Thriller"
+        "rating": 6.9,
+        "overview": "After his mission is exposed, an undercover CIA operative stuck deep in hostile territory in Afghanistan must fight his way out, alongside his Afghan translator, to an extraction point in Kandahar, all whilst avoiding elite enemy forces and foreign spies tasked with hunting them down.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//lCanGgsqF4xD2WA5NF8PWeT3IXd.jpg",
+        "yt_trailer_id": "VlJ-uGKbnuE",
+        "categories": "Action;Thriller"
     },
     {
-        "title": "Alien Invasion",
+        "title": "El hombre del saco",
         "year": "2023",
-        "rating": 5.4,
-        "overview": "A group of friends find a large egg, but little do they know it contains an unwelcome predator. Now they must stop it from reaching civilization.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//kaSvEH3RJvQa6NfAuEVqDMBEk5E.jpg",
-        "categories": "Science Fiction;Horror"
+        "rating": 5.6,
+        "overview": "Explores the Spanish origins of the character's story, where he is a tuberculosis patient from Almeria who will do anything to get well, even consuming the blood of the kids he kidnaps in a sack.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//3EdqlGB2ACpnqsrtKhyacaPhzHK.jpg",
+        "yt_trailer_id": null,
+        "categories": "Horror;Adventure"
+    },
+    {
+        "title": "Oppenheimer",
+        "year": "2023",
+        "rating": 8.3,
+        "overview": "The story of J. Robert Oppenheimer\u2019s role in the development of the atomic bomb during World War II.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+        "yt_trailer_id": "e25RoI3rykw",
+        "categories": "Drama;History"
+    },
+    {
+        "title": "Finding Steve McQueen",
+        "year": "2019",
+        "rating": 6.2,
+        "overview": "In 1972, a gang of close-knit thieves from Youngstown, Ohio attempt to steal $30 million in illegal contributions. Based on the true story of the biggest bank heist in US history.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//uhmNHWTVniHHYKTsWSvSir19K1z.jpg",
+        "yt_trailer_id": "kiTP5h0uZj8",
+        "categories": "Crime"
+    },
+    {
+        "title": "Spy Kids: Armageddon",
+        "year": "2023",
+        "rating": 6.5,
+        "overview": "When the children of the world\u2019s greatest secret agents unwittingly help a powerful game developer unleash a computer virus that gives him control of all technology, they must become spies themselves to save their parents and the world.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//vd8YdaH7dzeIMGTNwQinlSiA1gV.jpg",
+        "yt_trailer_id": "1Lol_yDrqV4",
+        "categories": "Family;Comedy;Action;Adventure"
+    },
+    {
+        "title": "The Creator",
+        "year": "2023",
+        "rating": 7.2,
+        "overview": "Amid a future war between the human race and the forces of artificial intelligence, a hardened ex-special forces agent grieving the disappearance of his wife, is recruited to hunt down and kill the Creator, the elusive architect of advanced AI who has developed a mysterious weapon with the power to end the war\u2014and mankind itself.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//vBZ0qvaRxqEhZwl6LWmruJqWE8Z.jpg",
+        "yt_trailer_id": "hZZ9uMn5AV8",
+        "categories": "Science Fiction;Action;Thriller"
+    },
+    {
+        "title": "Mondocane",
+        "year": "2021",
+        "rating": 6.4,
+        "overview": "In the near future, the southern Italian city of Taranto is surrounded by barbed wire that no one, not even the police, dares to cross. The poorest are left fighting for survival, while gangs compete for the territory. Two thirteen-year-old orphans who grew up together, dream of joining one of the gangs.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//gOuJBz9u1YVWwvx12lJX56yUT6I.jpg",
+        "yt_trailer_id": "ZHooqb2XcHc",
+        "categories": "Action;Crime;Science Fiction;Drama"
+    },
+    {
+        "title": "Summer 1941",
+        "year": "2022",
+        "rating": 5.5,
+        "overview": "Beginning of the Great Patriotic War. Lieutenant Adi Sharipov, together with his platoon, cover the retreat of the regimental headquarters and remain surrounded, behind enemy lines. The enemy drives the squad into the swamp. Fear of the unknown, despondency and doubt haunt the fighters until they realize that waiting and inaction will destroy the squad faster than enemy bullets.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//pBiCR1Rl2YX0tNXg38EFPGRytsS.jpg",
+        "yt_trailer_id": null,
+        "categories": "Action;War"
+    },
+    {
+        "title": "Scooby-Doo! And Krypto, Too!",
+        "year": "2023",
+        "rating": 7.9,
+        "overview": "When the Justice League goes missing and villains overrun Metropolis, there's only one team that can solve this mystery: Scooby-Doo and the gang! But wait, there's a new dog in town \u2013 Krypto \u2013 Superman's Superdog with Super Powers. Mystery Inc. will need all the help it can get when phantoms menace the Justice League's headquarters.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//ntMOnvlYYnio7Fx3xqBu9B1Sz7f.jpg",
+        "yt_trailer_id": "6NfkdZThS4I",
+        "categories": "Animation;Family;Mystery;Fantasy;Comedy"
+    },
+    {
+        "title": "The Little Mermaid",
+        "year": "2023",
+        "rating": 6.5,
+        "overview": "The youngest of King Triton\u2019s daughters, and the most defiant, Ariel longs to find out more about the world beyond the sea, and while visiting the surface, falls for the dashing Prince Eric. With mermaids forbidden to interact with humans, Ariel makes a deal with the evil sea witch, Ursula, which gives her a chance to experience life on land, but ultimately places her life \u2013 and her father\u2019s crown \u2013 in jeopardy.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//ym1dxyOk4jFcSl4Q2zmRrA5BEEN.jpg",
+        "yt_trailer_id": "P-S_u-mPGIo",
+        "categories": "Adventure;Family;Fantasy;Romance"
     },
     {
         "title": "The Equalizer",
@@ -653,150 +410,493 @@
         "rating": 7.2,
         "overview": "McCall believes he has put his mysterious past behind him and dedicated himself to beginning a new, quiet life. But when he meets Teri, a young girl under the control of ultra-violent Russian gangsters, he can\u2019t stand idly by \u2013 he has to help her. Armed with hidden skills that allow him to serve vengeance against anyone who would brutalize the helpless, McCall comes out of his self-imposed retirement and finds his desire for justice reawakened. If someone has a problem, if the odds are stacked against them, if they have nowhere else to turn, McCall will help. He is The Equalizer.",
         "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//9u4yW7yPA0BQ2pv9XwiNzItwvp8.jpg",
+        "yt_trailer_id": "IdWz_uw86IY",
         "categories": "Thriller;Action;Crime"
     },
     {
-        "title": "Evil Dead Rise",
+        "title": "PAW Patrol: The Mighty Movie",
         "year": "2023",
-        "rating": 7,
-        "overview": "A reunion between two estranged sisters gets cut short by the rise of flesh-possessing demons, thrusting them into a primal battle for survival as they face the most nightmarish version of family imaginable.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//5ik4ATKmNtmJU6AYD0bLm56BCVM.jpg",
-        "categories": "Thriller;Horror"
+        "rating": 7.7,
+        "overview": "A magical meteor crash-lands in Adventure City, gives the PAW Patrol pups superpowers, and transforms them into The Mighty Pups. When the Patrol's archrival Humdinger breaks out of jail and teams up with mad scientist Victoria Vance to steal the powers for themselves, the Mighty Pups must save Adventure City and stop the supervillains before it's too late.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//aTvePCU7exLepwg5hWySjwxojQK.jpg",
+        "yt_trailer_id": "gQT57u8T6XQ",
+        "categories": "Animation;Family;Action;Science Fiction"
     },
     {
-        "title": "Zom 100: Bucket List of the Dead",
+        "title": "Cats in the Museum",
         "year": "2023",
-        "rating": 6.9,
-        "overview": "Bullied by his boss, worked around the clock, he's nothing more than a corporate drone. All it takes is a zombie outbreak for him to finally feel alive!",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//kD35dB3KOHrLo1Y3RU5xXJ1hI7.jpg",
-        "categories": "Comedy;Horror;Action"
+        "rating": 7.2,
+        "overview": "A cartoon about the famous four-legged inhabitants of the St. Petersburg Winter Palace - museum cats that protect the territory of the State Hermitage from rats and mice.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//xEyGkeCaqwV4IdjS7dP8YswXWOU.jpg",
+        "yt_trailer_id": null,
+        "categories": "Animation;Comedy"
     },
     {
-        "title": "Sisu",
+        "title": "Guardians of the Galaxy Vol. 3",
         "year": "2023",
-        "rating": 7.5,
-        "overview": "Deep in the wilderness of Lapland, Aatami Korpi is searching for gold but after he stumbles upon Nazi patrol, a breathtaking and gold-hungry chase through the destroyed and mined Lapland wilderness begins.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//ygO9lowFMXWymATCrhoQXd6gCEh.jpg",
-        "categories": "Action;War"
-    },
-    {
-        "title": "Murder City",
-        "year": "2023",
-        "rating": 7,
-        "overview": "A disgraced former cop finds himself working for a ruthless female kingpin to pay off his estranged father\u2019s debt and protect his family.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//gZ1YbdkwyTCmVxZxh1otFnMEnOs.jpg",
-        "categories": "Crime;Thriller;Action"
-    },
-    {
-        "title": "My First Barbie: Happy DreamDay",
-        "year": "2023",
-        "rating": 6.3,
-        "overview": "Sing along with Barbie, Barbie, Teresa, and Renee in this musical adventure as they plan the biggest surprise birthday party ever for Barbie\u2019s sister, Chelsea.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//zUGDo9luTIyiVfPVEmKGa55pIJa.jpg",
-        "categories": "Family;Animation"
-    },
-    {
-        "title": "Spider-Man: No Way Home",
-        "year": "2021",
         "rating": 8,
-        "overview": "Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//5weKu49pzJCt06OPpjvT80efnQj.jpg",
-        "categories": "Action;Adventure;Science Fiction"
+        "overview": "Peter Quill, still reeling from the loss of Gamora, must rally his team around him to defend the universe along with protecting one of their own. A mission that, if not completed successfully, could quite possibly lead to the end of the Guardians as we know them.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//r2J02Z2OpNTctfOSN1Ydgii51I3.jpg",
+        "yt_trailer_id": "3RLT34SwtQc",
+        "categories": "Science Fiction;Adventure;Action"
     },
     {
-        "title": "After Everything",
-        "year": "2023",
-        "rating": 0,
-        "overview": "Besieged by writer\u2019s block and the crushing breakup with Tessa, Hardin travels to Portugal in search of a woman he wronged in the past \u2013 and to find himself. Hoping to win back Tessa, he realizes he needs to change his ways before he can make the ultimate commitment.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//gZLGCibvFY4zmt8sWUZcbBTHRtk.jpg",
-        "categories": "Romance;Drama"
+        "title": "Saw",
+        "year": "2004",
+        "rating": 7.4,
+        "overview": "Obsessed with teaching his victims the value of life, a deranged, sadistic serial killer abducts the morally wayward. Once captured, they must face impossible choices in a horrific game of survival. The victims must fight to win their lives back, or die trying...",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//4da0TS3iQ1IzuyhDS8elgkmOfrN.jpg",
+        "yt_trailer_id": "zaANSeQ3La4",
+        "categories": "Horror;Mystery;Crime"
     },
     {
-        "title": "Babylon 5: The Road Home",
+        "title": "The Rat Catcher",
         "year": "2023",
         "rating": 6.8,
-        "overview": "Travel across the galaxy with John Sheridan as he unexpectedly finds himself transported through multiple timelines and alternate realities in a quest to find his way back home. Along the way he reunites with some familiar faces, while discovering cosmic new revelations about the history, purpose, and meaning of the Universe.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//qlXLiFKf2kvJ4K2VDBC5Z048vm3.jpg",
-        "categories": "Animation;Science Fiction;Action;Adventure"
+        "overview": "In an English village, a reporter and a mechanic listen to a ratcatcher explain his clever plan to outwit his prey.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//29WJ7dOHt48AtXK1J1rONEEvIMN.jpg",
+        "yt_trailer_id": null,
+        "categories": "Comedy"
     },
     {
         "title": "The Nun",
-        "year": "2005",
-        "rating": 5.5,
-        "overview": "Years ago, a cruel and merciless nun turned a boarding school into a living hell for her students until they could no longer bear the abuse, and she mysteriously disappeared. Now the alumnae are being brutally murdered one by one.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//2bDojliSLzGFwxlqQZodJAXHy7H.jpg",
-        "categories": "Horror;Mystery"
+        "year": "2018",
+        "rating": 5.9,
+        "overview": "A priest with a haunted past and a novice on the threshold of her final vows are sent by the Vatican to investigate the death of a young nun in Romania and confront a malevolent force in the form of a demonic nun.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//sFC1ElvoKGdHJIWRpNB3xWJ9lJA.jpg",
+        "yt_trailer_id": "facz93TkBH0",
+        "categories": "Horror;Mystery;Thriller"
     },
     {
-        "title": "Lamborghini: The Man Behind the Legend",
-        "year": "2022",
-        "rating": 6.2,
-        "overview": "Follow the launch of Lamborghini\u2019s career as a manufacturer of tractors, a creator of military vehicles during World War II, and the designer of Lamborghini cars, which he launched in 1963 as the high-end sports car company Automobili Lamborghini.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//RKgnYLhCNGCUkrhiCRrs40rEHe.jpg",
-        "categories": "Drama;History"
-    },
-    {
-        "title": "SpongeBob SquarePants Presents The Tidal Zone",
+        "title": "My Fault",
         "year": "2023",
-        "rating": 8.3,
-        "overview": "GrandPat travels through alternate dimensions and timelines to get home.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//rozwpOPiTEYnXygWGvUPST4lVQa.jpg",
-        "categories": "Animation;Comedy;Adventure"
+        "rating": 8.1,
+        "overview": "Noah must leave her city, boyfriend, and friends to move into William Leister's mansion, the flashy and wealthy husband of her mother Rafaela. As a proud and independent 17 year old, Noah resists living in a mansion surrounded by luxury. However, it is there where she meets Nick, her new stepbrother, and the clash of their strong personalities becomes evident from the very beginning.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//w46Vw536HwNnEzOa7J24YH9DPRS.jpg",
+        "yt_trailer_id": "xY-qRGC6Yu0",
+        "categories": "Drama;Romance"
     },
     {
-        "title": "Ant-Man and the Wasp: Quantumania",
+        "title": "Mojave Diamonds",
         "year": "2023",
-        "rating": 6.4,
-        "overview": "Super-Hero partners Scott Lang and Hope van Dyne, along with with Hope's parents Janet van Dyne and Hank Pym, and Scott's daughter Cassie Lang, find themselves exploring the Quantum Realm, interacting with strange new creatures and embarking on an adventure that will push them beyond the limits of what they thought possible.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//qnqGbB22YJ7dSs4o6M7exTpNxPz.jpg",
-        "categories": "Action;Adventure;Science Fiction"
+        "rating": 5.7,
+        "overview": "A former MMA fighter and his brothers must rescue their kidnapped family from a dangerous crime syndicate after $50M of illegal diamonds gets stolen.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//eauJLqzFy53KR86VNXnzz3wsD6w.jpg",
+        "yt_trailer_id": "QZ_fwgBQ7u0",
+        "categories": "Action;Crime;Thriller"
     },
     {
-        "title": "Creed III",
+        "title": "Doraemon: Nobita's Sky Utopia",
         "year": "2023",
-        "rating": 7.2,
-        "overview": "After dominating the boxing world, Adonis Creed has thrived in his career and family life. When a childhood friend and former boxing prodigy, Damian Anderson, resurfaces after serving a long sentence in prison, he is eager to prove that he deserves his shot in the ring. The face-off between former friends is more than just a fight. To settle the score, Adonis must put his future on the line to battle Damian \u2014 a fighter with nothing to lose.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//cvsXj3I9Q2iyyIo95AecSd1tad7.jpg",
-        "categories": "Drama;Action"
+        "rating": 7,
+        "overview": "Doraemon, Nobita and his friends go to find Utopia, a perfect land in the sky where everyone lives with happiness, using an airship having a time warp function.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//g9ksiIwYUUTWMR1PH22p8YAfUR1.jpg",
+        "yt_trailer_id": "DKHad8YOuxg",
+        "categories": "Animation;Adventure;Science Fiction"
     },
     {
-        "title": "Kingdom 3: The Flame of Fate",
-        "year": "2023",
-        "rating": 7.6,
-        "overview": "It follows Li Xin and Wang Qi as they stand on the battlefield for the first time to fight off an invasion by Zhao, and it also follows Ying Zheng's unknown past.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//lm5LF2eyCcBdCEfvpeyvpujOyPb.jpg",
-        "categories": "Action;Adventure;War"
-    },
-    {
-        "title": "Dampyr",
-        "year": "2022",
-        "rating": 6.5,
-        "overview": "Haunted by nightmares, con artist Harlan Draka wanders through the war-torn Balkan countryside, making money out of ridding superstitious villagers of imaginary monsters. But after being hired by soldiers who are under attack by actual vampires, Harlan discovers the truth: he's a Dampyr, half-human and half-vampire. While trying to stop a Master of the Night and his undead army, Harlan will have to learn to manage his newfound powers and uncover his origins.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//zAWfB7kaEUUrnTX9ZlaeySAAGgM.jpg",
-        "categories": "Horror;Fantasy;Action"
-    },
-    {
-        "title": "Shazam! Fury of the Gods",
-        "year": "2023",
-        "rating": 6.7,
-        "overview": "Billy Batson and his foster siblings, who transform into superheroes by saying \"Shazam!\", are forced to get back into action and fight the Daughters of Atlas, who they must stop from using a weapon that could destroy the world.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//A3ZbZsmsvNGdprRi2lKgGEeVLEH.jpg",
-        "categories": "Comedy;Action;Fantasy"
-    },
-    {
-        "title": "No Way Out",
-        "year": "2021",
-        "rating": 6.5,
-        "overview": "Trying to salvage a relationship, 2 couples go on a weekend camping trip only to find out they aren\u2019t alone in the woods.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//1IxZqwaqJUqMlasGgKdpvGFooWx.jpg",
-        "categories": "Horror;Thriller;Drama;Mystery"
-    },
-    {
-        "title": "Ghosted",
+        "title": "Reptile",
         "year": "2023",
         "rating": 7.1,
-        "overview": "Salt-of-the-earth Cole falls head over heels for enigmatic Sadie \u2014 but then makes the shocking discovery that she\u2019s a secret agent. Before they can decide on a second date, Cole and Sadie are swept away on an international adventure to save the world.",
-        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//liLN69YgoovHVgmlHJ876PKi5Yi.jpg",
-        "categories": "Action;Comedy;Romance"
+        "overview": "Following the brutal murder of a young real estate agent, a hardened detective attempts to uncover the truth in a case where nothing is as it seems, and by doing so dismantles the illusions in his own life.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//soIgqZBoTiTgMqUW0JtxsPWAilQ.jpg",
+        "yt_trailer_id": "1MST_rh4hPE",
+        "categories": "Thriller;Crime;Drama;Mystery"
+    },
+    {
+        "title": "Expend4bles",
+        "year": "2023",
+        "rating": 6.7,
+        "overview": "Armed with every weapon they can get their hands on and the skills to use them, The Expendables are the world\u2019s last line of defense and the team that gets called when all other options are off the table. But new team members with new styles and tactics are going to give \u201cnew blood\u201d a whole new meaning.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//nLOw900kDcbvsSs5YshUXRvWS0Z.jpg",
+        "yt_trailer_id": "0MuGublBY8s",
+        "categories": "Action;Adventure;Thriller"
+    },
+    {
+        "title": "Ghost in the Shell: SAC_2045 Sustainable War",
+        "year": "2021",
+        "rating": 7.3,
+        "overview": "In the year 2045, after an economic disaster known as the Synchronized Global Default, rapid developments in AI propelled the world to enter a state of \"Sustainable War\". However, the public is not aware of the threat that AI has towards the human race.  A compilation film with newly added footage.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//kNTvGWDTxb2spAp9SRLNfOo7kCM.jpg",
+        "yt_trailer_id": "I10CBnlVNPo",
+        "categories": "Animation;Action;Science Fiction"
+    },
+    {
+        "title": "Bottoms",
+        "year": "2023",
+        "rating": 7,
+        "overview": "Unpopular best friends PJ and Josie start a high school self-defense club to meet girls and lose their virginity. They soon find themselves in over their heads when the most popular students start beating each other up in the name of self-defense.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//jeyTQrNEpyE1LZIgVlswYh3sc34.jpg",
+        "yt_trailer_id": "Q_TaL4yiW_w",
+        "categories": "Comedy"
+    },
+    {
+        "title": "Puss in Boots: The Last Wish",
+        "year": "2022",
+        "rating": 8.3,
+        "overview": "Puss in Boots discovers that his passion for adventure has taken its toll: He has burned through eight of his nine lives, leaving him with only one life left. Puss sets out on an epic journey to find the mythical Last Wish and restore his nine lives.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//kuf6dutpsT0vSVehic3EZIqkOBt.jpg",
+        "yt_trailer_id": "z-E5pTQVW8w",
+        "categories": "Adventure;Fantasy;Animation;Comedy;Family;Action"
+    },
+    {
+        "title": "Avatar: The Way of Water",
+        "year": "2022",
+        "rating": 7.7,
+        "overview": "Set more than a decade after the events of the first film, learn the story of the Sully family (Jake, Neytiri, and their kids), the trouble that follows them, the lengths they go to keep each other safe, the battles they fight to stay alive, and the tragedies they endure.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//t6HIqrRAclMCA60NsSmeqe9RmNV.jpg",
+        "yt_trailer_id": "pwA0k1oNrhI",
+        "categories": "Science Fiction;Adventure;Action"
+    },
+    {
+        "title": "Heart of Stone",
+        "year": "2023",
+        "rating": 6.9,
+        "overview": "An intelligence operative for a shadowy global peacekeeping agency races to stop a hacker from stealing its most valuable \u2014 and dangerous \u2014 weapon.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//vB8o2p4ETnrfiWEgVxHmHWP9yRl.jpg",
+        "yt_trailer_id": "2CRR_yWYO0c",
+        "categories": "Thriller;Action"
+    },
+    {
+        "title": "Strays",
+        "year": "2023",
+        "rating": 7.5,
+        "overview": "When Reggie is abandoned on the mean city streets by his lowlife owner, Doug, Reggie is certain that his beloved owner would never leave him on purpose. But once Reggie falls in with Bug, a fast-talking, foul-mouthed stray who loves his freedom and believes that owners are for suckers, Reggie finally realizes he was in a toxic relationship and begins to see Doug for the heartless sleazeball that he is.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//n1hqbSCtyBAxaXEl1Dj3ipXJAJG.jpg",
+        "yt_trailer_id": "paerjkkwN5I",
+        "categories": "Comedy;Adventure"
+    },
+    {
+        "title": "Adipurush",
+        "year": "2023",
+        "rating": 5.5,
+        "overview": "7000 years ago, Ayodhya's Prince Raghava and Prince Sesh along with the Mighty Vanar Warriors travels to the island of Lanka with an aim to rescue Raghava's wife Janaki, who has been abducted by Lankesh, the king of Lanka.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//bNY8xxtLm0HtdPS0kBttK3WKGQf.jpg",
+        "yt_trailer_id": null,
+        "categories": "Action;Adventure;Drama;Fantasy"
+    },
+    {
+        "title": "Miraculous: Ladybug & Cat Noir, The Movie",
+        "year": "2023",
+        "rating": 7.8,
+        "overview": "A life of an ordinary Parisian teenager Marinette goes superhuman when she becomes Ladybug. Bestowed with magical powers of creation, Ladybug must unite with her opposite, Cat Noir, to save Paris as a new villain unleashes chaos unto the city.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//bBON9XO9Ek0DjRwMBnJNCwC96Cd.jpg",
+        "yt_trailer_id": "W0rQUt4odnQ",
+        "categories": "Animation;Family;Action;Fantasy;Romance"
+    },
+    {
+        "title": "The Last Voyage of the Demeter",
+        "year": "2023",
+        "rating": 7.3,
+        "overview": "The crew of the merchant ship Demeter attempts to survive the ocean voyage from Carpathia to London as they are stalked each night by a merciless presence onboard the ship.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//nrtbv6Cew7qC7k9GsYSf5uSmuKh.jpg",
+        "yt_trailer_id": "861511105",
+        "categories": "Thriller;Horror"
+    },
+    {
+        "title": "Ruby Gillman, Teenage Kraken",
+        "year": "2023",
+        "rating": 7.5,
+        "overview": "Ruby Gillman, a sweet and awkward high school student, discovers she's a direct descendant of the warrior kraken queens. The kraken are sworn to protect the oceans of the world against the vain, power-hungry mermaids. Destined to inherit the throne from her commanding grandmother, Ruby must use her newfound powers to protect those she loves most.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//lotWiuWuTGlQ94rzBdy6ZmKZnTA.jpg",
+        "yt_trailer_id": "PQ478NGn7Zg",
+        "categories": "Animation;Family;Fantasy;Comedy"
+    },
+    {
+        "title": "\u00bfQuieres ser mi hijo?",
+        "year": "2023",
+        "rating": 8.9,
+        "overview": "Lu, a conformist woman in her forties, learns that her 15-year partner has been having extramarital affairs. Starting from scratch, she gets involved in an unexpected relationship with a young womanizer.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//6cZbQppNSELFdsV7gvrOflL6DWK.jpg",
+        "yt_trailer_id": null,
+        "categories": "Comedy;Romance"
+    },
+    {
+        "title": "One Piece Film Red",
+        "year": "2022",
+        "rating": 7.4,
+        "overview": "Uta \u2014 the most beloved singer in the world. Her voice, which she sings with while concealing her true identity, has been described as \u201cotherworldly.\u201d She will appear in public for the first time at a live concert. As the venue fills with all kinds of Uta fans \u2014 excited pirates, the Navy watching closely, and the Straw Hats led by Luffy who simply came to enjoy her sonorous performance \u2014 the voice that the whole world has been waiting for is about to resound.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//ogDXuVkO92GcETZfSofXXemw7gb.jpg",
+        "yt_trailer_id": "RCB5XJevS9U",
+        "categories": "Animation;Adventure;Action;Fantasy"
+    },
+    {
+        "title": "Project Legion",
+        "year": "2022",
+        "rating": 3.9,
+        "overview": "A former marine awakens to an apocalyptic sight outside of his window and barricades himself from evil creatures that surround his apartment door and terrorize the city.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//vEfbuchWvISRpqwEUHoxwuxdF0O.jpg",
+        "yt_trailer_id": "g0pGATPHNAc",
+        "categories": "Horror;Science Fiction;Thriller"
+    },
+    {
+        "title": "Insidious: The Red Door",
+        "year": "2023",
+        "rating": 6.8,
+        "overview": "To put their demons to rest once and for all, Josh Lambert and a college-aged Dalton Lambert must go deeper into The Further than ever before, facing their family's dark past and a host of new and more horrifying terrors that lurk behind the red door.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//d07phJqCx6z5wILDYqkyraorDPi.jpg",
+        "yt_trailer_id": "ZoBdltv1u3c",
+        "categories": "Horror;Mystery;Thriller"
+    },
+    {
+        "title": "The Equalizer 2",
+        "year": "2018",
+        "rating": 6.7,
+        "overview": "Robert McCall, who serves an unflinching justice for the exploited and oppressed, embarks on a relentless, globe-trotting quest for vengeance when a long-time girl friend is murdered.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//cQvc9N6JiMVKqol3wcYrGshsIdZ.jpg",
+        "yt_trailer_id": "zxF5W3-Y2hY",
+        "categories": "Action;Thriller;Crime"
+    },
+    {
+        "title": "Scream VI",
+        "year": "2023",
+        "rating": 7.2,
+        "overview": "Following the latest Ghostface killings, the four survivors leave Woodsboro behind and start a fresh chapter.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//wDWwtvkRRlgTiUr6TyLSMX8FCuZ.jpg",
+        "yt_trailer_id": "_c-u23GtbVw",
+        "categories": "Horror;Crime;Thriller"
+    },
+    {
+        "title": "Til Death Do Us Part",
+        "year": "2023",
+        "rating": 6.1,
+        "overview": "After bailing on her wedding, a former bride-to-be must fight off her ex-groom and seven angry killer groomsmen in order to survive the night.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//2JSsduIaJzlScVunHCc6KYBIOjY.jpg",
+        "yt_trailer_id": "81FJNFuzKRU",
+        "categories": "Horror;Thriller;Action"
+    },
+    {
+        "title": "Memories",
+        "year": "1995",
+        "rating": 7.4,
+        "overview": "In this anime anthology, a salvage ship crew happens upon a haunted vessel in \"Magnetic Rose\"; a cold tablet turns a lab worker into a biological weapon in \"Stink Bomb\"; and an urban populace carries on an endless war with an unseen foe in \"Cannon Fodder.\"",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//2e3rs7ZZxf6ENkWcxkOYnq0xuXf.jpg",
+        "yt_trailer_id": "NTyRMfdDfc8",
+        "categories": "Fantasy;Animation;Science Fiction"
+    },
+    {
+        "title": "PAW Patrol: The Movie",
+        "year": "2021",
+        "rating": 7.4,
+        "overview": "Ryder and the pups are called to Adventure City to stop Mayor Humdinger from turning the bustling metropolis into a state of chaos.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//ic0intvXZSfBlYPIvWXpU1ivUCO.jpg",
+        "yt_trailer_id": "LRMTr2VZcr8",
+        "categories": "Animation;Family;Adventure;Comedy"
+    },
+    {
+        "title": "The Wonderful Story of Henry Sugar",
+        "year": "2023",
+        "rating": 7.4,
+        "overview": "A rich man learns about a guru who can see without using his eyes. He sets out to master the skill in order to cheat at gambling.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//A4LTXT8MMZIr4aIwhE4qbGFivBo.jpg",
+        "yt_trailer_id": "4RdncisZ_QA",
+        "categories": "Fantasy;Comedy;Adventure"
+    },
+    {
+        "title": "After",
+        "year": "2019",
+        "rating": 7.1,
+        "overview": "Tessa Young is a dedicated student, dutiful daughter and loyal girlfriend to her high school sweetheart. Entering her first semester of college, Tessa's guarded world opens up when she meets Hardin Scott, a mysterious and brooding rebel who makes her question all she thought she knew about herself -- and what she wants out of life.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//u3B2YKUjWABcxXZ6Nm9h10hLUbh.jpg",
+        "yt_trailer_id": "2ZAdcWHuCmY",
+        "categories": "Romance;Drama"
+    },
+    {
+        "title": "Mavka: The Forest Song",
+        "year": "2023",
+        "rating": 7.3,
+        "overview": "Mavka \u2014 a Soul of the Forest and its Warden \u2014 faces an impossible choice between love and her duty as guardian to the Heart of the Forest, when she falls in love with a human \u2014 the talented young musician Lukas.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//eeJjd9JU2Mdj9d7nWRFLWlrcExi.jpg",
+        "yt_trailer_id": "WZ1je_JJTv8",
+        "categories": "Animation;Adventure;Family;Fantasy"
+    },
+    {
+        "title": "Darkland: The Return",
+        "year": "2023",
+        "rating": 6.6,
+        "overview": "Seven years ago, Zaid went to war against the Copenhagen underworld to avenge his dead brother. His identity as a respected doctor of cardiology and life as a family man is but a fading dream, and in prison Zaid suffers the loss of his son Noah, whom he barely knows. When a police agent approaches Zaid and offers him a deal to be released in exchange for infiltrating the Copenhagen underworld, he sees his chance to reclaim the remnants of the family life he left behind. But everything has a price, and Zaid realizes that he has now seriously endangered his son's life. After all, once you become part of the underworld, is there any way out?",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//c8B4DsVcFVDLVmbpHMHU3RjLNAV.jpg",
+        "yt_trailer_id": null,
+        "categories": "Action;Thriller"
+    },
+    {
+        "title": "After Ever Happy",
+        "year": "2022",
+        "rating": 6.8,
+        "overview": "As a shocking truth about a couple's families emerges, the two lovers discover they are not so different from each other. Tessa is no longer the sweet, simple, good girl she was when she met Hardin \u2014 any more than he is the cruel, moody boy she fell so hard for.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//moogpu8rNkEjTgFyLXwhPghft5w.jpg",
+        "yt_trailer_id": "7rVxq0WB09Q",
+        "categories": "Romance;Drama"
+    },
+    {
+        "title": "No Hard Feelings",
+        "year": "2023",
+        "rating": 7.2,
+        "overview": "On the brink of losing her childhood home, Maddie discovers an intriguing job listing: wealthy helicopter parents looking for someone to \u201cdate\u201d their introverted 19-year-old son, Percy, before he leaves for college. To her surprise, Maddie soon discovers the awkward Percy is no sure thing.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//gD72DhJ7NbfxvtxGiAzLaa0xaoj.jpg",
+        "yt_trailer_id": "BXaRRK6lgeY",
+        "categories": "Comedy;Romance"
+    },
+    {
+        "title": "Saw II",
+        "year": "2005",
+        "rating": 6.6,
+        "overview": "When a new murder victim is discovered with all the signs of Jigsaw's hand, Detective Eric Matthews begins a full investigation and apprehends Jigsaw with little effort. But for Jigsaw, getting caught is just another part of his plan. Eight more of his victims are already fighting for their lives and now it's time for Matthews to join the game.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//gTnaTysN8HsvVQqTRUh8m35mmUA.jpg",
+        "yt_trailer_id": "y979drB7EEI",
+        "categories": "Horror"
+    },
+    {
+        "title": "Forgotten Love",
+        "year": "2023",
+        "rating": 8.4,
+        "overview": "A once-respected surgeon who's lost his family and his memory gets a chance at redemption when he reconnects with someone from his forgotten past.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//tqXqhp0MaDi0SkcN20iNuobXIKs.jpg",
+        "yt_trailer_id": "09FRe2BMh74",
+        "categories": "Drama;Romance"
+    },
+    {
+        "title": "Love Is in the Air",
+        "year": "2023",
+        "rating": 6.3,
+        "overview": "A fiercely independent pilot fighting to keep her family business afloat starts to fall for the man sent by corporate to ground her operation forever.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//cAn1tvopkqATQ0AfV4LK08ReAvp.jpg",
+        "yt_trailer_id": "O2JI6EldneY",
+        "categories": "Romance;Comedy;Drama"
+    },
+    {
+        "title": "Viking: Bloodlust",
+        "year": "2023",
+        "rating": 7,
+        "overview": "A band of vikings are on the run from a blood thirsty group of Berserkers who want to fight to the death.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//xveBJmViwHdgjH3UQQmImkHOW7B.jpg",
+        "yt_trailer_id": "xMMQZIIvliU",
+        "categories": "Action;History"
+    },
+    {
+        "title": "Special Delivery",
+        "year": "2022",
+        "rating": 7.1,
+        "overview": "A black-market cabbie drives criminals at breakneck speeds until she is left in charge of a fugitive's son.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//iFUBAfMDlFOck29BEwS1awH5TB3.jpg",
+        "yt_trailer_id": "RIuWQPIaDFw",
+        "categories": "Action;Crime"
+    },
+    {
+        "title": "Freestyle",
+        "year": "2023",
+        "rating": 6.8,
+        "overview": "Trying to check out a recording from his debut album, a street rapper and his friend run into trouble when a major drug deal turns into a total disaster for them.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//hNPJzlPlIVgTAjb2Mgqwl1QqydK.jpg",
+        "yt_trailer_id": null,
+        "categories": "Crime;Action;Thriller"
+    },
+    {
+        "title": "Sakra",
+        "year": "2023",
+        "rating": 6.7,
+        "overview": "Qiao Feng is the respected leader of a roving band of martial artists. After he is wrongfully accused of murder and subsequently exiled, Qiao Feng goes on the run in search of answers about his own mysterious origin story\u2014and the unknown enemies working to destroy him from the shadows.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//jGKCpt3zzbGZbgoza6HCvecqElM.jpg",
+        "yt_trailer_id": "aHP_pyGtFIk",
+        "categories": "Action;Drama"
+    },
+    {
+        "title": "The Nightmare Before Christmas",
+        "year": "1993",
+        "rating": 7.8,
+        "overview": "Tired of scaring humans every October 31 with the same old bag of tricks, Jack Skellington, the spindly king of Halloween Town, kidnaps Santa Claus and plans to deliver shrunken heads and other ghoulish gifts to children on Christmas morning. But as Christmas approaches, Jack's rag-doll girlfriend, Sally, tries to foil his misguided plans.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//oQffRNjK8e19rF7xVYEN8ew0j7b.jpg",
+        "yt_trailer_id": "lVtetOjX_vk",
+        "categories": "Fantasy;Animation;Family"
+    },
+    {
+        "title": "Coco",
+        "year": "2017",
+        "rating": 8.2,
+        "overview": "Despite his family\u2019s baffling generations-old ban on music, Miguel dreams of becoming an accomplished musician like his idol, Ernesto de la Cruz. Desperate to prove his talent, Miguel finds himself in the stunning and colorful Land of the Dead following a mysterious chain of events. Along the way, he meets charming trickster Hector, and together, they set off on an extraordinary journey to unlock the real story behind Miguel's family history.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//gGEsBPAijhVUFoiNpgZXqRVWJt2.jpg",
+        "yt_trailer_id": "rKCUPdZHyyc",
+        "categories": "Family;Animation;Fantasy;Music;Comedy;Adventure"
+    },
+    {
+        "title": "After We Fell",
+        "year": "2021",
+        "rating": 7.1,
+        "overview": "Just as Tessa's life begins to become unglued, nothing is what she thought it would be. Not her friends nor her family. The only person that she should be able to rely on is Hardin, who is furious when he discovers the massive secret that she's been keeping. Before Tessa makes the biggest decision of her life, everything changes because of revelations about her family.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//dU4HfnTEJDf9KvxGS9hgO7BVeju.jpg",
+        "yt_trailer_id": "NYdNN6C9hfI",
+        "categories": "Romance;Drama"
+    },
+    {
+        "title": "The Flood",
+        "year": "2023",
+        "rating": 6.8,
+        "overview": "A horde of giant hungry alligators is unleashed on a group of in-transit prisoners and their guards after a massive hurricane floods Louisiana.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//mvjqqklMpHwOxc40rn7dMhGT0Fc.jpg",
+        "yt_trailer_id": "xx5sYS0pHJg",
+        "categories": "Action;Mystery;Thriller;Horror"
+    },
+    {
+        "title": "Barbarians",
+        "year": "2021",
+        "rating": 5.4,
+        "overview": "A civilized dinner party in a country house sees four friends, Lucas, Adam, Chloe, and Eve, coming together for a birthday celebration. As the night progresses secrets and lies force themselves into the light and polite pretensions are dropped.  A knock at the door reveals three masked intruders with an agenda of their own.  Will their friendship stand the test? Can they survive the night or will their secrets eventually catch up with them?",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//6dSolFhaf5JOQjgwKCYnEoeJB8z.jpg",
+        "yt_trailer_id": "5OMkzhx2Cc8",
+        "categories": "Thriller;Horror"
+    },
+    {
+        "title": "Mob Land",
+        "year": "2023",
+        "rating": 5.8,
+        "overview": "A sheriff tries to keep the peace when a desperate family man violently robs a pill mill with his brother-in-law, alerting an enforcer for the New Orleans mafia.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//mcz8oi9oCgq1wkA3Wz2kluE94pE.jpg",
+        "yt_trailer_id": "XbcFFw8YdEo",
+        "categories": "Action;Crime;Thriller"
+    },
+    {
+        "title": "Bunker",
+        "year": "2023",
+        "rating": 7.6,
+        "overview": "Trapped in a bunker during World War I, a group of soldiers are faced with an ungodly presence that slowly turns them against each other.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//jOA7chFPVzSyPp2DaRg8hqA1BHr.jpg",
+        "yt_trailer_id": "_c5O7O6smtI",
+        "categories": "Horror;Thriller;War"
+    },
+    {
+        "title": "The Pope's Exorcist",
+        "year": "2023",
+        "rating": 7.1,
+        "overview": "Father Gabriele Amorth, Chief Exorcist of the Vatican, investigates a young boy's terrifying possession and ends up uncovering a centuries-old conspiracy the Vatican has desperately tried to keep hidden.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//jFC4LS5qTAT3PinzdEzINfu1CV9.jpg",
+        "yt_trailer_id": "TEF-y4cmSBo",
+        "categories": "Horror;Thriller"
+    },
+    {
+        "title": "Saw IV",
+        "year": "2007",
+        "rating": 6.2,
+        "overview": "Jigsaw and his apprentice Amanda are dead. Now, upon the news of Detective Kerry's murder, two seasoned FBI profilers, Agent Strahm and Agent Perez, arrive in the terrified community to assist the veteran Detective Hoffman in sifting through Jigsaw's latest grisly remains and piecing together the puzzle. However, when SWAT Commander Rigg is abducted and thrust into a game, the last officer untouched by Jigsaw has but ninety minutes to overcome a series of demented traps and save an old friend...or face the deadly consequences.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//owzhppFoegtjAkEhyxQhRtgPl96.jpg",
+        "yt_trailer_id": "OxwdZMMymqY",
+        "categories": "Horror;Thriller;Crime"
+    },
+    {
+        "title": "Resident Evil: Death Island",
+        "year": "2023",
+        "rating": 7.6,
+        "overview": "In San Francisco, Jill Valentine is dealing with a zombie outbreak and a new T-Virus, Leon Kennedy is on the trail of a kidnapped DARPA scientist, and Claire Redfield is investigating a monstrous fish that is killing whales in the bay. Joined by Chris Redfield and Rebecca Chambers, they discover the trail of clues from their separate cases all converge on the same location, Alcatraz Island, where a new evil has taken residence and awaits their arrival.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//qayga07ICNDswm0cMJ8P3VwklFZ.jpg",
+        "yt_trailer_id": "g6dKnUw7GPo",
+        "categories": "Animation;Action;Horror"
+    },
+    {
+        "title": "Corpse Bride",
+        "year": "2005",
+        "rating": 7.5,
+        "overview": "Set in a 19th-century European village, this stop-motion animation feature follows the story of Victor, a young man whisked away to the underworld and wed to a mysterious corpse bride, while his real bride Victoria waits bereft in the land of the living.",
+        "poster_path": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2//isb2Qow76GpqYmsSyfdMfsYAjts.jpg",
+        "yt_trailer_id": "Jq8EXyd-2Io",
+        "categories": "Romance;Fantasy;Animation"
     }
 ]
