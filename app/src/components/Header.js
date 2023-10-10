@@ -29,7 +29,7 @@ const Header = () => {
         <div className="col col-3">
             <div className="text-end align-middle right">
                 <FontAwesomeIcon icon={faShoppingBasket} className="basketicon"/>
-                <img className="avatar" alt='avatar' src="avatar.jpg" />
+                <img className="avatar" alt='avatar' src="/avatar.jpg" />
             </div>
         </div>
     </div>
