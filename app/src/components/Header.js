@@ -1,12 +1,50 @@
-import React from 'react';
+import React, { useState } from 'react';
+import axios from "axios";
 import './Header.css';
 import './CinemaSelector';
+import { API_URL } from "../Config";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faShoppingBasket } from '@fortawesome/free-solid-svg-icons';
 import CinemaSelector from "./CinemaSelector"; // Hozzáadva a faCaretDown import
 
 const Header = () => {
-  return (
+    const [searchText, setSearchText] = useState('');
+
+    const handleSearch = async () => {
+        if (searchText.trim() === '') {
+            return;
+        }
+
+        try {
+            const response = await axios.get(`${API_URL}/movie/getAll`);
+            const movies = response.data;
+
+            const filteredMovies = movies.filter((movie) =>
+                movie.title.toLowerCase().includes(searchText.toLowerCase())
+            );
+
+            if (filteredMovies.length > 0) {
+                // Ha találtunk találatokat, válaszd ki az elsőt és irányítsd át a felhasználót az /movie/{id}-ra
+                const firstMatch = filteredMovies[0];
+                const movieId = firstMatch.id;
+                window.location.href = `/movie/${movieId}`;
+            } else {
+                // Ha nincs találat, irányítsd át a felhasználót a /test-re
+                window.location.href = '/test';
+            }
+        } catch (error) {
+            console.error('Hiba történt az API hívás közben:', error);
+        }
+    };
+
+    const handleKeyPress = (e) => {
+        if (e.key === 'Enter') {
+            // Ha az Enter billentyűt lenyomják a keresőmezőben, akkor indítsd el a keresést
+            handleSearch();
+        }
+    };
+
+    return (
     <div className="row fixed-top justify-content-center top-nav align-items-center" style={{ height: 90 }}>
         <div className="col text-start col-3">
             <CinemaSelector />
@@ -20,8 +58,11 @@ const Header = () => {
                 className="form-control searchinput"
                 type="text"
                 placeholder="Movie Search"
+                value={searchText}
+                onChange={(e) => setSearchText(e.target.value)}
+                onKeyDown={handleKeyPress}
             />
-            <button className="btn btn-primary searchbtn" type="button">
+            <button className="btn btn-primary searchbtn" type="button" onClick={handleSearch}>
                 <FontAwesomeIcon icon={faSearch} style={{ fontSize: 22 }} />
             </button>
             </div>
@@ -33,7 +74,7 @@ const Header = () => {
             </div>
         </div>
     </div>
-  );
+    );
 }
 
 export default Header;

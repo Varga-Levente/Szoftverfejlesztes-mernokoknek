@@ -13,6 +13,11 @@ const Scroller = ({ endpoint, category, extraclass }) => {
                 const movieData = response.data;
                 console.log('API hívás eredménye:', movieData);
                 setMovies(movieData);
+                //Set all .scroller-container opacity to 1
+                const scrollerContainers = document.querySelectorAll(".scroller-container");
+                scrollerContainers.forEach((scrollerContainer) => {
+                    scrollerContainer.style.opacity = 1;
+                });
             })
             .catch((error) => {
                 console.error('API hívás sikertelen:', error);
@@ -26,9 +31,9 @@ const Scroller = ({ endpoint, category, extraclass }) => {
             event.preventDefault();
 
             if (event.deltaY < 0) {
-                event.currentTarget.scrollLeft -= 160;
+                event.currentTarget.scrollLeft -= (160)*2;
             } else if (event.deltaY > 0) {
-                event.currentTarget.scrollLeft += 160;
+                event.currentTarget.scrollLeft += (160)*2;
             }
         };
 
