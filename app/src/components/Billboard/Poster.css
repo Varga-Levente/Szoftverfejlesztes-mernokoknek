@@ -3,7 +3,7 @@
     float: left;
     margin-right: 10px;
     display: inline-block;
-    max-height: 320px;
+    padding-bottom: 0.5%;
 }
 
 .poster:nth-child(even) .movie-title {
