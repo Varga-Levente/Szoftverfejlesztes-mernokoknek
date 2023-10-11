@@ -22,8 +22,13 @@ const MovieView = ({ match }) => {
                     //The categories separated by ; change it to ,
                     data.categories = data.categories.replace(/;/g, ', ');
                     setMovieData(data);
-                    console.log(data);
+                    //console.log(data);
                     //If the data stored modify .viewer opacity to 1
+                    //If yt_trailer_id is null add visualy hidden class to the trailer-video iframe
+                    if (data.yt_trailer_id === null) {
+                        document.querySelector('.trailer-video').classList.add('visually-hidden');
+                        document.querySelector('.movieView-trailer').classList.add('visually-hidden');
+                    }
                     document.querySelector('.viewer').style.opacity = 1;
                 } else {
                     console.error('Hiba történt az API-hívás során:', response.statusText);
@@ -73,7 +78,8 @@ const MovieView = ({ match }) => {
                         <p className="movieView-trailer">Trailer</p>
                         <iframe title={movieData.yt_trailer_id} className="bg-dark bg-opacity-50 d-flex align-items-center align-self-center trailer-video"
                                 allowFullScreen frameBorder="0" src={`https://www.youtube-nocookie.com/embed/${movieData.yt_trailer_id}`}
-                                width="800vh" height="450vw"></iframe>
+                                width="800vh" height="450vw">
+                        </iframe>
                     </div>
                 </div>
             </div>
