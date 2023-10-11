@@ -52,8 +52,9 @@ const MovieView = ({ match }) => {
                     <div className="row">
                         <div className="col">
                             <div className="centerflex columnflex">
-                                <p className="movieView-title">{movieData.title}<sup
-                                    className="movieView-releaseyear">({movieData.year})</sup></p>
+                                <p className="movieView-title">{movieData.title}
+                                    <sup className="movieView-releaseyear"> ({movieData.year})</sup>
+                                </p>
                                 <p className="movieView-categories">{movieData.categories}</p>
                             </div>
                             <div className="centerflex">
