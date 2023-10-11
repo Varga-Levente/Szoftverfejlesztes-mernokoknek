@@ -5,7 +5,7 @@ import './CinemaSelector';
 import { API_URL } from "../Config";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faShoppingBasket } from '@fortawesome/free-solid-svg-icons';
-import CinemaSelector from "./CinemaSelector"; // Hozzáadva a faCaretDown import
+import CinemaSelector from "./CinemaSelector";
 
 const Header = () => {
     const [searchText, setSearchText] = useState('');
@@ -30,7 +30,7 @@ const Header = () => {
                 window.location.href = `/movie/${movieId}`;
             } else {
                 // Ha nincs találat, irányítsd át a felhasználót a /test-re
-                window.location.href = '/test';
+                window.location.href = '/error?err=No%20movie%20found!';
             }
         } catch (error) {
             console.error('Hiba történt az API hívás közben:', error);
@@ -69,8 +69,12 @@ const Header = () => {
         </div>
         <div className="col col-3">
             <div className="text-end align-middle right">
-                <FontAwesomeIcon icon={faShoppingBasket} className="basketicon"/>
-                <img className="avatar" alt='avatar' src="/avatar.jpg" />
+                <a href={"/cart"}>
+                    <FontAwesomeIcon icon={faShoppingBasket} className="basketicon"/>
+                </a>
+                <a href={"/profile"}>
+                    <img className="avatar" alt='avatar' src="/avatar.jpg" />
+                </a>
             </div>
         </div>
     </div>

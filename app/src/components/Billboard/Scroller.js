@@ -11,7 +11,7 @@ const Scroller = ({ endpoint, category, extraclass }) => {
             .get(endpoint)
             .then((response) => {
                 const movieData = response.data;
-                console.log('API hívás eredménye:', movieData);
+                console.log('SCROLLER | API hívás eredménye:', movieData);
                 setMovies(movieData);
                 //Set all .scroller-container opacity to 1
                 const scrollerContainers = document.querySelectorAll(".scroller-container");
@@ -20,7 +20,7 @@ const Scroller = ({ endpoint, category, extraclass }) => {
                 });
             })
             .catch((error) => {
-                console.error('API hívás sikertelen:', error);
+                console.error('SCROLLER | API hívás sikertelen:', error);
             });
     }, [endpoint]);
 
