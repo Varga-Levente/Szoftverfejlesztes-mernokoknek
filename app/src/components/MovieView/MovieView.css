@@ -103,6 +103,14 @@
     filter: drop-shadow(0px 0px 20px #2b2b38);
 }
 
+.buy-ticket-btn:visited {
+    color: white;
+}
+
+.buy-ticket-btn:hover {
+    background-color: #f62a2d;
+}
+
 .ticket-icon {
     padding-right: 5px;
 }
