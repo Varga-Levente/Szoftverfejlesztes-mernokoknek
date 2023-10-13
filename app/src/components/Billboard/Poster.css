@@ -6,6 +6,10 @@
     padding-bottom: 0.5%;
 }
 
+.poster:nth-child(even) .movie-title {
+    color: #fff;
+}
+
 .movie-poster {
     width: 140px;
     display: block;
