@@ -10,6 +10,7 @@ function App() {
 
     useEffect(() => {
         const timeout = setTimeout(() => {
+            document.querySelector('.loadinganim').classList.add('hidden');
             setShowLoading(false);
         }, 3000);
 

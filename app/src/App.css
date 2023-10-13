@@ -126,6 +126,10 @@ body {
   transition: opacity .5s ease-in;
 }
 
+.hidden {
+  display: none;
+}
+
 .loader {
   position: absolute;
   top: 50%;
