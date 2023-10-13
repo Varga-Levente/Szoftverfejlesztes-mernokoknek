@@ -30,7 +30,7 @@ const ContentRow = () => {
     }, []);
 
     return (
-        <div className="row" style={{ height: '100%' }}>
+        <div className="row" style={{ height: '100%', paddingTop: '90px' }}>
             <div className="col col-1" style={{ position: 'relative' }}>
                 <VerticalMenu />
             </div>

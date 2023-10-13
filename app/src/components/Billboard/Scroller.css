@@ -34,7 +34,7 @@
 }
 
 .scroller-container:not(:first-child) {
-    margin-top: 18vw;
+    margin-top: 16vw;
 }
 
 .category-sup {
