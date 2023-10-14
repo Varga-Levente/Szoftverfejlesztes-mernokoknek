@@ -10,7 +10,7 @@ const CinemaSelector = () => {
                 <div className="row">
                     <div className="col-sm-10 col-md-10 col-xxl-10">
                         <div className="row">
-                            <div className="col-xxl-12"><span className="choosecinema">Choose Cinama</span></div>
+                            <div className="col-xxl-12"><span className="choosecinema">Choose Cinema</span></div>
                         </div>
                         <div className="row">
                             <div className="col"><span className="cityname">Debrecen</span></div>
