@@ -12,7 +12,7 @@ function App() {
         const timeout = setTimeout(() => {
             document.querySelector('.loadinganim').classList.add('hidden');
             setShowLoading(false);
-        }, 3000);
+        }, 1500);
 
         return () => clearTimeout(timeout);
     }, []);
