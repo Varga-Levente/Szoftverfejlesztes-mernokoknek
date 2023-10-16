@@ -45,7 +45,7 @@ const Header = () => {
     };
 
     return (
-    <div className="row fixed-top justify-content-center top-nav align-items-center" style={{ height: 90 }}>
+    <div className="row fixed-top justify-content-center top-nav align-items-center" style={{ height: '90',  zIndex: '998' }}>
         <div className="col text-start col-3">
             <CinemaSelector />
         </div>
