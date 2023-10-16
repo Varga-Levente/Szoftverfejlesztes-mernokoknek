@@ -17,7 +17,9 @@ const CinemaSelector = () => {
                         </div>
                     </div>
                     <div className="col-sm-2 col-md-2 col-xxl-2 d-flex arrowcontainer">
+                        <button  className="btn">
                         <FontAwesomeIcon icon={faCaretDown} className="selectarrow" />
+                        </button>
                     </div>
                 </div>
             </div>
