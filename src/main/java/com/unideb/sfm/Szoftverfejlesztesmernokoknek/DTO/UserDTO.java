@@ -12,7 +12,8 @@ public class UserDTO {
 
     private String fullName;
     private String email;
-    private String password;
+    private String pw_hash;
+    private String pw_salt;
 
     private List<FoodCartDTO> foodCarts;
 

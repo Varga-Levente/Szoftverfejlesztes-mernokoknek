@@ -51,7 +51,8 @@ public class UserController {
         userDTO.setId(user.getId());
         userDTO.setFullName(user.getFullName());
         userDTO.setEmail(user.getEmail());
-        userDTO.setPassword(user.getPassword());
+        userDTO.setPw_hash(user.getPw_hash());
+        userDTO.setPw_salt(user.getPw_salt());
 
         List<FoodCart> foodCarts = foodCartRepository.findAllByUser(user);
         List<FoodCartDTO> foodCartDTOs = new ArrayList<>();
