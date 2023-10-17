@@ -10,14 +10,16 @@ const CinemaSelector = () => {
                 <div className="row">
                     <div className="col-sm-10 col-md-10 col-xxl-10">
                         <div className="row">
-                            <div className="col-xxl-12"><span className="choosecinema">Choose Cinama</span></div>
+                            <div className="col-xxl-12"><span className="choosecinema">Choose Cinema</span></div>
                         </div>
                         <div className="row">
                             <div className="col"><span className="cityname">Debrecen</span></div>
                         </div>
                     </div>
                     <div className="col-sm-2 col-md-2 col-xxl-2 d-flex arrowcontainer">
+                        <button  className="btn">
                         <FontAwesomeIcon icon={faCaretDown} className="selectarrow" />
+                        </button>
                     </div>
                 </div>
             </div>

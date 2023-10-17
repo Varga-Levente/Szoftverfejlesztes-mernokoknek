@@ -35,3 +35,11 @@
 .selectarrow {
     color: #F74346;
 }
+
+.btn
+{
+    border: none;
+}
+
+.btn:hover {background-color: #161621;}
+.btn:focus {background-color: #161621;}
