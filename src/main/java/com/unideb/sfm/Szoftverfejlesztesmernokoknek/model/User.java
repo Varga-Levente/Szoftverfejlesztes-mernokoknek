@@ -14,5 +14,6 @@ public class User {
     private int id;
     private String fullName;
     private String email;
-    private String password;
+    private String pw_hash;
+    private String pw_salt;
 }
