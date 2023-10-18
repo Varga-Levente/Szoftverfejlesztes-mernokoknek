@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from "axios";
 import './Header.css';
 import './CinemaSelector';
@@ -9,6 +9,21 @@ import CinemaSelector from "./CinemaSelector";
 
 const Header = () => {
     const [searchText, setSearchText] = useState('');
+    // Use the useState hook to track the click state
+    const [clicked, setClicked] = useState(false);
+
+    useEffect(() => {
+        // Check if the user is on the "localhost:3000/cart" page
+        if (window.location.pathname === '/cart') {
+            setClicked(true);
+        }
+    }, []);
+
+    // Function to handle the click event
+    const handleCartClick = () => {
+        // Set the clicked state to true
+        setClicked(true);
+    };
 
     const handleSearch = async () => {
         if (searchText.trim() === '') {
@@ -69,8 +84,8 @@ const Header = () => {
         </div>
         <div className="col col-3">
             <div className="text-end align-middle right">
-                <a href={"/cart"}>
-                    <FontAwesomeIcon icon={faShoppingBasket} className="basketicon"/>
+                <a href={"/cart"} onClick={handleCartClick}>
+                    <FontAwesomeIcon icon={faShoppingBasket} className={clicked ? "basketicon clicked" : "basketicon"}/>
                 </a>
                 <a href={"/profile"}>
                     <img className="avatar" alt='avatar' src="/avatar.jpg" />
