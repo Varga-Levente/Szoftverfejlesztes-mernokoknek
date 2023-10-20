@@ -1,0 +1,127 @@
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import Swal from 'sweetalert2';
+
+const Login = () => {
+    const [formData, setFormData] = useState({
+        username: '',
+        password: '',
+    });
+    const [userData, setUserData] = useState(JSON.parse(localStorage.getItem('user')) || null);
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({
+            ...formData,
+            [name]: value,
+        });
+    };
+
+    const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer);
+            toast.addEventListener('mouseleave', Swal.resumeTimer);
+        }
+    });
+
+    const handleLogout = () => {
+        // Töröld a felhasználói adatokat a localStorage-ból
+        localStorage.removeItem('user');
+        // Töröld a felhasználói adatokat a komponens állapotából
+        setUserData(null);
+        Toast.fire({
+            icon: 'success',
+            title: 'Kijelentkezés sikeres'
+        });
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        try {
+            const response = await axios.post('http://localhost:8080/api/v1/auth/signin', formData);
+
+            if (response.status === 200) {
+                console.log('Sikeres bejelentkezés');
+                console.log(response.data);
+
+                // Mentsd el a felhasználói adatokat a localStorage-ban
+                localStorage.setItem('user', JSON.stringify(response.data));
+                setUserData(response.data);
+
+                Toast.fire({
+                    icon: 'success',
+                    title: 'Bejelentkezés sikeres'
+                });
+            } else {
+                Toast.fire({
+                    icon: 'error',
+                    title: 'Hibás felhasználónév vagy jelszó!'
+                });
+            }
+        } catch (error) {
+            Toast.fire({
+                icon: 'error',
+                title: 'Hiba történt a bejelentkezés során!'
+            });
+            console.error('Hiba történt:', error);
+        }
+    };
+
+    useEffect(() => {
+        // Ellenőrizd a localStorage-t a komponens betöltésekor
+        const storedUser = JSON.parse(localStorage.getItem('user'));
+        if (storedUser) {
+            setUserData(storedUser);
+        }
+    }, []);
+
+    return (
+        <div style={{ color: 'white' }}>
+            {userData ? (
+                <div>
+                    <h1>Bejelentkezve</h1>
+                    <p>id: {userData.id}</p>
+                    <p>fullName: {userData.fullName}</p>
+                    <p>username: {userData.username}</p>
+                    <p>email: {userData.email}</p>
+                    <p>roles: {userData.roles.join(', ')}</p>
+                    <p>accessToken: {userData.accessToken}</p>
+                    <p>tokenType: {userData.tokenType}</p>
+                    <br />
+                    <button onClick={handleLogout}>Logout</button>
+                </div>
+            ) : (
+                <form onSubmit={handleSubmit}>
+                    <h1>Bejelentkezés</h1>
+                    <div>
+                        <label>Felhasználónév </label>
+                        <input
+                            type="text"
+                            name="username"
+                            value={formData.username}
+                            onChange={handleChange}
+                        />
+                    </div>
+                    <div>
+                        <label>Jelszó </label>
+                        <input
+                            type="password"
+                            name="password"
+                            value={formData.password}
+                            onChange={handleChange}
+                        />
+                    </div>
+                    <button type="submit">Bejelentkezés</button>
+                </form>
+            )}
+        </div>
+    );
+};
+
+export default Login;
