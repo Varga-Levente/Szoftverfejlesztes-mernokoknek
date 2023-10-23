@@ -69,7 +69,8 @@ public class AuthController {
                         userDetails.getUsername(),
                         userDetails.getFullName(),
                         userDetails.getEmail(),
-                        roles));
+                        roles,
+                        userDetails.getProfileImage()));
   }
 
   @PostMapping("/signup")
