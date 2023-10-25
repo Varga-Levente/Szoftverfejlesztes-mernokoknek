@@ -130,7 +130,7 @@ const Register = () => {
                         <div className="col-md-12">
                             <div className="input-container">
                                 <input
-                                    className={`form-control fullname-input ${errors.fullName && 'is-invalid'}`}
+                                    className={`regforminput form-control fullname-input ${errors.fullName && 'is-invalid'}`}
                                     type="text"
                                     placeholder="FULL NAME"
                                     name="fullName"
@@ -139,7 +139,7 @@ const Register = () => {
                                 />
                                 {errors.fullName && <p className="error-text">{errors.fullName}</p>}
                                 <input
-                                    className={`form-control username-input ${errors.username && 'is-invalid'}`}
+                                    className={`regforminput form-control username-input ${errors.username && 'is-invalid'}`}
                                     type="text"
                                     placeholder="USERNAME"
                                     name="username"
@@ -148,7 +148,7 @@ const Register = () => {
                                 />
                                 {errors.username && <p className="error-text">{errors.username}</p>}
                                 <input
-                                    className={`form-control email-input ${errors.email && 'is-invalid'}`}
+                                    className={`regforminput form-control email-input ${errors.email && 'is-invalid'}`}
                                     type="email"
                                     placeholder="EMAIL"
                                     name="email"
@@ -157,7 +157,7 @@ const Register = () => {
                                 />
                                 {errors.email && <p className="error-text">{errors.email}</p>}
                                 <input
-                                    className={`form-control password-input ${errors.password && 'is-invalid'}`}
+                                    className={`regforminput form-control password-input ${errors.password && 'is-invalid'}`}
                                     type="password"
                                     placeholder="PASSWORD"
                                     name="password"
@@ -166,7 +166,7 @@ const Register = () => {
                                 />
                                 {errors.password && <p className="error-text">{errors.password}</p>}
                                 <input
-                                    className={`form-control password-input ${errors.confirmPassword && 'is-invalid'}`}
+                                    className={`regforminput form-control password-input ${errors.confirmPassword && 'is-invalid'}`}
                                     type="password"
                                     placeholder="CONFIRM PASSWORD"
                                     name="confirmPassword"
