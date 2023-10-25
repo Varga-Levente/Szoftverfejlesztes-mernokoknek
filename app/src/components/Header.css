@@ -104,5 +104,8 @@
 
   .basketicon:hover {
     color: #F74346;
-    padding-bottom: 2%;
+  }
+
+  .basketicon.clicked {
+    color: #F74346;
   }

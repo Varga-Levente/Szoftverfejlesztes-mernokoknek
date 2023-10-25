@@ -12,8 +12,12 @@
     "axios": "^1.5.1",
     "bootstrap": "^5.3.2",
     "dotenv": "^16.3.1",
+<<<<<<< HEAD
     "jsonwebtoken": "^9.0.2",
     "material-icons": "^1.13.11",
+=======
+    "material-icons": "^1.13.12",
+>>>>>>> main
     "react": "^18.2.0",
     "react-cookie": "^4.1.1",
     "react-dom": "^18.2.0",

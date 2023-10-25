@@ -9,7 +9,25 @@ import CinemaSelector from "./CinemaSelector";
 
 const Header = () => {
     const [searchText, setSearchText] = useState('');
+<<<<<<< HEAD
     const [user, setUser] = useState(null);
+=======
+    // Use the useState hook to track the click state
+    const [clicked, setClicked] = useState(false);
+
+    useEffect(() => {
+        // Check if the user is on the "localhost:3000/cart" page
+        if (window.location.pathname === '/cart') {
+            setClicked(true);
+        }
+    }, []);
+
+    // Function to handle the click event
+    const handleCartClick = () => {
+        // Set the clicked state to true
+        setClicked(true);
+    };
+>>>>>>> main
 
     const handleSearch = async () => {
         if (searchText.trim() === '') {
@@ -81,8 +99,8 @@ const Header = () => {
         </div>
         <div className="col col-3">
             <div className="text-end align-middle right">
-                <a href={"/cart"}>
-                    <FontAwesomeIcon icon={faShoppingBasket} className="basketicon"/>
+                <a href={"/cart"} onClick={handleCartClick}>
+                    <FontAwesomeIcon icon={faShoppingBasket} className={clicked ? "basketicon clicked" : "basketicon"}/>
                 </a>
                 <a href={user ? "/profile" : "/login"}>
                     <img className="avatar" alt='avatar' src={user ? user.profileImage : "avatar.jpg"} />
