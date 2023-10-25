@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Register.css';
+import {API_URL} from '../Config';
 import Swal from 'sweetalert2';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSignOutAlt, faTimes, faUserPlus } from '@fortawesome/free-solid-svg-icons';
@@ -83,7 +84,7 @@ const Register = () => {
             //Any other response, show an error message using Swal.fire() (500 or 401 status code)
 
             //Create the axios request here and get the response if status code is 400, 401, or 500 get the response message and show it using Swal.fire()
-            axios.post("http://localhost:8080/api/v1/auth/signup", formData)
+            axios.post(`${API_URL}/auth/signup`, formData)
             .then((response) => {
                 if (response.status === 200) {
                     window.location.href = "/login?message=registered";

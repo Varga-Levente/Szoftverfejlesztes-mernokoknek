@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Login.css';
+import {API_URL} from '../Config';
 import axios from 'axios';
 import Swal from 'sweetalert2';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -64,7 +65,7 @@ const Login = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post('http://localhost:8080/api/v1/auth/signin', formData);
+            const response = await axios.post(`${API_URL}/auth/signin`, formData);
 
             if (response.status === 200) {
                 console.log('Sikeres bejelentkezés');
