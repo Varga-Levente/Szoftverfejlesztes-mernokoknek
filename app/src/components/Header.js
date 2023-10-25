@@ -9,6 +9,7 @@ import CinemaSelector from "./CinemaSelector";
 
 const Header = () => {
     const [searchText, setSearchText] = useState('');
+    const [user, setUser] = useState(null);
     // Use the useState hook to track the click state
     const [clicked, setClicked] = useState(false);
 
@@ -59,6 +60,17 @@ const Header = () => {
         }
     };
 
+    useEffect(() => {
+        // Ellenőrizd a localStorage-t a komponens betöltésekor
+        const storedUser = JSON.parse(localStorage.getItem('user'));
+        //If user is not null, then he is logged in
+        if (storedUser) {
+            setUser(storedUser);
+            console.log(storedUser);
+        }
+    }, []);
+
+
     return (
     <div className="row fixed-top justify-content-center top-nav align-items-center" style={{ height: '90',  zIndex: '998' }}>
         <div className="col text-start col-3">
@@ -87,8 +99,8 @@ const Header = () => {
                 <a href={"/cart"} onClick={handleCartClick}>
                     <FontAwesomeIcon icon={faShoppingBasket} className={clicked ? "basketicon clicked" : "basketicon"}/>
                 </a>
-                <a href={"/profile"}>
-                    <img className="avatar" alt='avatar' src="/avatar.jpg" />
+                <a href={user ? "/profile" : "/login"}>
+                    <img className="avatar" alt='avatar' src={user ? user.profileImage : "avatar.jpg"} />
                 </a>
             </div>
         </div>

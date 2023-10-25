@@ -1,9 +1,11 @@
 // src/App.js
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css';
-import Header from './components/Header';
 import ContentRow from './components/ContentRow';
+import Login from './components/Login/Login';
+import Register from './components/Register/Register';
 
 function App() {
     const [showLoading, setShowLoading] = useState(true);
@@ -12,7 +14,7 @@ function App() {
         const timeout = setTimeout(() => {
             document.querySelector('.loadinganim').classList.add('hidden');
             setShowLoading(false);
-        }, 1500);
+        }, 500);
 
         return () => clearTimeout(timeout);
     }, []);
@@ -35,8 +37,15 @@ function App() {
                 <div className="loader-inner"></div>
             </div>
         </section>
-      <Header />
-      <ContentRow />
+        <BrowserRouter>
+            <Switch>
+                <Route path="/login" component={Login} />
+                <Route path="/register" component={Register} />
+                <Route path="/" render={() => (
+                    <ContentRow />
+                )} />
+            </Switch>
+        </BrowserRouter>
     </div>
   );
 }
