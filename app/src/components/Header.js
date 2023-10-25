@@ -9,9 +9,7 @@ import CinemaSelector from "./CinemaSelector";
 
 const Header = () => {
     const [searchText, setSearchText] = useState('');
-<<<<<<< HEAD
     const [user, setUser] = useState(null);
-=======
     // Use the useState hook to track the click state
     const [clicked, setClicked] = useState(false);
 
@@ -27,7 +25,6 @@ const Header = () => {
         // Set the clicked state to true
         setClicked(true);
     };
->>>>>>> main
 
     const handleSearch = async () => {
         if (searchText.trim() === '') {
