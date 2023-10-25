@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Set;
 
 @RestController
-@CrossOrigin
+@CrossOrigin(origins = "*", maxAge = 3600)
 @RequestMapping("/api/v1/movie")
 public class MovieController {
     //ASD
