@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Register.css';
-import {API_URL} from '../Config';
+import {API_URL} from '../../Config';
 import Swal from 'sweetalert2';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSignOutAlt, faTimes, faUserPlus } from '@fortawesome/free-solid-svg-icons';
