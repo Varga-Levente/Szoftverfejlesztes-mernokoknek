@@ -6,6 +6,18 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faSignOutAlt, faTimes, faUserLock} from "@fortawesome/free-solid-svg-icons";
 
 const Login = () => {
+
+    //If ?message=registered is in the URL, show a success message
+    useEffect(() => {
+        if (window.location.search.includes('message=registered')) {
+            Swal.fire({
+                icon: 'success',
+                title: 'Registration successful',
+                text: 'You can now log in!',
+            });
+        }
+    }, []);
+
     const [formData, setFormData] = useState({
         username: '',
         password: '',

@@ -152,3 +152,11 @@ input::placeholder {
     align-items: center;
     justify-content: center;
 }
+
+.error-text{
+    color: #f74346;
+    font-family: 'Roboto';
+    font-size: 12px;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
