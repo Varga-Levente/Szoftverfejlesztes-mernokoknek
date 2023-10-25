@@ -20,7 +20,7 @@
     padding: 30px 0 30px 0;
 }
 
-.loginforminput::placeholder {
+input::placeholder {
     text-align: center;
 }
 
@@ -36,7 +36,7 @@
     color: silver;
 }
 
-.username-input {
+.input-container > .username-input, .password-input, .email-input, .password-input, .fullname-input {
     margin: 0 0 10px 0;
     text-align: center;
     font-family: 'Roboto';
@@ -49,27 +49,36 @@
 
 /* Button CSS */
 
-.login-btn {
+.reg-btn {
     width: 100%;
     background-color: transparent;
-    border: 1px #f74346 solid;
+    border-color: #f74346;
     color: silver;
     font-family: 'Roboto';
     font-weight: 300;
 }
 
-.login-btn:hover {
+.reg-btn:hover {
     background-color: rgba(247, 67, 70, 0.5);
     border-color: #f74346;
     -webkit-box-shadow: 0px 0px 0px 1px #F74346;
     box-shadow: 0px 0px 0px 1px #F74346;
 }
 
-.login-btn:focus {
+.reg-btn:focus {
     background-color: rgba(247, 67, 70, 1) !important;
     border-color: #f74346 !important;
     -webkit-box-shadow: 0px 0px 0px 1px #F74346;
     box-shadow: 0px 0px 0px 1px #F74346;
+}
+
+.reg-btn:disabled,
+.reg-btn[disabled]{
+    background-color: transparent;
+    border: 1px grey solid;
+    color: white;
+    font-family: 'Roboto';
+    font-weight: 300;
 }
 
 .close-button {
@@ -118,7 +127,7 @@
     border-color: #f74346;
 }
 
-.logincontainer {
+.registercontainer {
     height: 100vh;
     display: flex;
     align-items: center;
@@ -142,14 +151,4 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.signedindetails{
-    color: silver;
-    font-family: 'Roboto', sans-serif;
-}
-
-.dataname{
-    font-weight: bold;
-    text-decoration: #f74346 underline;
 }

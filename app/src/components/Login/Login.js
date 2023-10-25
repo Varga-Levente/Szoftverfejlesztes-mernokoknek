@@ -123,8 +123,8 @@ const Login = () => {
                     <div className="row">
                         <div className="col-md-12">
                             <div className="input-container">
-                                <input className="form-control username-input" type="text" name="username" value={formData.username} onChange={handleChange} placeholder="USERNAME"/>
-                                <input className="form-control password-input" type="password" name="password" value={formData.password} onChange={handleChange} placeholder="PASSWORD"/>
+                                <input className="form-control username-input loginforminput" type="text" name="username" value={formData.username} onChange={handleChange} placeholder="USERNAME"/>
+                                <input className="form-control password-input loginforminput" type="password" name="password" value={formData.password} onChange={handleChange} placeholder="PASSWORD"/>
                             </div>
                             <button className="btn btn-primary login-btn" type="submit">Login</button>
                         </div>

@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css';
 import ContentRow from './components/ContentRow';
 import Login from './components/Login/Login';
+import Register from './components/Register/Register';
 
 function App() {
     const [showLoading, setShowLoading] = useState(true);
@@ -39,6 +40,7 @@ function App() {
         <BrowserRouter>
             <Switch>
                 <Route path="/login" component={Login} />
+                <Route path="/register" component={Register} />
                 <Route path="/" render={() => (
                     <ContentRow />
                 )} />
