@@ -12,6 +12,7 @@ import Cart from "./Cart/Cart";
 import Profile from "./Profile/Profile";
 import Coming_soon from "./Coming-soon/Coming-soon";
 import Food from "./Food/Food";
+import Header from "./Header";
 
 const ContentRow = () => {
     //Get categories from API /movies/getAllCategories
@@ -30,45 +31,48 @@ const ContentRow = () => {
     }, []);
 
     return (
-        <div className="row" style={{ height: '100%', paddingTop: '90px' }}>
-            <div className="col col-1" style={{ position: 'relative' }}>
-                <VerticalMenu />
-            </div>
-            <div className="col contents content-col">
-                <BrowserRouter>
-                    <Switch>
-                        <Route path="/error" component={err} />
-                        <Route path="/cart" component={Cart} />
-                        <Route path="/profile" component={Profile} />
-                        <Route path="/food" component={Food} />
-                        <Route path="/coming-soon" component={Coming_soon} />
-                        <Route
-                            key="popular"
-                            path="/"
-                            exact
-                            render={(props) => (
-                                <div>
-                                    {/*Popular Scroller*/}
-                                    <Scroller {...props}
-                                              endpoint={`${API_URL}/movie/getPopulars`}
-                                              category="Popular (7+ Rating)"
-                                              extraclass="popular-category"
-                                    />
-
-                                    {/*Scrollers by Categories*/}
-                                    {categories.map((category) => (
+        <div>
+            <Header />
+            <div className="row" style={{ height: '100%', paddingTop: '90px' }}>
+                <div className="col col-1" style={{ position: 'relative' }}>
+                    <VerticalMenu />
+                </div>
+                <div className="col contents content-col">
+                    <BrowserRouter>
+                        <Switch>
+                            <Route path="/error" component={err} />
+                            <Route path="/cart" component={Cart} />
+                            <Route path="/profile" component={Profile} />
+                            <Route path="/food" component={Food} />
+                            <Route path="/coming-soon" component={Coming_soon} />
+                            <Route
+                                key="popular"
+                                path="/"
+                                exact
+                                render={(props) => (
+                                    <div>
+                                        {/*Popular Scroller*/}
                                         <Scroller {...props}
-                                                  endpoint={`${API_URL}/movie/getByCategory/${category}`}
-                                                  category={category}
+                                                  endpoint={`${API_URL}/movie/getPopulars`}
+                                                  category="Popular (7+ Rating)"
+                                                  extraclass="popular-category"
                                         />
-                                    ))}
 
-                                </div>
-                            )}
-                        />
-                        <Route path="/movie/:id" component={MovieView} />
-                    </Switch>
-                </BrowserRouter>
+                                        {/*Scrollers by Categories*/}
+                                        {categories.map((category) => (
+                                            <Scroller {...props}
+                                                      endpoint={`${API_URL}/movie/getByCategory/${category}`}
+                                                      category={category}
+                                            />
+                                        ))}
+
+                                    </div>
+                                )}
+                            />
+                            <Route path="/movie/:id" component={MovieView} />
+                        </Switch>
+                    </BrowserRouter>
+                </div>
             </div>
         </div>
     );

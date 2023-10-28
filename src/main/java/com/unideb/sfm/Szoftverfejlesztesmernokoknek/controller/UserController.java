@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
 @RequestMapping("/api/v1/user")
 public class UserController {
@@ -51,8 +52,7 @@ public class UserController {
         userDTO.setId(user.getId());
         userDTO.setFullName(user.getFullName());
         userDTO.setEmail(user.getEmail());
-        userDTO.setPw_hash(user.getPw_hash());
-        userDTO.setPw_salt(user.getPw_salt());
+        userDTO.setPassword(user.getPassword());
 
         List<FoodCart> foodCarts = foodCartRepository.findAllByUser(user);
         List<FoodCartDTO> foodCartDTOs = new ArrayList<>();

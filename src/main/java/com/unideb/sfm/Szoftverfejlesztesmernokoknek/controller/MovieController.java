@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Set;
 
 @RestController
-@CrossOrigin
+@CrossOrigin(origins = "*", maxAge = 3600)
 @RequestMapping("/api/v1/movie")
 public class MovieController {
     //ASD
@@ -52,7 +52,7 @@ public class MovieController {
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //http://localhost:8080/api/v1/movies/reset
     @Transactional
-    @RequestMapping(path = "reset")
+    @DeleteMapping(path = "reset")
     public List resetMovies() throws IOException {
         return movieService.reset();
     }
