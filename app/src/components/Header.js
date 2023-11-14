@@ -100,7 +100,7 @@ const Header = () => {
                     <FontAwesomeIcon icon={faShoppingBasket} className={clicked ? "basketicon clicked" : "basketicon"}/>
                 </a>
                 <a href={user ? "/profile" : "/login"}>
-                    <img className="avatar" alt='avatar' src={user ? user.profileImage : "avatar.jpg"} />
+                    <img className="avatar" alt='avatar' src={user ? user.profileImage : "/avatar.jpg"} />
                 </a>
             </div>
         </div>
