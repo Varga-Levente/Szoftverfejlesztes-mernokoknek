@@ -1,0 +1,64 @@
+
+
+.food_1 {
+    width: 365px;
+}
+
+.popcorn {
+    height: 150px;
+    width: 150px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    float: left;
+    object-fit: cover;
+}
+
+.rightside_of_popcorn {
+    background-color: #2B2B38;
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-top: 15px;
+}
+
+.title {
+    font-size: 25px;
+    color: #f74346;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.size {
+    font-size: 20px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.price {
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 10%;
+    margin-top: 20%;
+    width: 70px;
+}
+
+
+.plus {
+    background-color: #FFFFFF;
+    width: 27px;
+    overflow: hidden;
+    height: 27px;
+    margin-left: 69%;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: -30%;
+}
+
+.but {
+    border: none;
+    background: none;
+}
