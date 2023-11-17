@@ -34,12 +34,56 @@
 
 .selectarrow {
     color: #F74346;
+    margin-bottom: 2px;
+
 }
 
-.btn
+.btn_cinema
 {
     border: none;
+    height: 30px;
 }
 
-.btn:hover {background-color: #161621;}
-.btn:focus {background-color: #161621;}
+.btn_cinema:hover {background-color: #161621;}
+.btn_cinema:focus {background-color: #161621;}
+
+/* Legördülő menü stílusok */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2B2B38;
+    min-width: 130px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: opacity 2.0s ease;
+    border-radius: 10px;
+    border: 0.5px solid #161621;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 17px;
+
+}
+
+.dropdown-content a:hover {
+    background-color: #161621;
+    border-radius: 10px;
+}
+
+.dropdown.open .dropdown-content {
+    display: block;
+    margin-top: 10px;
+}
+
+
