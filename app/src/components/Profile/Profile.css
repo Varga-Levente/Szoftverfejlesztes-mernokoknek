@@ -1,4 +1,50 @@
 .profile {
-    margin-top: 1%;
     color: #f74346;
+    font-size: 45px;
+}
+
+.profile_page {
+    margin-top: 4%;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 2%;
+}
+
+.profile_panel {
+    height: 650px;
+    width: 70%;
+    margin-top: 2%;
+    margin-left: 2%;
+    border: 2px solid cyan;
+}
+
+.avatar_v1 {
+    width: 145px;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 45px;
+
+}
+
+.left_side {
+    border: 2px solid blue;
+    display: inline-block;
+    width: 50%;
+    height: 650px;
+}
+
+.right_side {
+
+    margin-top: -10%;
+    display: inline-block;
+    height: 650px;
+    width: 50%;
+}
+
+.my_tickets {
+    border: 2px solid red;
+    height: 100px;
+    padding: 45px;
+}
+
+.ticket {
+    border: 2px solid hotpink;
 }
