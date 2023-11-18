@@ -61,8 +61,9 @@
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     z-index: 1;
     transition: opacity 2.0s ease;
-    border-radius: 10px;
-    border: 0.5px solid #161621;
+    border-radius: 5px;
+    border: 0.1px solid #161621;
+    text-align: center;
 }
 
 .dropdown-content a {
@@ -83,7 +84,8 @@
 
 .dropdown.open .dropdown-content {
     display: block;
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-left: -87px;
 }
 
 

@@ -4,7 +4,7 @@ import './Header.css';
 import './CinemaSelector';
 import { API_URL } from "../Config";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faShoppingBasket } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faShoppingBasket, faRightFromBracket, faTicket, faUser } from '@fortawesome/free-solid-svg-icons';
 import CinemaSelector from "./CinemaSelector";
 
 const Header = () => {
@@ -100,7 +100,14 @@ const Header = () => {
                     <FontAwesomeIcon icon={faShoppingBasket} className={clicked ? "basketicon clicked" : "basketicon"}/>
                 </a>
                 <a href={user ? "/profile" : "/login"}>
-                    <img className="avatar" alt='avatar' src={user ? user.profileImage : "/avatar.jpg"} />
+                    <div className="dropdown_avatar">
+                        <button className=" dropbtn_avatar"><img className="avatar" alt='avatar' src={user ? user.profileImage : "/avatar.jpg"} /></button>
+                        <div className="dropdown-content_avatar">
+                            <a href="/profile"><FontAwesomeIcon icon={faUser} className={"profile_icons"} />Profile</a>
+                            <a href="/#"><FontAwesomeIcon icon={faTicket} className={"profile_icons"} />My Tickets</a>
+                            <a href="/#"><FontAwesomeIcon icon={faRightFromBracket} className={"profile_icons"} />Logout</a>
+                        </div>
+                    </div>
                 </a>
             </div>
         </div>

@@ -63,6 +63,7 @@
     border-radius: 12.9px;
     margin: 10px;
     box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);
+
   }
   
   .input-group.center {
@@ -109,3 +110,54 @@
   .basketicon.clicked {
     color: #F74346;
   }
+
+.dropdown_avatar {
+  position: relative;
+  display: inline-block;
+}
+
+/* Legördülő gomb stílusa */
+.dropbtn_avatar {
+  border: none;
+  cursor: pointer;
+  background: none;
+  padding: 0;
+}
+
+/* Legördülő tartalom (rejtett alapból) */
+.dropdown-content_avatar {
+  display: none;
+  position: absolute;
+  background-color: #2B2B38;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-align: center;
+  transition: opacity 2.0s ease;
+  border-radius: 5px;
+  border: 0.1px solid black;
+}
+
+/* Legördülő menü elemeinek stílusa */
+.dropdown-content_avatar a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Roboto';
+}
+
+/* Legördülő menü elem hover stílusa */
+.dropdown-content_avatar a:hover {
+  background-color: #161621;
+}
+
+/* Legördülő tartalom megjelenítése, ha a gombra kattintanak */
+.dropdown_avatar:hover .dropdown-content_avatar {
+  display: block;
+  margin-left: -50px;
+}
+
+.profile_icons {
+  margin-right: 15px;
+}
