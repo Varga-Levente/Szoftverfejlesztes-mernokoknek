@@ -2,18 +2,25 @@ package com.unideb.sfm.Szoftverfejlesztesmernokoknek;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @SpringBootApplication
 public class SzoftverfejlesztesMernokoknekApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SzoftverfejlesztesMernokoknekApplication.class, args);
-		//Open browser (http://localhost:8080) automatically 
-//		try {
-//			Runtime.getRuntime().exec("rundll32 url.dll,FileProtocolHandler " + "http://localhost:8080");
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//		}
+	}
+
+	@Bean
+	public WebMvcConfigurer corsConfigurer(){
+		return new WebMvcConfigurer(){
+			@Override
+			public void addCorsMappings(CorsRegistry registry){
+				registry.addMapping("/**").allowedOrigins("*").allowedMethods("GET", "POST", "PUT", "DELETE").allowedHeaders("*").allowCredentials(false);
+			}
+		};
 	}
 
 }
