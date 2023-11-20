@@ -16,6 +16,11 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.CorsConfigurationSource;
+import org.springframework.web.cors.reactive.UrlBasedCorsConfigurationSource;
+
+import java.util.Arrays;
 
 @Configuration
 @EnableMethodSecurity
@@ -54,17 +59,30 @@ public class WebSecurityConfig {
   @Bean
   public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
     http.csrf(csrf -> csrf.disable())
-        .exceptionHandling(exception -> exception.authenticationEntryPoint(unauthorizedHandler))
-        .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+            .exceptionHandling(exception -> exception.authenticationEntryPoint(unauthorizedHandler))
+            .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
             .authorizeHttpRequests(auth ->
                     auth.requestMatchers("/api/v1/movie/**", "/api/v1/user/**", "/api/v1/food/**", "api/v1/auth/**", "/api/v1/**").permitAll()
-                    .anyRequest().authenticated()
+                            .anyRequest().authenticated()
             );
 
     http.authenticationProvider(authenticationProvider());
 
     http.addFilterBefore(authenticationJwtTokenFilter(), UsernamePasswordAuthenticationFilter.class);
 
+    return http.build();
+  }
+
+  @Bean
+  public SecurityFilterChain allowall(HttpSecurity http) throws Exception{
+    //Enable DELETE PUT POST GET on all endpoints from all origins using new syntax
+    http.csrf(csrf -> csrf.disable())
+            .exceptionHandling(exception -> exception.authenticationEntryPoint(unauthorizedHandler))
+            .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+            .authorizeHttpRequests(auth ->
+                    auth.requestMatchers("/**").permitAll()
+                            .anyRequest().permitAll()
+            );
     return http.build();
   }
 }
