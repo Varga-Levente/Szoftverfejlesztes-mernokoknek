@@ -68,7 +68,7 @@ const Admin_Food = () => {
 
     const deleteFood = async (id) => {
         try {
-            await axios.delete(`${API_URL}/food/delete/${id}`);
+            await axios.delete(`${API_URL}/food/remove/${id}`);
             // If deleted successfully, fetch foods again to update the list
             fetchFoods();
             window.alert('Food deleted successfully.');
