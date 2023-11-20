@@ -262,7 +262,7 @@ const AdminMovies = () => {
             });
 
             // Send data to the API
-            await axios.post('/movie/add', result);
+            await axios.post(`${API_URL}/movie/add`, result);
 
             // If added successfully, fetch movies again to update the list
             fetchMovies();
