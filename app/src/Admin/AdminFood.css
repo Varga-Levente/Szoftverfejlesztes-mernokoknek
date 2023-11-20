@@ -1,0 +1,30 @@
+.admin-food-counter {
+    color: white;
+}
+
+.admin-food-counter > .counter {
+    font-weight: bold;
+}
+
+.admin-food-row1 {
+    margin-top: 20px;
+}
+
+.admin-food-row2 {
+    margin-top: 20px;
+}
+
+.admin-food-row3 {
+    margin-top: 20px;
+}
+
+.admin-food-actionbtn {
+    width: 30px;
+    height: 30px;
+    font-size: 80%;
+    padding: 0;
+}
+
+.admin-food-input {
+    width: 50%;
+}

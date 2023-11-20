@@ -1,0 +1,30 @@
+.admin-movie-counter {
+    color: white;
+}
+
+.admin-movie-counter > .counter {
+    font-weight: bold;
+}
+
+.admin-movie-row1 {
+    margin-top: 20px;
+}
+
+.admin-movie-row2 {
+    margin-top: 20px;
+}
+
+.admin-movie-row3 {
+    margin-top: 20px;
+}
+
+.admin-movie-actionbtn {
+    width: 30px;
+    height: 30px;
+    font-size: 80%;
+    padding: 0;
+}
+
+.admin-movie-input {
+    width: 50%;
+}
