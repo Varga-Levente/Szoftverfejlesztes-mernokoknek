@@ -32,6 +32,15 @@ public class MovieService {
         return ResponseEntity.ok("Moves added successfully");
     }
 
+    public ResponseEntity<?> removeMovie(Integer id) {
+        Movie movie = movieRepository.findById(id).orElse(null);
+        if (movie == null) {
+            return ResponseEntity.notFound().build();
+        }
+        movieRepository.deleteById(id);
+        return ResponseEntity.ok("Movie deleted");
+    }
+
     public ResponseEntity<?> editMovie(Integer id, Movie movie) {
         Movie existingMovie = movieRepository.findById(id).orElse(null);
         //If the food does not exist, return 404 Not found

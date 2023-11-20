@@ -1,8 +1,5 @@
 package com.unideb.sfm.Szoftverfejlesztesmernokoknek.controller;
 
-import com.unideb.sfm.Szoftverfejlesztesmernokoknek.model.User;
-import com.unideb.sfm.Szoftverfejlesztesmernokoknek.repository.UserRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 

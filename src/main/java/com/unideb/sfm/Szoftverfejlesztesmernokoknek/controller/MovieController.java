@@ -35,6 +35,11 @@ public class MovieController {
         return movieService.addMovie(movie);
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    @DeleteMapping(path = "remove/{id}")
+    public ResponseEntity<?> removeMovie(@PathVariable("id") Integer id) {
+        return movieService.removeMovie(id);
+    }
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     @PutMapping(path = "edit/{id}")
     public ResponseEntity<?> editMovie(@PathVariable("id") Integer id, @RequestBody Movie movie) {
         return movieService.editMovie(id, movie);
