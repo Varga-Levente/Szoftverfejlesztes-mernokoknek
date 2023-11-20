@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { API_URL } from '../Config';
 import axios from 'axios';
 import AdminNav from "./AdminNav";
-import "./Admin_Movies.css";
+import "./AdminMovies.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEdit, faTrash, faCheck, faTimes } from '@fortawesome/free-solid-svg-icons';
 
-const Admin_Movies = () => {
+const AdminMovies = () => {
     const [movies, setMovies] = useState([]);
     const [editingRowId, setEditingRowId] = useState(null);
     const [editedData, setEditedData] = useState({
@@ -319,4 +319,4 @@ const Admin_Movies = () => {
     );
 }
 
-export default Admin_Movies;
+export default AdminMovies;

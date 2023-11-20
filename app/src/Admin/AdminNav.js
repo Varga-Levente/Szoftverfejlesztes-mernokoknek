@@ -1,9 +1,9 @@
 import React from 'react';
-import './Admin_NAV.css';
+import './AdminNav.css';
 import { faHome, faBurger, faCamera, faUser } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Admin_NAV = () => {
+const AdminNav = () => {
     return (
         <>
             <div className="col-md-2 text-center admin-menu-item">
@@ -30,4 +30,4 @@ const Admin_NAV = () => {
     );
 }
 
-export default Admin_NAV;
+export default AdminNav;

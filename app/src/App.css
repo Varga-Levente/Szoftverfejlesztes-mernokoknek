@@ -5,6 +5,23 @@ body {
   scroll-behavior: smooth;
 }
 
+.demo-alert {
+  z-index: 9999;
+  position: fixed;
+  bottom: 0;
+  background-color: #f74346;
+  width: 100%;
+  color: white;
+}
+
+.legal-copy {
+  font-size: 1vh;
+}
+
+.warning-text {
+
+}
+
 .App {
   text-align: center;
   overflow-X: hidden;
