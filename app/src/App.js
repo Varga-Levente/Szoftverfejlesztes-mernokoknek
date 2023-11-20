@@ -32,9 +32,12 @@ function App() {
     }, [showLoading]);
 
     const isAdminAccessGranted = () => {
-        // Ellenőrizze, hogy az access-token paraméter létezik és megfelelő-e
-        const searchParams = new URLSearchParams(window.location.search);
-        return searchParams.get('access-token') === 'adminAccess';
+        let user = JSON.parse(localStorage.getItem('user'));
+        //If user.roles has ROLE_ADMIN, return true
+        if (user && user.roles.includes('ROLE_ADMIN')) {
+            return true;
+        }
+        return false;
     };
 
   return (
@@ -50,7 +53,7 @@ function App() {
                 <Route path="/login" component={Login} />
                 <Route path="/register" component={Register} />
                 <Route
-                    path="/admin-food"
+                    path="/admin-foods"
                     render={() =>
                         isAdminAccessGranted() ? (
                             <AdminFood />
