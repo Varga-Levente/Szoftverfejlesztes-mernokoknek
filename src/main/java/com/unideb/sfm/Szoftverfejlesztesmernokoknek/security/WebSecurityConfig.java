@@ -11,6 +11,7 @@ import org.springframework.security.authentication.dao.DaoAuthenticationProvider
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -59,7 +60,7 @@ public class WebSecurityConfig {
   }
 
   @Bean
-  public void configure(HttpSecurity http) throws Exception {
+  public SecurityFilterChain configure(HttpSecurity http) throws Exception {
     http.csrf(csrf -> csrf.disable())
             .exceptionHandling(exception -> exception.authenticationEntryPoint(unauthorizedHandler))
             .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
@@ -67,6 +68,7 @@ public class WebSecurityConfig {
                     auth.requestMatchers("**").permitAll()
                             .anyRequest().authenticated()
             );
+    return http.build();
   }
 
   @Bean
@@ -83,19 +85,6 @@ public class WebSecurityConfig {
 
     http.addFilterBefore(authenticationJwtTokenFilter(), UsernamePasswordAuthenticationFilter.class);
 
-    return http.build();
-  }
-
-  @Bean
-  public SecurityFilterChain allowall(HttpSecurity http) throws Exception{
-    //Enable DELETE PUT POST GET on all endpoints from all origins using new syntax
-    http.csrf(csrf -> csrf.disable())
-            .exceptionHandling(exception -> exception.authenticationEntryPoint(unauthorizedHandler))
-            .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-            .authorizeHttpRequests(auth ->
-                    auth.requestMatchers("/**").permitAll()
-                            .anyRequest().permitAll()
-            );
     return http.build();
   }
 }
