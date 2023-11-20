@@ -1,0 +1,19 @@
+.admin-menu-item {
+    color: white;
+}
+
+.nav-btn {
+    width: 40%;
+    font-size: 18px;
+    height: 50px
+}
+
+.nav-btn:hover {
+    color: #f74346;
+    background-color: #2B2B38;
+}
+
+.btn-active {
+    color: #f74346;
+    background-color: #2B2B38;
+}
