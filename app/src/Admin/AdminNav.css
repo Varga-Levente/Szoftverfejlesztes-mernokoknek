@@ -3,9 +3,14 @@
 }
 
 .nav-btn {
-    width: 40%;
-    font-size: 18px;
-    height: 50px
+    width: 10vw;
+    min-width: 100px;
+    height: 8vh;
+    font-size: 2vh;
+}
+
+.btn-text {
+    font-size: clamp(15px, 1vw, 53px);
 }
 
 .nav-btn:hover {
