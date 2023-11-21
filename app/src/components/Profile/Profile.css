@@ -1,6 +1,8 @@
 .profile {
     color: #f74346;
     font-size: 45px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 3%;
 }
 
 .profile_page {
@@ -10,11 +12,12 @@
 }
 
 .profile_panel {
-    height: 650px;
+    height: 270px;
     width: 70%;
     margin-top: 2%;
-    margin-left: 2%;
-    border: 2px solid cyan;
+    margin-left: 5%;
+
+    display: flex;
 }
 
 .avatar_v1 {
@@ -25,26 +28,165 @@
 }
 
 .left_side {
-    border: 2px solid blue;
-    display: inline-block;
     width: 50%;
-    height: 650px;
+    height: 270px;
 }
 
 .right_side {
-
-    margin-top: -10%;
-    display: inline-block;
-    height: 650px;
+    height: 270px;
     width: 50%;
+    margin-left: 1%;
 }
 
 .my_tickets {
-    border: 2px solid red;
-    height: 100px;
-    padding: 45px;
+    height: 80px;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 2%;
+    display: flex; /* Flex konténer a szöveg és ikon elrendezéséhez */
+    align-items: center; /* Elemek középre igazítása */
+    background-color: #2B2B38;
+    color: white;
+    border-radius: 50px;
+    margin-bottom: 15px;
 }
 
-.ticket {
-    border: 2px solid hotpink;
+.my_credit {
+    height: 80px;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 2%;
+    background-color: #2B2B38;
+    color: white;
+    display: flex; /* Flex konténer a szöveg és ikon elrendezéséhez */
+    align-items: center; /* Elemek középre igazítása */
+    border-radius: 50px;
+    margin-bottom: 15px;
+}
+
+.history {
+    height: 80px;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 2%;
+    background-color: #2B2B38;
+    color: white;
+    display: flex; /* Flex konténer a szöveg és ikon elrendezéséhez */
+    align-items: center; /* Elemek középre igazítása */
+    border-radius: 50px;
+}
+
+.foot_profile {
+
+    width: 70%;
+    height: 200px;
+    margin-left: 5%;
+    display: flex; /* Flex konténer a szöveg és ikon elrendezéséhez */
+    align-items: center; /* Elemek középre igazítása */
+    padding-left: 22%;
+}
+
+.prof_icons {
+    margin-bottom: 1%;
+    color: white;
+
+}
+
+.text {
+    margin-left: 15%;
+    width: 300px;
+}
+
+.lefticons {
+    color: #f74346;
+    margin-left: 40px;
+    margin-right: -35px;
+    height: 30px;
+}
+
+.upper {
+    height: 190px;
+    display: flex;
+}
+
+.down {
+    height: 80px;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 2%;
+    display: flex; /* Flex konténer a szöveg és ikon elrendezéséhez */
+    align-items: center; /* Elemek középre igazítása */
+    background-color:  #f74346;
+    color: white;
+    border-radius: 50px;
+    margin-bottom: 15px;
+}
+
+.text_v1 {
+    width: 20%;
+    text-align: center;
+    margin-left: 40%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logout_icon {
+    height: 30px;
+    margin-left: 15%;
+    margin-right: -20%;
+}
+
+.leftwall {
+    height: 187px;
+    width: 50%;
+
+
+}
+.rightwall {
+    height: 187px;
+    width: 50%;
+}
+
+.welcome {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    margin-top: 13%;
+}
+
+.welcome_v1 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 37px;
+    font-weight: 700;
+}
+
+.option_icon {
+    color: white;
+    height: 30px;
+}
+
+.option {
+    height: 40px;
+    width: 40px;
+    background-color: #f74346;
+    margin-left: 125px;
+    text-align: center;
+    margin-top: -5%;
+    padding-top: 1.5%;
+    border-radius: 16px;
+}
+
+.links {
+    text-decoration: none;
+}
+
+.below {
+    color: white;
+    margin-left: 2%;
+    font-family: 'Roboto', sans-serif;
+    width: 23%;
+    font-size: 25px;
+}
+
+.below_icon {
+    color: #f74346;
+    height: 25px;
+    margin-bottom: 1%;
+
 }
