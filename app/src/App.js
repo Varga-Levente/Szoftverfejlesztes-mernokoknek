@@ -8,6 +8,8 @@ import Login from './components/Login/Login';
 import Register from './components/Register/Register';
 import AdminFood from './Admin/AdminFood';
 import AdminMovies from './Admin/AdminMovies';
+import AdminUsers from "./Admin/AdminUsers";
+import NotFound from "./ErrorPages/NotFound";
 
 function App() {
     const [showLoading, setShowLoading] = useState(true);
@@ -50,6 +52,7 @@ function App() {
         </section>
         <BrowserRouter>
             <Switch>
+                <Route path="/404" component={NotFound} />
                 <Route path="/login" component={Login} />
                 <Route path="/register" component={Register} />
                 <Route
@@ -72,9 +75,23 @@ function App() {
                         )
                     }
                 />
-                <Route path="/" render={() => (
-                    <ContentRow />
-                )} />
+                <Route
+                    path="/admin-users"
+                    render={() =>
+                        isAdminAccessGranted() ? (
+                            <AdminUsers />
+                        ) : (
+                            <Redirect to="/" />
+                        )
+                    }
+                />
+
+                <Route path="/" render={() => <ContentRow />} />
+                <Route render={() => {
+                    // JavaScript redirect
+                    window.location.href = "/404";
+                    return null; // Prevent rendering of any component
+                }} />
             </Switch>
         </BrowserRouter>
         <footer className="footer text-center demo-alert">
