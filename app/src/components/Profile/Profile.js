@@ -1,13 +1,22 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Profile.css';
 import { faPlay, faTicket, faCreditCard, faBookOpen, faRightFromBracket, faGear, faCircleInfo, faPen } from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 const Profile = () => {
+
+    const [userData, setUserData] = useState(JSON.parse(localStorage.getItem('user')) || null);
     const handleLogout = () => {
         // localStorage-ből eltávolítjuk a 'user' kulcsot
         localStorage.removeItem('user');
-        // Itt további lépéseket is végrehajthatsz a kijelentkezés után
+        // redirect a főoldalra
+        window.location.href = '/';
     };
+
+    //If there is no userData, redirect to /
+    if (!userData) {
+        window.location.href = '/';
+    }
+
     return (
         <div className={"profile_page"}>
             <h1 className="profile">Profile</h1>
@@ -15,7 +24,7 @@ const Profile = () => {
                 <div className={"left_side"}>
                     <div className={"upper"}>
                         <div className={"leftwall"}>
-                            <img src={"/avatar.jpg"} className={"avatar_v1"} alt={"avatar"}/>
+                            <img src={`data:image/jpg;base64,${userData.profileImage}`} className={"avatar_v1"} alt={"avatar"}/>
                             <a href={"/profile"} className={"links"}>
                             <div className={"option"}>
                                 <FontAwesomeIcon icon={faGear} className={"option_icon"}/>
@@ -23,11 +32,11 @@ const Profile = () => {
                             </a>
                         </div>
                         <div className={"rightwall"}>
-                            <h2 className={"welcome"}>Hi! User</h2>
+                            <h2 className={"welcome"}>Hi! {userData.fullName}</h2>
                             <h2 className={"welcome_v1"}>Welcome</h2>
                         </div>
                     </div>
-                    <a href={"/profile"} className={"links"} onClick={handleLogout}>
+                    <a href="#" className={"links"} onClick={handleLogout}>
                         <div className={"down"}>
                             <FontAwesomeIcon icon={faRightFromBracket} className={"prof_icons logout_icon"}/>
                             <h2 className={"text_v1"}>Logout</h2>
