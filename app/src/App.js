@@ -10,6 +10,7 @@ import AdminFood from './Admin/AdminFood';
 import AdminMovies from './Admin/AdminMovies';
 import AdminUsers from "./Admin/AdminUsers";
 import NotFound from "./ErrorPages/NotFound";
+import ImageUploader from "./Test/ImageTest";
 
 function App() {
     const [showLoading, setShowLoading] = useState(true);
@@ -52,6 +53,7 @@ function App() {
         </section>
         <BrowserRouter>
             <Switch>
+                <Route path="/test" render={() => <ImageUploader />} />
                 <Route path="/404" component={NotFound} />
                 <Route path="/login" component={Login} />
                 <Route path="/register" component={Register} />

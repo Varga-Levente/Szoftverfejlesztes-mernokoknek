@@ -15,6 +15,8 @@ const Register = () => {
         confirmPassword: '',
     });
 
+    const [imageData, setImageData] = useState('');
+
     const [errors, setErrors] = useState({});
 
     const handleInputChange = (e) => {
@@ -24,6 +26,18 @@ const Register = () => {
             [name]: value,
         });
         validateField(name, value);
+    };
+
+    const handleProfilePictureChange = async (e) => {
+        const file = e.target.files[0];
+        const reader = new FileReader();
+
+        reader.onloadend = () => {
+            const base64String = reader.result.split(',')[1];
+            setImageData(base64String);
+        };
+        //Create a simplified file url
+        await reader.readAsDataURL(file);
     };
 
     const validateField = (fieldName, value) => {
@@ -68,22 +82,6 @@ const Register = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (isFormValid()) {
-            //Send data to backend http://localhost:8080/api/v1/auth/signup using POST method and formData wirh axios
-            //The sample body of the request is as follows:
-            // {
-            //     "fullName": "string",
-            //     "username": "string",
-            //     "email": "string",
-            //     "role":["user"],
-            //     "password": "string"
-            // }
-
-            //If the response is {"message": "User registered successfully!"}, redirect to login page and add get parameter message=registered
-            //If the response is {"message": "Error: Username is already taken!"}, show an error message using Swal.fire() (400 status code)
-            //If the response is {"message": "Error: Email is already in use!"}, show an error message using Swal.fire() (400 status code)
-            //Any other response, show an error message using Swal.fire() (500 or 401 status code)
-
-            //Create the axios request here and get the response if status code is 400, 401, or 500 get the response message and show it using Swal.fire()
             axios.post(`${API_URL}/auth/signup`, formData)
             .then((response) => {
                 if (response.status === 200) {
@@ -174,10 +172,23 @@ const Register = () => {
                                     onChange={handleInputChange}
                                 />
                                 {errors.confirmPassword && <p className="error-text">{errors.confirmPassword}</p>}
+                                <input
+                                    className="regforminput form-control"
+                                    type="file"
+                                    placeholder="PROFILE PICTURE"
+                                    name="profilePicture"
+                                    onChange={handleProfilePictureChange}
+                                />
                             </div>
                             <button className="btn btn-primary login-btn" type="submit" disabled={!isFormValid()}>
                                 SIGNUP
                             </button>
+                            {imageData && (
+                                <div>
+                                    <h2>Uploaded Image:</h2>
+                                    <img src={`data:image/jpg;base64,${imageData}`} alt="Uploaded" style={{ maxWidth: '100%' }} />
+                                </div>
+                            )}
                         </div>
                     </div>
                 </div>
