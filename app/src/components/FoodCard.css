@@ -1,0 +1,75 @@
+/* FoodCard.css */
+
+.food-card {
+  display: flex;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 120px; /* Kisebb margin a kártyák között */
+  max-width: 300px;
+}
+
+.food-card-left {
+  flex: 1;
+}
+
+.food-card-left img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.food-card-right {
+  flex: 2;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.food-card-right h2 {
+  font-size: 18px;
+  margin: 0;
+  color: #F74346;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  margin: 5px 0; /* Kisebb margin a mennyiségvezérlők között */
+}
+
+.quantity-control button {
+  background: #F74346;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.quantity-control button:hover {
+  background: #F53C3F;
+}
+
+.quantity-control span {
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+.order-button {
+  background: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.order-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.grid-container {
+  display: grid;
+  width: 100%;
+  align-content: center;
+}
