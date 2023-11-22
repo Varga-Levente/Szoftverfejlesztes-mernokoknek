@@ -121,43 +121,58 @@ const Login = () => {
                 ) : () => {}}
             </div>
             {!userData ? (
-            <form className="loginform" onSubmit={handleSubmit}>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-12">
-                            <div className="logintop">
-                                <FontAwesomeIcon icon={faUserLock} className={"usericon"} />
-                                <div className="logintextcontainer">
-                                    <p className="login-text">Login</p>
+                <form className="loginform" onSubmit={handleSubmit}>
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-md-12">
+                                <div className="logintop">
+                                    <FontAwesomeIcon icon={faUserLock} className={"usericon"} />
+                                    <div className="logintextcontainer">
+                                        <p className="login-text">Login</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-md-12">
-                            <div className="input-container">
-                                <input className="form-control username-input loginforminput" type="text" name="username" value={formData.username} onChange={handleChange} placeholder="USERNAME"/>
-                                <input className="form-control password-input loginforminput" type="password" name="password" value={formData.password} onChange={handleChange} placeholder="PASSWORD"/>
+                        <div className="row">
+                            <div className="col-md-12">
+                                <div className="input-container">
+                                    <input className="form-control username-input loginforminput" type="text" name="username" value={formData.username} onChange={handleChange} placeholder="USERNAME"/>
+                                    <input className="form-control password-input loginforminput" type="password" name="password" value={formData.password} onChange={handleChange} placeholder="PASSWORD"/>
+                                </div>
+                                <button className="btn btn-primary login-btn" type="submit">Login</button>
                             </div>
-                            <button className="btn btn-primary login-btn" type="submit">Login</button>
                         </div>
                     </div>
-                </div>
-            </form>
+                </form>
             ) : (
-                <div className="signedindetails">
-                    <h1>Bejelentkezve</h1>
-                    <p><span className="dataname">ID:</span> {userData.id}</p>
-                    <p><span className="dataname">FullName:</span> {userData.fullName}</p>
-                    <p><span className="dataname">Username:</span> {userData.username}</p>
-                    <p><span className="dataname">ProfileIMG:</span> {userData.profileImage}</p>
-                    <p><span className="dataname">Email:</span> {userData.email}</p>
-                    <p><span className="dataname">Roles:</span> {userData.roles.join(', ')}</p>
-                    <p><span className="dataname">AccessToken:</span> {userData.accessToken}</p>
-                    <p><span className="dataname">TokenType:</span> {userData.tokenType}</p>
-                    <br />
-                    <button className="btn btn-primary login-btn" onClick={handleLogout}>Logout</button>
-                </div>
+                <>
+                    <table className="table table-striped table-dark" style={{margin: "0 5% 0 5%"}}>
+                        <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Username</th>
+                            <th scope="col">Full Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Roles</th>
+                            <th scope="col">Token Type</th>
+                            <th scope="col">Access Token</th>
+                            <th scope="col">Profile Image</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">{userData.id}</th>
+                            <td><img src={`data:image/jpg;base64,${userData.profileImage}`} alt="Profileimage" style={{ maxWidth: '40px', borderRadius: "50%" }} /> {userData.username}</td>
+                            <td>{userData.fullName}</td>
+                            <td>{userData.email}</td>
+                            <td>{userData.roles.join(', ')}</td>
+                            <td>{userData.tokenType}</td>
+                            <td>{userData.accessToken.substring(0, 30)+"..."}</td>
+                            <td>{userData.profileImage.substring(0, 30)+"..."}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </>
             )}
         </div>
     );

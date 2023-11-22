@@ -2,6 +2,7 @@ package com.unideb.sfm.Szoftverfejlesztesmernokoknek.payload.request;
 
 import java.util.Set;
 
+import jakarta.persistence.Lob;
 import jakarta.validation.constraints.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -27,6 +28,16 @@ public class SignupRequest {
   @NotBlank
   @Size(min = 6, max = 40)
   private String password;
+
+  private String profileImage;
+
+  public String getProfileImage() {
+    return profileImage;
+  }
+
+  public void setProfileImage(String profileImage) {
+    this.profileImage = profileImage;
+  }
 
   public String getUsername() {
     return username;
