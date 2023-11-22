@@ -22,7 +22,7 @@ public class UserDetailsImpl implements UserDetails {
 
   private String email;
 
-  private String profileImage;
+  private byte[] profileImage;
 
   @JsonIgnore
   private String password;
@@ -30,7 +30,7 @@ public class UserDetailsImpl implements UserDetails {
   private Collection<? extends GrantedAuthority> authorities;
 
   public UserDetailsImpl(Integer id, String username, String fullName, String email, String password,
-      Collection<? extends GrantedAuthority> authorities, String profileImage) {
+      Collection<? extends GrantedAuthority> authorities, byte[] profileImage) {
     this.id = id;
     this.username = username;
     this.fullName = fullName;
@@ -55,11 +55,11 @@ public class UserDetailsImpl implements UserDetails {
         user.getProfileImage());
   }
 
-    public String getProfileImage() {
+    public byte[] getProfileImage() {
         return profileImage;
     }
 
-    public void setProfileImage(String profileImage) {
+    public void setProfileImage(byte[] profileImage) {
         this.profileImage = profileImage;
     }
   @Override
