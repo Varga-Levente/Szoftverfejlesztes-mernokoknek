@@ -36,7 +36,7 @@ const Profile = () => {
                             <h2 className={"welcome_v1"}>Welcome</h2>
                         </div>
                     </div>
-                    <a href="#" className={"links"} onClick={handleLogout}>
+                    <a href="/#" className={"links"} onClick={handleLogout}>
                         <div className={"down"}>
                             <FontAwesomeIcon icon={faRightFromBracket} className={"prof_icons logout_icon"}/>
                             <h2 className={"text_v1"}>Logout</h2>
