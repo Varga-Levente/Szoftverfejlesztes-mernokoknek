@@ -39,7 +39,7 @@ const VerticalMenu = () => {
             onMouseEnter={handleListItemHover}
             onMouseLeave={handleListItemLeave}
         >
-            <a className="nav-link navigationlink" href="/#">
+            <a className="nav-link navigationlink" href="/coming-soon">
                 <i className="material-icons mui">movie_filter</i><br />
                 <span className="menuname">Coming soon</span>
             </a>
@@ -48,7 +48,7 @@ const VerticalMenu = () => {
             onMouseEnter={handleListItemHover}
             onMouseLeave={handleListItemLeave}
         >
-            <a className="nav-link navigationlink" href="./Food.js">
+            <a className="nav-link navigationlink" href="/food">
                 <FontAwesomeIcon icon={faHamburger} className="fas faicon" /><br />
                 <span className="menuname">Food</span>
             </a>
@@ -57,7 +57,7 @@ const VerticalMenu = () => {
             onMouseEnter={handleListItemHover}
             onMouseLeave={handleListItemLeave}
         >
-            <a className="nav-link navigationlink" href="/#">
+            <a className="nav-link navigationlink" href="/profile">
                 <FontAwesomeIcon icon={faUser} className="fas faicon" /><br />
                 <span className="menuname">Profile</span>
             </a>
