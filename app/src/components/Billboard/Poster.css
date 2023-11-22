@@ -3,7 +3,7 @@
     float: left;
     margin-right: 10px;
     display: inline-block;
-    max-height: 320px;
+    padding-bottom: 0.5%;
 }
 
 .poster:nth-child(even) .movie-title {
@@ -23,7 +23,7 @@
     font-weight: 700;
     color: #f74346;
     text-align: left;
-    font-size: 0.7vw;
+    font-size: 0.5vw;
     white-space: normal;
 }
 

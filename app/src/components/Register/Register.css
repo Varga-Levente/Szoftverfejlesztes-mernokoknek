@@ -1,0 +1,162 @@
+.usericon {
+    color: silver;
+    font-size: 100px;
+    padding: 0;
+    margin: 0;
+}
+
+.login-text {
+    color: silver;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 4.5vh;
+    padding: 0;
+    margin: 0;
+}
+
+/* Input CSS */
+
+.input-container {
+    padding: 30px 0 30px 0;
+}
+
+.regforminput::placeholder {
+    text-align: center;
+}
+
+.input-container > input:focus {
+    -webkit-box-shadow: 0px 0px 0px 1px #F74346;
+    box-shadow: 0px 0px 0px 1px #F74346;
+}
+
+.input-container > input, .input-container > input:focus {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1.5px #f74346 solid;
+    color: silver;
+}
+
+.input-container > .username-input, .password-input, .email-input, .password-input, .fullname-input {
+    margin: 0 0 10px 0;
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+
+.password-input {
+    text-align: center;
+}
+
+/* Button CSS */
+
+.reg-btn {
+    width: 100%;
+    background-color: transparent;
+    border-color: #f74346;
+    color: silver;
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+
+.reg-btn:hover {
+    background-color: rgba(247, 67, 70, 0.5);
+    border-color: #f74346;
+    -webkit-box-shadow: 0px 0px 0px 1px #F74346;
+    box-shadow: 0px 0px 0px 1px #F74346;
+}
+
+.reg-btn:focus {
+    background-color: rgba(247, 67, 70, 1) !important;
+    border-color: #f74346 !important;
+    -webkit-box-shadow: 0px 0px 0px 1px #F74346;
+    box-shadow: 0px 0px 0px 1px #F74346;
+}
+
+.reg-btn:disabled,
+.reg-btn[disabled]{
+    background-color: transparent;
+    border: 1px grey solid;
+    color: white;
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+
+.close-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #2b2b38;
+    border: 1px #f74346 solid;
+    color: #f74346;
+    padding-top: 5px;
+    font-weight: bold;
+    font-size: 120%;
+    width: 48px;
+    height: 48px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    -webkit-box-shadow: 0px 0px 0px 1px #F74346;
+    box-shadow: 0px 0px 0px 1px #F74346;
+    background-color: rgba(247, 67, 70, 1);
+    border-color: #f74346;
+}
+
+.logout-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #2b2b38;
+    border: 1px #f74346 solid;
+    color: #f74346;
+    padding-top: 5px;
+    font-weight: bold;
+    font-size: 120%;
+    width: 48px;
+    height: 48px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.logout-button:hover {
+    -webkit-box-shadow: 0px 0px 0px 1px #F74346;
+    box-shadow: 0px 0px 0px 1px #F74346;
+    background-color: rgba(247, 67, 70, 1);
+    border-color: #f74346;
+}
+
+.registercontainer {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginform {
+    width: 35%;
+    max-width: 400px;
+}
+
+.logintop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.logintextcontainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.error-text{
+    color: #f74346;
+    font-family: 'Roboto';
+    font-size: 12px;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
