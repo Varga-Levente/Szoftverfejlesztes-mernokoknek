@@ -4,7 +4,7 @@ import { faPlay, faTicket, faCreditCard, faBookOpen, faRightFromBracket, faGear,
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 const Profile = () => {
 
-    const [userData, setUserData] = useState(JSON.parse(localStorage.getItem('user')) || null);
+    const [userData] = useState(JSON.parse(localStorage.getItem('user')) || null);
     const handleLogout = () => {
         // localStorage-ből eltávolítjuk a 'user' kulcsot
         localStorage.removeItem('user');
