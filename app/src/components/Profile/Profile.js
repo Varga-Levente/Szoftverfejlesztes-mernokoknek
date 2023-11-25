@@ -16,7 +16,7 @@ const Profile = () => {
                     <div className={"upper"}>
                         <div className={"leftwall"}>
                             <img src={"/avatar.jpg"} className={"avatar_v1"} alt={"avatar"}/>
-                            <a href={"/profile"} className={"links"}>
+                            <a href={"/settings"} className={"links"}>
                             <div className={"option"}>
                                 <FontAwesomeIcon icon={faGear} className={"option_icon"}/>
                             </div>

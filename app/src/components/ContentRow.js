@@ -13,6 +13,7 @@ import Profile from "./Profile/Profile";
 import Coming_soon from "./Coming-soon/Coming-soon";
 import Food from "./Food/Food";
 import Header from "./Header";
+import Settings from "./Settings/Settings";
 
 const ContentRow = () => {
     //Get categories from API /movies/getAllCategories
@@ -45,6 +46,7 @@ const ContentRow = () => {
                             <Route path="/profile" component={Profile} />
                             <Route path="/food" component={Food} />
                             <Route path="/coming-soon" component={Coming_soon} />
+                            <Route path="/settings" component={Settings} />
                             <Route
                                 key="popular"
                                 path="/"
