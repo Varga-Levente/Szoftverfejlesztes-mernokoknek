@@ -1,5 +1,6 @@
 package com.unideb.sfm.Szoftverfejlesztesmernokoknek.service;
 
+import com.unideb.sfm.Szoftverfejlesztesmernokoknek.model.Food;
 import com.unideb.sfm.Szoftverfejlesztesmernokoknek.model.Movie;
 import com.unideb.sfm.Szoftverfejlesztesmernokoknek.repository.MovieRepository;
 import com.unideb.sfm.Szoftverfejlesztesmernokoknek.utils.ReadJSON;
@@ -26,9 +27,44 @@ public class MovieService {
         return movieRepository.findAll();
     }
 
-    public String addMovie(Movie movie) {
-        movieRepository.save(movie);
-        return "Movie added";
+    public ResponseEntity<?> addMovie(List<Movie> movie) {
+        movieRepository.saveAll(movie);
+        return ResponseEntity.ok("Moves added successfully");
+    }
+
+    public ResponseEntity<?> removeMovie(Integer id) {
+        Movie movie = movieRepository.findById(id).orElse(null);
+        if (movie == null) {
+            return ResponseEntity.notFound().build();
+        }
+        movieRepository.deleteById(id);
+        return ResponseEntity.ok("Movie deleted");
+    }
+
+    public ResponseEntity<?> editMovie(Integer id, Movie movie) {
+        Movie existingMovie = movieRepository.findById(id).orElse(null);
+        //If the food does not exist, return 404 Not found
+        if (existingMovie == null) {
+            return ResponseEntity.notFound().build();
+        }
+
+        //If food is null, return 400 Bad Request
+        if (movie == null) {
+            return ResponseEntity.badRequest().build();
+        }
+
+        //Change the values of the existing food to the new values
+        existingMovie.setTitle(movie.getTitle());
+        existingMovie.setYear(movie.getYear());
+        existingMovie.setRating(movie.getRating());
+        existingMovie.setOverview(movie.getOverview());
+        existingMovie.setPoster_path(movie.getPoster_path());
+        existingMovie.setYt_trailer_id(movie.getYt_trailer_id());
+        existingMovie.setCategories(movie.getCategories());
+
+        //Save the existing food
+        movieRepository.save(existingMovie);
+        return ResponseEntity.ok("Movie edited");
     }
 
     public ResponseEntity<Movie> getMovieById(Integer movieId) {
