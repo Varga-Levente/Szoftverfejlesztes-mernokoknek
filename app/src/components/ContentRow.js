@@ -2,11 +2,10 @@
 import React from 'react';
 import axios from 'axios';
 import {API_URL} from '../Config';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import './ContentRow.css';
 import VerticalMenu from './VerticalMenu';
 import Scroller from './Billboard/Scroller';
-import err from './err';
 import MovieView from "./MovieView/MovieView";
 import Cart from "./Cart/Cart";
 import Profile from "./Profile/Profile";
@@ -32,7 +31,7 @@ const ContentRow = () => {
     }, []);
 
     return (
-        <div>
+        <>
             <Header />
             <div className="row" style={{ height: '100%', paddingTop: '90px' }}>
                 <div className="col col-1" style={{ position: 'relative' }}>
@@ -41,7 +40,6 @@ const ContentRow = () => {
                 <div className="col contents content-col">
                     <BrowserRouter>
                         <Switch>
-                            <Route path="/error" component={err} />
                             <Route path="/cart" component={Cart} />
                             <Route path="/profile" component={Profile} />
                             <Route path="/food" component={Food} />
@@ -72,11 +70,16 @@ const ContentRow = () => {
                                 )}
                             />
                             <Route path="/movie/:id" component={MovieView} />
+                            <Route render={() => {
+                                // JavaScript redirect
+                                window.location.href = "/404";
+                                return null; // Prevent rendering of any component
+                            }} />
                         </Switch>
                     </BrowserRouter>
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 

@@ -4,7 +4,7 @@ import './Header.css';
 import './CinemaSelector';
 import { API_URL } from "../Config";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faShoppingBasket, faRightFromBracket, faTicket, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faShoppingBasket, faRightFromBracket, faTicket, faUser, faUserPlus } from '@fortawesome/free-solid-svg-icons';
 import CinemaSelector from "./CinemaSelector";
 
 const Header = () => {
@@ -70,6 +70,10 @@ const Header = () => {
         }
     }, []);
 
+    const handleLogout = () => {
+        localStorage.removeItem('user');
+        window.location.href = '/';
+    }
 
     return (
     <div className="row fixed-top justify-content-center top-nav align-items-center" style={{ height: '90',  zIndex: '998' }}>
@@ -101,16 +105,24 @@ const Header = () => {
                 </a>
                 <a href={user ? "/profile" : "/login"}>
                     <div className="dropdown_avatar">
-                        <button className=" dropbtn_avatar"><img className="avatar" alt='avatar' src={user ? user.profileImage : "/avatar.jpg"} /></button>
-                        <div className="dropdown-content_avatar">
-                            <a href="/profile"><FontAwesomeIcon icon={faUser} className={"profile_icons"} />Profile</a>
-                            <a href="/#"><FontAwesomeIcon icon={faTicket} className={"profile_icons"} />My Tickets</a>
-                            <a href="/#"><FontAwesomeIcon icon={faRightFromBracket} className={"profile_icons"} />Logout</a>
-                        </div>
+                        <button className=" dropbtn_avatar"><img className="avatar" alt='avatar' src={user ? "data:image/jpg;base64,"+user.profileImage : "/avatar.jpg"} /></button>
+                        {user ?
+                            <div className="dropdown-content_avatar">
+                                <a href="/profile"><FontAwesomeIcon icon={faUser} className={"profile_icons"} />Profile</a>
+                                <a href="/#"><FontAwesomeIcon icon={faTicket} className={"profile_icons"} />My Tickets</a>
+                                <a onClick={handleLogout} href="/#"><FontAwesomeIcon icon={faRightFromBracket} className={"profile_icons"} />Logout</a>
+                            </div>
+                            :
+                            <div className="dropdown-content_avatar">
+                                <a href="/login"><FontAwesomeIcon icon={faUser} className={"profile_icons"} />Login</a>
+                                <a href="/register"><FontAwesomeIcon icon={faUserPlus} className={"profile_icons"} />Register</a>
+                            </div>
+                        }
                     </div>
                 </a>
             </div>
-        </div>
+        </div>rt
+
     </div>
     );
 }

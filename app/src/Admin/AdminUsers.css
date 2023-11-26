@@ -1,0 +1,30 @@
+.admin-user-counter {
+    color: white;
+}
+
+.admin-user-counter > .counter {
+    font-weight: bold;
+}
+
+.admin-user-row1 {
+    margin-top: 20px;
+}
+
+.admin-user-row2 {
+    margin-top: 20px;
+}
+
+.admin-user-row3 {
+    margin-top: 20px;
+}
+
+.admin-user-actionbtn {
+    width: 30px;
+    height: 30px;
+    font-size: 80%;
+    padding: 0;
+}
+
+.admin-user-input {
+    width: 50%;
+}

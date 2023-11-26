@@ -45,7 +45,7 @@
     align-items: center; /* Elemek középre igazítása */
     background-color: #2B2B38;
     color: white;
-    border-radius: 50px;
+    border-radius: 25px;
     margin-bottom: 15px;
 }
 
@@ -57,7 +57,7 @@
     color: white;
     display: flex; /* Flex konténer a szöveg és ikon elrendezéséhez */
     align-items: center; /* Elemek középre igazítása */
-    border-radius: 50px;
+    border-radius: 25px;
     margin-bottom: 15px;
 }
 
@@ -69,7 +69,7 @@
     color: white;
     display: flex; /* Flex konténer a szöveg és ikon elrendezéséhez */
     align-items: center; /* Elemek középre igazítása */
-    border-radius: 50px;
+    border-radius: 25px;
 }
 
 .foot_profile {
@@ -112,7 +112,7 @@
     align-items: center; /* Elemek középre igazítása */
     background-color:  #f74346;
     color: white;
-    border-radius: 50px;
+    border-radius: 25px;
     margin-bottom: 15px;
 }
 
