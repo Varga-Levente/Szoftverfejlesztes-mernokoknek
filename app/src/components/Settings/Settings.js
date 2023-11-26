@@ -4,8 +4,8 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGear, faCircleArrowRight} from "@fortawesome/free-solid-svg-icons";
 
 const Settings = () => {
-    const [username, setUsername] = useState('Username');
-    const [email, setEmail] = useState('username@domain.com');
+    const [username, setUsername] = useState('User');
+    const [email, setEmail] = useState('user@domain.com');
     const [re_password, setAgainPassword] = useState('');
     const [new_password, setPassword] = useState('');
 

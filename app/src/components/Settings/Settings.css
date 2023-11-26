@@ -112,11 +112,12 @@
     background-color: #161621;
     height: 65px;
     width: 100%;
-    color: #FFFFFF;
+    color: white;
     font-size: 25px;
     border-radius: 20px;
     border: 1px solid #f74346;
     margin-bottom: 2%;
+    padding-left: 4%;
 }
 
 .deletion {
