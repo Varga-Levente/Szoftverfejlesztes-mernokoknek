@@ -2,7 +2,7 @@
 import React from 'react';
 import axios from 'axios';
 import {API_URL} from '../Config';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import {BrowserRouter, Route, Switch, useLocation} from 'react-router-dom';
 import './ContentRow.css';
 import VerticalMenu from './VerticalMenu';
 import Scroller from './Billboard/Scroller';
@@ -15,10 +15,12 @@ import Header from "./Header";
 import Settings from "./Settings/Settings";
 
 const ContentRow = () => {
+    const location = useLocation();
     //Get categories from API /movies/getAllCategories
     const [categories, setCategories] = React.useState([]);
     React.useEffect(() => {
         //Use ${API_URL}/movies/getAllCategories with axios and setCategories
+        if (location.pathname !== '/') return;
         axios
             .get(`${API_URL}/movie/getCategories`)
             .then((response) => {
@@ -28,7 +30,7 @@ const ContentRow = () => {
             }, (error) => {
                 console.error('CONTENTROW | API hívás sikertelen:', error);
             });
-    }, []);
+    }, [location.pathname]);
 
     return (
         <>
