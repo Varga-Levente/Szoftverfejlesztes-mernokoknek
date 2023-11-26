@@ -4,7 +4,7 @@ import './Header.css';
 import './CinemaSelector';
 import { API_URL } from "../Config";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faShoppingBasket, faRightFromBracket, faTicket, faUser, faUserPlus } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faShoppingBasket, faRightFromBracket, faTicket, faUser, faUserPlus, faUserTie } from '@fortawesome/free-solid-svg-icons';
 import CinemaSelector from "./CinemaSelector";
 
 const Header = () => {
@@ -111,6 +111,9 @@ const Header = () => {
                                 <a href="/profile"><FontAwesomeIcon icon={faUser} className={"profile_icons"} />Profile</a>
                                 <a href="/#"><FontAwesomeIcon icon={faTicket} className={"profile_icons"} />My Tickets</a>
                                 <a onClick={handleLogout} href="/#"><FontAwesomeIcon icon={faRightFromBracket} className={"profile_icons"} />Logout</a>
+                                {user.roles.includes('ROLE_ADMIN') &&
+                                    <a href="/admin-movies"><FontAwesomeIcon icon={faUserTie} className={"profile_icons"} />Admin</a>
+                                }
                             </div>
                             :
                             <div className="dropdown-content_avatar">
