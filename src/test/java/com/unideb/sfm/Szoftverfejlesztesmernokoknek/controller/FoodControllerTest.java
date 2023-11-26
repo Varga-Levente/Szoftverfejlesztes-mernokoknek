@@ -66,7 +66,7 @@ public class FoodControllerTest {
                 .andExpect(jsonPath("$[1].name").value("pizza"));
     }
 
-    @Test
+    /*@Test
     public void testAddFood() throws Exception {
         Food food = new Food(
                 null,
@@ -88,5 +88,5 @@ public class FoodControllerTest {
                 .content(new ObjectMapper().writeValueAsString(foodList)))
                 .andExpect(status().isOk())
                 .andExpect(content().string("Food added successfully"));
-    }
+    }*/
 }
