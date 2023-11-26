@@ -14,9 +14,9 @@ public class CinemaService {
     @Autowired
     private CinemaRepository cinemaRepository;
 
-    public ResponseEntity<?> addCinema(Cinema cinema) {
-        cinemaRepository.save(cinema);
-        return ResponseEntity.ok("Cinema added successfully");
+    public ResponseEntity<?> addCinema(List<Cinema> cinema) {
+        cinemaRepository.saveAll(cinema);
+        return ResponseEntity.ok("Cinemas added successfully");
     }
 
     public ResponseEntity<?> removeCinemaById(Integer cinemaId) {

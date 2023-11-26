@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api/v1/cinema")
@@ -23,7 +25,7 @@ public class CinemaController {
     }
 
     @PostMapping("add")
-    public ResponseEntity<?> addCinema(@RequestBody Cinema cinema) {
+    public ResponseEntity<?> addCinema(@RequestBody List<Cinema> cinema) {
         return cinemaService.addCinema(cinema);
     }
 
