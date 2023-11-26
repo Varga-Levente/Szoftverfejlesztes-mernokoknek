@@ -25,10 +25,10 @@ const Profile = () => {
                     <div className={"upper"}>
                         <div className={"leftwall"}>
                             <img src={`data:image/jpg;base64,${userData.profileImage}`} className={"avatar_v1"} alt={"avatar"}/>
-                            <a href={"/profile"} className={"links"}>
-                            <div className={"option"}>
-                                <FontAwesomeIcon icon={faGear} className={"option_icon"}/>
-                            </div>
+                            <a href={"/settings"} className={"links"}>
+                                <div className={"option"}>
+                                    <FontAwesomeIcon icon={faGear} className={"option_icon"}/>
+                                </div>
                             </a>
                         </div>
                         <div className={"rightwall"}>
