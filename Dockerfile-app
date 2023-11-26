@@ -23,4 +23,4 @@ WORKDIR /app
 
 EXPOSE 8000
 
-CMD java $JAVA_OPTS -jar app.jar
+CMD java $JAVA_OPTS -jar app.jar --spring.profiles.active=production
