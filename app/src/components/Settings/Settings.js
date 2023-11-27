@@ -4,8 +4,8 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGear, faCircleArrowRight} from "@fortawesome/free-solid-svg-icons";
 
 const Settings = () => {
-    const [username, setUsername] = useState('Username');
-    const [email, setEmail] = useState('username@domain.com');
+    const [username, setUsername] = useState('User');
+    const [email, setEmail] = useState('user@domain.com');
     const [re_password, setAgainPassword] = useState('');
     const [new_password, setPassword] = useState('');
 
@@ -42,10 +42,12 @@ const Settings = () => {
                         </div>
                     </div>
                         <div className={"bottom"}>
+                            <a href={"/onclick_torles"} className={"links_1"}>
                             <div className={"deletion"}>
                                 <h2 className={"request"}>Request account deletion</h2>
                                 <FontAwesomeIcon icon={faCircleArrowRight} className={"del"}/>
                             </div>
+                            </a>
                             <h2 className={"title_text"}>New password</h2>
                             <input type="text" id="username" className={"textbox"} name="new_password" value={new_password} onChange={(e) => updatePassword(e.target.value)}/>
                         </div>
@@ -61,14 +63,18 @@ const Settings = () => {
             </div>
             <div className={"foot_settings"}>
                 <div className={"back"}>
+                    <a href={"/profile"} className={"links_1"}>
                     <div className={"back_1"}>
                         <h2 className={"twowords"}>Back</h2>
                     </div>
+                    </a>
                 </div>
                 <div className={"save"}>
+                        <button className={"btn btnn"}>
                         <div className={"save_1"}>
                             <h2 className={"twowords"}>Save</h2>
                         </div>
+                        </button>
                 </div>
             </div>
         </div>

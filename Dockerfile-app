@@ -11,7 +11,7 @@ COPY src/ /project/src
 RUN mvn package
 
 # Második szakasz
-FROM openjdk:18.0.1-jdk-slim
+FROM openjdk:22-ea-22
 
 RUN mkdir /app
 
@@ -23,4 +23,4 @@ WORKDIR /app
 
 EXPOSE 8000
 
-CMD java $JAVA_OPTS -jar app.jar
+CMD java $JAVA_OPTS -jar app.jar --spring.profiles.active=production

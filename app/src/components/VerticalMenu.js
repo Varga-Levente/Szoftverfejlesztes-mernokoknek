@@ -1,9 +1,11 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHamburger, faUser } from '@fortawesome/free-solid-svg-icons';
 import './VerticalMenu.css';
 
 const VerticalMenu = () => {
+    const location = useLocation();
 
     const handleListItemHover = (event) => {
         // Az összes a li elemen belüli elem kiválasztása
@@ -30,7 +32,7 @@ const VerticalMenu = () => {
             onMouseEnter={handleListItemHover}
             onMouseLeave={handleListItemLeave}
         >
-            <a className="nav-link active navigationlink" href="/#">
+            <a className={`nav-link navigationlink ${location.pathname === '/' ? 'active' : ''}`} href="/#">
                 <i className="material-icons mui">movie</i><br />
                 <span className="menuname">Billboard</span>
             </a>
@@ -39,7 +41,7 @@ const VerticalMenu = () => {
             onMouseEnter={handleListItemHover}
             onMouseLeave={handleListItemLeave}
         >
-            <a className="nav-link navigationlink" href="/coming-soon">
+            <a className={`nav-link navigationlink ${location.pathname === '/coming-soon' ? 'active' : ''}`} href="/coming-soon">
                 <i className="material-icons mui">movie_filter</i><br />
                 <span className="menuname">Coming soon</span>
             </a>
@@ -48,7 +50,7 @@ const VerticalMenu = () => {
             onMouseEnter={handleListItemHover}
             onMouseLeave={handleListItemLeave}
         >
-            <a className="nav-link navigationlink" href="/food">
+            <a className={`nav-link navigationlink ${location.pathname === '/food' ? 'active' : ''}`} href="/food">
                 <FontAwesomeIcon icon={faHamburger} className="fas faicon" /><br />
                 <span className="menuname">Food</span>
             </a>
@@ -57,7 +59,7 @@ const VerticalMenu = () => {
             onMouseEnter={handleListItemHover}
             onMouseLeave={handleListItemLeave}
         >
-            <a className="nav-link navigationlink" href="/profile">
+            <a className={`nav-link navigationlink ${["/profile", "/settings"].includes(location.pathname) ? 'active' : ''}`} href="/profile">
                 <FontAwesomeIcon icon={faUser} className="fas faicon" /><br />
                 <span className="menuname">Profile</span>
             </a>
