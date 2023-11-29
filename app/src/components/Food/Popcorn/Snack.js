@@ -2,13 +2,13 @@ import React from 'react';
 import './Snack.css';
 
 const Snack = (props) => {
-    const { key, name, size, price } = props;
+    const { name, size, price } = props;
 
 
 
     return (
 
-        <div key={key} className={"food_1"}>
+        <div className={"food_1"}>
             <img src={"https://www.simplyrecipes.com/thmb/Xzggu-Md45HKhhYSw4DK8tGlZ_I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Perfect-Popcorn-LEAD-41-4a75a18443ae45aa96053f30a3ed0a6b.JPG"} className={"popcorn"} alt={"popcorn"}/>
             <div className={"rightside_of_popcorn"}>
                 <h2 className={"title"}>{name}</h2>
