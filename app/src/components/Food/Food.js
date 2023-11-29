@@ -34,8 +34,8 @@ const Food = () => {
             <div className={"foodContent"}>
                 <div className={"line"}>
                     {foodItems.snacks && foodItems.snacks.map(snack => (
-                        <div className={"foods"}>
-                                <Snack key={snack.id} name={snack.name} size={snack.description} price={snack.price} image={snack.image} />
+                        <div key={snack.id} className={"foods"}>
+                                <Snack name={snack.name} size={snack.description} price={snack.price} image={snack.image} />
                         </div>
                     ))}
                 </div>
@@ -44,8 +44,8 @@ const Food = () => {
             <div className={"foodContent"}>
                 <div className={"line"}>
                     {foodItems.drinks && foodItems.drinks.map(drink => (
-                        <div className={"foods"}>
-                                <Drink key={drink.id} name={drink.name} size={drink.description} price={drink.price} image={drink.image} />
+                        <div key={drink.id} className={"foods"}>
+                                <Drink name={drink.name} size={drink.description} price={drink.price} image={drink.image} />
                         </div>
                     ))}
                 </div>
